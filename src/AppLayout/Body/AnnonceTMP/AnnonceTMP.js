@@ -7,7 +7,6 @@ class AnnonceTMP extends Component {
   render() {
 
     let height = (window.innerHeight - 230) + "px";
-    console.log(window.innerHeight);
 
     return (
       <div className="AnnonceTMP" style={{'height': height}}>

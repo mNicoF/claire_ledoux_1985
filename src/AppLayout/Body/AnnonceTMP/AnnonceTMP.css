@@ -35,5 +35,7 @@
 }
 
 .AnnonceBtn:hover{
+    text-decoration: none;
+    color: white;
     background-color: #3B5CA0;
 }
