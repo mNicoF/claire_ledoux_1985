@@ -1,0 +1,39 @@
+.AnnonceTMP {
+    text-align: center;
+}
+
+.AnnonceTMP::after {
+    content: "";
+    background: url("AnnonceTMP_background.jpg");
+    opacity: 0.35;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+  }
+
+.AnnonceTMP > * {
+    padding: 10px;
+    font-size: 2em;
+}
+
+.AnnonceH3 {
+    padding-top: 50px !important;
+    font-weight: bold !important;
+    font-size: 3em !important;
+}
+
+.AnnonceBtn {
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    background-color: #4267B2;
+    border-radius: 10px;
+}
+
+.AnnonceBtn:hover{
+    background-color: #3B5CA0;
+}
