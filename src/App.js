@@ -11,7 +11,7 @@ import Footer from './AppLayout/Footer/Footer';
  * CSS
  */
 import 'bootstrap/dist/css/bootstrap.css';
-import './App.css';
+import './Style/App.css';
 
 /**
  * Library Font-Awesome

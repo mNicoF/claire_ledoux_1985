@@ -1,4 +1,10 @@
 /* 
+ * Theme font
+*/
+
+@font-face { font-family: F25_Executive; src: url('F25_Executive.otf'); } 
+
+/* 
  * Theme color
 */
 
