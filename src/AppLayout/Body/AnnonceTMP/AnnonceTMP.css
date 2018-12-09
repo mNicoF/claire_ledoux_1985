@@ -1,3 +1,14 @@
+.AnnonceTMPLayout {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.HorairesIMG {
+    height: 90%;
+    width: 90%;
+}
+
 .AnnonceTMP {
     text-align: center;
 }
