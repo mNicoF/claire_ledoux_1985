@@ -1,6 +1,6 @@
 .App-header {
-  height: 150px;
-  padding: 20px;
+  height: 130px;
+  padding: 20px 0px;
 }
 
 .App-title {
@@ -8,4 +8,16 @@
   font-size: 2em;
   font-family: F25_Executive;
   /*font-variant: small-caps;*/
+}
+
+.nav-item > a, .nav-item > a:hover {
+  font-family: F25_Executive;
+  color:#37342F;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.navbar {
+  background-color: #F4E7D3;
+  width: 100% !important;
 }

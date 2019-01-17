@@ -1,21 +1,15 @@
-.AnnonceTMPLayout {
+.AccueilLayout {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
 }
 
-.HorairesIMG {
-    height: 90%;
-    width: 90%;
-}
-
-.AnnonceTMP {
+.Accueil {
     text-align: center;
 }
 
-.AnnonceTMP::after {
+.Accueil::after {
     content: "";
-    background: url("AnnonceTMP_background.jpg");
+    background: url("./../../ressources/AnnonceTMP_background.jpg");
     opacity: 0.35;
     top: 0;
     left: 0;
@@ -25,18 +19,18 @@
     z-index: -1;   
   }
 
-.AnnonceTMP > * {
+.Accueil > * {
     padding: 10px;
     font-size: 2em;
 }
 
-.AnnonceH3 {
+.AccueilH3 {
     padding-top: 50px !important;
     font-weight: bold !important;
     font-size: 3em !important;
 }
 
-.AnnonceBtn {
+.AccueilBtn {
     padding: 10px;
     font-weight: bold;
     text-decoration: none;
@@ -45,7 +39,7 @@
     border-radius: 10px;
 }
 
-.AnnonceBtn:hover{
+.AccueilBtn:hover{
     text-decoration: none;
     color: white;
     background-color: #3B5CA0;

@@ -17,6 +17,12 @@
   bottom: 5px;
 }
 
+.Footer-link {
+ 
+  color: #F4E7D3 !important;
+  text-decoration: none;
+}
+
 .Footer-right {
   position: fixed;
   bottom: 5px;

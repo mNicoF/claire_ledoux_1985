@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 
 /**
  * Fixed parts
@@ -8,8 +8,12 @@ import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import Header from './AppLayout/Header/Header';
 import Footer from './AppLayout/Footer/Footer';
 
-import AnnonceTMP from './Component/AnnonceTMP/AnnonceTMP';
-import Contact from './Component/Contact/Contact';
+import Accueil from './Page/Accueil/Accueil';
+//TODO: optimiser le chargement des pages
+//import Presentation 
+//import Galerie
+//import Tarifs
+import Contact from './Page/Contact/Contact';
 
 /**
  * REDUX
@@ -18,7 +22,8 @@ import { combineReducers, createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 import { createLogger } from 'redux-logger';
 
-import { contactReducer } from './redux/reducers/ContactReducer';
+import { appReducer } from './redux/reducers/AppReducer';
+
 /**
  * CSS
  */
@@ -28,7 +33,6 @@ import './Style/App.css';
 /**
  * Library Font-Awesome
  */
-//import '@fortawesome/fontawesome-free'
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faCopyright } from '@fortawesome/free-regular-svg-icons';
 //import {  } from '@fortawesome/free-solid-svg-icons';
@@ -36,7 +40,7 @@ import { faCopyright } from '@fortawesome/free-regular-svg-icons';
 library.add(faCopyright);
 
 const reducers = combineReducers({
-  contact: contactReducer
+  appReducer
 });
 
 const logger = createLogger({
@@ -53,10 +57,8 @@ class App extends Component {
   constructor(props){
     super(props);
     this.state = {
-      currentURL: '/'
+      
     };
-    this.handleNav = this.handleNav.bind(this);
-    this.handleHistory = this.handleHistory.bind(this);
   }
 
   componentDidMount(){
@@ -69,58 +71,28 @@ class App extends Component {
     window.removeEventListener('popstate', this.handleHistory);
   }
 
-  handleHistory(event){
-    const fullURLSplit = window.location;
-
-    this.setState({
-      currentURL: fullURLSplit[fullURLSplit.length - 1]
-    })
-  }
-
-  handleNav(event){
-    const fullURLSplit = event.target.href.split('/');
-
-    this.setState({
-      currentURL: fullURLSplit[fullURLSplit.length - 1]
-    })
-  }
-
   render() {
-
-    //const stateCurrentURL = this.state.currentURL;
 
     return (
       <div className="App">
-        <Header/>
-        <div>
-          <Provider store={store}>
-            <Router>
-              <div>
-                <div className="menuBar">
-                  <Link to="/contact" activeClassName="selected" onClick={this.handleNav}>Contact</Link>
-                  <Link to="/annonceTMP" activeClassName="selected" onClick={this.handleNav}>Annonce</Link>
-                </div>
-                <Switch>
-                  <Route path="/contact" component={Contact}></Route>
-                  <Route path="/annonceTMP" component={AnnonceTMP}></Route>
-                </Switch>
-              </div>
-            </Router>
-          </Provider>
-        </div>
-        <Footer/>
+        <Provider store={store}>
+          <Router>
+            <>
+              <Header/>
+              <Switch>
+                <Route path="/accueil" component={Accueil}></Route>
+                {/*<Route path="/presentation" component={Presentation}></Route>
+                <Route path="/galerie" component={Galerie}></Route>
+    <Route path="/tarifs" component={Tarifs}></Route>*/}
+                <Route path="/contact" component={Contact}></Route>
+                <Redirect path="*" to="/accueil"/>
+              </Switch>
+              <Footer/>
+            </>
+          </Router>
+        </Provider>
       </div>
     );
-
-    /*return (
-      <div className="App">
-        <Header/>
-        <div>
-          <AnnonceTMP/>
-        </div>
-        <Footer/>
-      </div>
-    );*/
   }
 }
 
