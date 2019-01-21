@@ -12,7 +12,7 @@ import Accueil from './Page/Accueil/Accueil';
 //TODO: optimiser le chargement des pages
 //import Presentation 
 //import Galerie
-//import Tarifs
+import Tarifs from './Page/Tarifs/Tarifs';
 import Contact from './Page/Contact/Contact';
 
 /**
@@ -80,11 +80,13 @@ class App extends Component {
             <>
               <Header/>
               <Switch>
+                {/* //TODO: construire les routes en bouclant comme le menu dans le header */}
                 <Route path="/accueil" component={Accueil}></Route>
                 {/*<Route path="/presentation" component={Presentation}></Route>
-                <Route path="/galerie" component={Galerie}></Route>
-    <Route path="/tarifs" component={Tarifs}></Route>*/}
+                <Route path="/galerie" component={Galerie}></Route>*/}
+                <Route path="/prestations" component={Tarifs}></Route>
                 <Route path="/contact" component={Contact}></Route>
+                {/* //TODO: redirect juste '/' sur /accueil et le reste sur un 404 */}
                 <Redirect path="*" to="/accueil"/>
               </Switch>
               <Footer/>

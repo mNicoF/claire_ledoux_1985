@@ -1,20 +1,4 @@
-import React, { Component } from 'react';
-//import { Button } from 'react-bootstrap';
+import { connect } from 'react-redux';
+import Contact from './Contact.jsx';
 
-import './Contact.css';
-import ContactMenu from './ContactMenu.js';
-import ContactDetail from './ContactDetail.js';
-
-class Contact extends Component {
-  render() {
-
-    return (
-      <div>
-        <ContactMenu />
-        <ContactDetail />
-      </div>
-    );
-  }
-}
-
-export default Contact;
+export default connect()(Contact);

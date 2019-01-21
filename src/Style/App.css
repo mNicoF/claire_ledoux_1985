@@ -1,8 +1,16 @@
+/*
+ * App.css
+ */
+
+ .root {
+   height: 100%;
+ }
+
 /* 
  * Theme font
 */
 
-@font-face { font-family: F25_Executive; src: url('F25_Executive.otf'); } 
+@font-face { font-family: F25_Executive; src: url('./font/F25_Executive.otf'); } 
 
 /* 
  * Theme color

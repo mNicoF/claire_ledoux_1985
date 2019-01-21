@@ -9,7 +9,7 @@
 
 .Accueil::after {
     content: "";
-    background: url("./../../ressources/AnnonceTMP_background.jpg");
+    background: url("./../medias/AnnonceTMP_background.jpg");
     opacity: 0.35;
     top: 0;
     left: 0;

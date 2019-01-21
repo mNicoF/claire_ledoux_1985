@@ -1,0 +1,10 @@
+.ContactLayout{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #F4E7D3; /*rgb(244,231,211)*/
+}
+
+.ContactIMG{
+    
+}

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-import './Footer.css';
+import '../../Style/Footer.css';
 
 class Footer extends Component {
   constructor(props) {
