@@ -15,7 +15,7 @@ class Contact extends Component {
 
     return (
       <div className="ContactLayout">
-        <img className="ContactIMG" src={require('../../medias/horaires.PNG')} alt="horaires"></img>
+        <img className="ContactIMG" src={require('../../medias/contact.PNG')} alt="horaires"></img>
       </div>
     );
   }

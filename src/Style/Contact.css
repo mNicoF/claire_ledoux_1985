@@ -5,6 +5,6 @@
     background-color: #F4E7D3; /*rgb(244,231,211)*/
 }
 
-.ContactIMG{
-    
+.ContactLayout > img {
+    max-width: 100%;
 }

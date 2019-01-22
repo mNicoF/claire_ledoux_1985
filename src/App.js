@@ -23,6 +23,7 @@ import { Provider } from 'react-redux';
 import { createLogger } from 'redux-logger';
 
 import { appReducer } from './redux/reducers/AppReducer';
+import { contactReducer } from './redux/reducers/ContactReducer';
 
 /**
  * CSS
@@ -40,7 +41,8 @@ import { faCopyright } from '@fortawesome/free-regular-svg-icons';
 library.add(faCopyright);
 
 const reducers = combineReducers({
-  appReducer
+  appReducer,
+  contactReducer
 });
 
 const logger = createLogger({
