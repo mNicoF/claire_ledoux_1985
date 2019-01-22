@@ -13,18 +13,18 @@ class Accueil extends Component {
 
   render() {
 
-    let height = (window.innerHeight - 230) + "px";
+    // let height = (window.innerHeight - 230) + "px";
+    // <div className="AccueilLayout" style={{'height': height}}>
+    
     return (
       <div className="AccueilLayout">
-        <div className="Accueil" style={{'height': height}}>
           <div className="AccueilH3">Bienvenue</div>
-          <div>Le cabinet de dermographie est ouvert !</div>
-          <div>Retrouverez les informations  sur Facebook :  </div>
+          <div>Le cabinet de dermographie vous attend !</div>
+          <div>Suivez toutes les informations sur Facebook :  </div>
           <div style={{'margin': '20px'}}>
             <a className="AccueilBtn" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/claireledoux1985/">@claireledoux1985</a>
           </div>
-          <div style={{'font-size': '1.2em'}}>Ce site est en cours de développement</div>
-        </div>
+          <div style={{'font-size': '2vmax'}}>- Ce site est toujours en cours de développement -</div>
       </div>
     );
   }

@@ -1,12 +1,27 @@
 .AccueilLayout {
     display: flex;
     flex-direction: column;
-}
-
-.Accueil {
     text-align: center;
+    
 }
 
+/* Image de fond dans le ::after pour garder l'écriture net*/
+.AccueilLayout::after {
+    content: "";
+    background-image: url("./../medias/Accueil_background.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    opacity: 0.35;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+/*
 .Accueil::after {
     content: "";
     background: url("./../medias/AnnonceTMP_background.jpg");
@@ -17,17 +32,18 @@
     right: 0;
     position: absolute;
     z-index: -1;   
-  }
+}
+*/
 
-.Accueil > * {
+.AccueilLayout > * {
     padding: 10px;
-    font-size: 2em;
+    font-size: 3vmax;
 }
 
 .AccueilH3 {
     padding-top: 50px !important;
     font-weight: bold !important;
-    font-size: 3em !important;
+    font-size: 5vmax !important;
 }
 
 .AccueilBtn {

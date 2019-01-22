@@ -2,8 +2,8 @@
 
 export const initialState = {
     menu: ["accueil", /*"presentation", "galerie",*/ "prestations", "contact"],
-    version: "0.1.2",
-    dateMaJ: "17/01/2019",
+    version: "1.0.2",
+    dateMaJ: "22/01/2019",
     author: {
         name: "Nicolas Forget",
         link: "https://www.linkedin.com/in/m-nicolas-forget/"
