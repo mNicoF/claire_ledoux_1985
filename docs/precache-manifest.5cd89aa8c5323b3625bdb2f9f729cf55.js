@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/claire_ledoux_1985/static/media/tarifs_epil.c26bbdb4.PNG"
   },
   {
-    "revision": "18957a91aab742838967",
-    "url": "/claire_ledoux_1985/static/css/main.9e9fe378.chunk.css"
+    "revision": "b00ea64182b88b997201",
+    "url": "/claire_ledoux_1985/static/css/main.ef77022a.chunk.css"
   },
   {
     "revision": "5b692e3163377864c0d70dde20212248",
@@ -24,8 +24,8 @@ self.__precacheManifest = [
     "url": "/claire_ledoux_1985/static/media/Accueil_background.604a0096.JPG"
   },
   {
-    "revision": "18957a91aab742838967",
-    "url": "/claire_ledoux_1985/static/js/main.18957a91.chunk.js"
+    "revision": "b00ea64182b88b997201",
+    "url": "/claire_ledoux_1985/static/js/main.b00ea641.chunk.js"
   },
   {
     "revision": "805ec453545141888828ac8e94b82092",
@@ -44,7 +44,7 @@ self.__precacheManifest = [
     "url": "/claire_ledoux_1985/static/css/1.dcbbc469.chunk.css"
   },
   {
-    "revision": "053f5691a2578f50bec9d53c2c35df15",
+    "revision": "de85abd4e0288cb4a34b707ab7f62b15",
     "url": "/claire_ledoux_1985/index.html"
   }
 ];
