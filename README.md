@@ -1,8 +1,12 @@
-This project is a simple website for the company Claire Ledoux 1985.
+Ce projet est un simple site web pour l'entreprise Claire Ledoux 1985.
+---
+Maquillage permanent // Tatouage medical // Dermopigmentation
 
 ---
 
-Ce projet est un simple site web pour l'entreprise Claire Ledoux 1985.
+This project is a simple website for the company Claire Ledoux 1985.
+---
+Permanent makeup // Medical tattoo // Dermopigmentation
 
 ---
 
