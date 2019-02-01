@@ -1,12 +1,14 @@
 Ce projet est un simple site web pour l'entreprise Claire Ledoux 1985.
 ---
 Maquillage permanent // Tatouage medical // Dermopigmentation
+13 Rue de l'Arsenal, 79000 Niort, France
 
 ---
 
 This project is a simple website for the company Claire Ledoux 1985.
 ---
 Permanent makeup // Medical tattoo // Dermopigmentation
+13 Rue de l'Arsenal, 79000 Niort, France
 
 ---
 
