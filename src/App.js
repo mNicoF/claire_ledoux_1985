@@ -91,7 +91,7 @@ class App extends Component {
                 {/* //TODO: redirect juste '/' sur /accueil et le reste sur un 404 */}
                 <Redirect path="*" to="/accueil"/>
               </Switch>
-              <Footer/>
+              <Footer rec={true}/>
             </>
           </Router>
         </Provider>
