@@ -1,4 +1,8 @@
 import { connect } from 'react-redux';
 import Tarifs from './Tarifs.jsx';
 
-export default connect()(Tarifs);
+const mapStateToProps = state => ({
+    prestations: state.tarifsReducer
+})
+
+export default connect(mapStateToProps)(Tarifs);

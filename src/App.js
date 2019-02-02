@@ -24,6 +24,7 @@ import { createLogger } from 'redux-logger';
 
 import { appReducer } from './redux/reducers/AppReducer';
 import { contactReducer } from './redux/reducers/ContactReducer';
+import { tarifsReducer } from './redux/reducers/TarifsReducer';
 
 /**
  * CSS
@@ -42,6 +43,7 @@ library.add(faCopyright);
 
 const reducers = combineReducers({
   appReducer,
+  tarifsReducer,
   contactReducer
 });
 
@@ -91,7 +93,7 @@ class App extends Component {
                 {/* //TODO: redirect juste '/' sur /accueil et le reste sur un 404 */}
                 <Redirect path="*" to="/accueil"/>
               </Switch>
-              <Footer rec={true}/>
+              <Footer/>
             </>
           </Router>
         </Provider>

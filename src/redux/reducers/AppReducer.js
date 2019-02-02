@@ -1,6 +1,7 @@
 //import { FUNC } from '../actions';
 
 export const initialState = {
+    target: "REC", //PROD
     menu: ["accueil", /*"presentation", "galerie",*/ "prestations", "contact"],
     version: "1.0.2",
     dateMaJ: "22/01/2019",
