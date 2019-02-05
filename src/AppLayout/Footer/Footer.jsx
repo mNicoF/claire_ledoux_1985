@@ -15,7 +15,7 @@ class Footer extends Component {
   render() {
 
     return (this.state.appInfos.target === "REC") ? (
-      <div className="Rec-footer">
+      <div className="Rec-footer Footer">
         <div className="Footer-left">Ce site est la version de test
         </div>
         <div className="Footer-right">
@@ -26,7 +26,7 @@ class Footer extends Component {
         </div>
       </div>
   ) : (
-    <div className="App-footer theme-reverse">
+    <div className="App-footer Footer theme-reverse">
         <div className="Footer-left">
           <FontAwesomeIcon icon={['far', 'copyright']} /> 
           <a href={this.state.appInfos.author.link}

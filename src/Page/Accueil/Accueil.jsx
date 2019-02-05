@@ -17,14 +17,14 @@ class Accueil extends Component {
     // <div className="AccueilLayout" style={{'height': height}}>
     
     return (
-      <div className="AccueilLayout">
+      <div className="AccueilLayout Page">
           <div className="AccueilH3">Bienvenue</div>
           <div>Le cabinet de dermographie vous attend !</div>
           <div>Suivez toutes les informations sur Facebook :  </div>
           <div style={{'margin': '20px'}}>
             <a className="AccueilBtn" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/claireledoux1985/">@claireledoux1985</a>
           </div>
-          <div style={{'font-size': '2vmax'}}>- Ce site est toujours en cours de développement -</div>
+          <div style={{'fontSize': '2vmax'}}>- Ce site est toujours en cours de développement -</div>
       </div>
     );
   }

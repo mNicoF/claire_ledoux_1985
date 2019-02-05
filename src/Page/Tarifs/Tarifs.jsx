@@ -15,19 +15,23 @@ class Tarifs extends Component {
 
   render() {
 
-    let prestations = [];
+    let tiles = [];
     let prestaGroups = this.state.prestations;
+
     for (let g in prestaGroups) {
-      prestations.push(<h2 key={g}>{g}</h2>);
+      let prestations = [];
+      prestations.push(<div className="TileHeader" key={g}>{g.toUpperCase()}</div>);
       let prestaList = prestaGroups[g];
+
       for (let p in prestaList){
         prestations.push(<Prestations key={p} presta={p} list={prestaList[p]}/>);
       }
+      tiles.push(<div key={"tile_"+g} className="TarifsTiles">{prestations}</div>);
     }
 
     return (
-      <div className="TarifsLayout">
-        {prestations}
+      <div className="TarifsLayout Page">
+        {tiles}
       </div>
     );
   }

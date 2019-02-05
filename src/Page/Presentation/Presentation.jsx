@@ -14,7 +14,7 @@ class Presentation extends Component {
   render() {
 
     return (
-      <div className="PresentationLayout">
+      <div className="PresentationLayout Page">
       </div>
     );
   }

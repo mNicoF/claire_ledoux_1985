@@ -1,9 +1,41 @@
 .TarifsLayout {
-
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-.PrestationLayout {
+.TarifsTiles {
+    flex-basis: 25%;
+    flex-shrink: 2;
+    margin: 10px;
+    min-width: 300px;
+}
 
+.TileHeader {
+    font-size: 2.2vmax;
+    font-weight: bold;
+}
+
+.card-header, .card-text {
+    font-size: 1.5vmax;
+}
+
+.PriceLine {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.PriceLine > * {
+    flex-basis: 70%;
+    flex-shrink: 1;
+    flex-grow: 0;
+}
+
+.Price {
+    flex-basis: 20%;
+    flex-grow: 0;
 }
 
 /**

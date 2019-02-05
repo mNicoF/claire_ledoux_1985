@@ -14,7 +14,7 @@ class Galerie extends Component {
   render() {
 
     return (
-      <div  className="GalerieLayout">
+      <div  className="GalerieLayout Page">
       </div>
     );
   }

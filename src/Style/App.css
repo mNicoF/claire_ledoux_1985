@@ -2,9 +2,14 @@
  * App.css
  */
 
- .root {
-   height: 100%;
- }
+.root {
+  height: 100%;
+}
+
+.Page {
+  margin-top: 15px;
+  margin-bottom: 55px;
+}
 
 /* 
  * Theme font

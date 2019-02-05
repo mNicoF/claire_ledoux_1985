@@ -14,7 +14,7 @@ class Contact extends Component {
   render() {
 
     return (
-      <div className="ContactLayout">
+      <div className="ContactLayout">{/*Page*/}
         <img className="ContactIMG" src={require('../../medias/contact.PNG')} alt="horaires"></img>
       </div>
     );

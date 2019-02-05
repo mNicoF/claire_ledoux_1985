@@ -3,8 +3,8 @@
 export const initialState = {
     target: "REC", //PROD
     menu: ["accueil", /*"presentation", "galerie",*/ "prestations", "contact"],
-    version: "1.0.2",
-    dateMaJ: "22/01/2019",
+    version: "1.0.3",
+    dateMaJ: "05/02/2019",
     author: {
         name: "Nicolas Forget",
         link: "https://www.linkedin.com/in/m-nicolas-forget/"
