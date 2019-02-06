@@ -16,23 +16,23 @@ self.__precacheManifest = [
     "url": "/claire_ledoux_1985/static/js/runtime~main.e49ca3f3.js"
   },
   {
-    "revision": "ebfdd27a118bfe0ccd66",
-    "url": "/claire_ledoux_1985/static/js/main.ebfdd27a.chunk.js"
+    "revision": "97550000cc51482b1bb5",
+    "url": "/claire_ledoux_1985/static/js/main.97550000.chunk.js"
   },
   {
     "revision": "9d2f53723ef50d4c7194",
     "url": "/claire_ledoux_1985/static/js/1.9d2f5372.chunk.js"
   },
   {
-    "revision": "ebfdd27a118bfe0ccd66",
-    "url": "/claire_ledoux_1985/static/css/main.7ebba491.chunk.css"
+    "revision": "97550000cc51482b1bb5",
+    "url": "/claire_ledoux_1985/static/css/main.5d98fb20.chunk.css"
   },
   {
     "revision": "9d2f53723ef50d4c7194",
     "url": "/claire_ledoux_1985/static/css/1.850ca390.chunk.css"
   },
   {
-    "revision": "e4a96680774e20d979f7bc9024e7e691",
+    "revision": "d0f620b66b90dc8b910bd63d47b2134a",
     "url": "/claire_ledoux_1985/index.html"
   }
 ];
