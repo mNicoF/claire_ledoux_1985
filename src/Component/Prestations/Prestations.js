@@ -33,7 +33,7 @@ class Prestations extends Component {
       //prestations.push(<div key={e} className="PriceLine">{e} : {prix[e]}</div>);
       prestations.push(
         <div key={e} className="PriceLine card-text">
-          <div>{e} :</div>
+          <div>{e} {(prix[e] !== "")? ":" : ""}</div>
           <div className="Price">{prix[e]}</div>
         </div>
       );

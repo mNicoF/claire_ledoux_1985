@@ -6,14 +6,14 @@
 }
 
 .App-footer {
-  font-size: 1vmax; /*0.75em*/
+  font-size: 2vh; /*1vmax*/
   font-style: italic;
 }
 
 .Rec-footer {
   background-color: red;
   color: white;
-  font-size: 1.5vmax;
+  font-size: 2.5vh; /*1.5vmax;*/
   font-weight: bold;
 }
 

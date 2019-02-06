@@ -24,7 +24,7 @@ class Accueil extends Component {
           <div style={{'margin': '20px'}}>
             <a className="AccueilBtn" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/claireledoux1985/">@claireledoux1985</a>
           </div>
-          <div style={{'fontSize': '2vmax'}}>- Ce site est toujours en cours de développement -</div>
+          <div className="AccueilDev">- Ce site est toujours en cours de développement -</div>
       </div>
     );
   }

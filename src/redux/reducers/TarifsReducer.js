@@ -3,7 +3,7 @@
 export const initialState = {
     "Dermopigmentation" : {
         "Esthétique": {
-            "Microblading ou Manuel sourcils" : "170 €",
+            "Microblading / Maquillage semi-permanent" : "170 €",
             "Sourcils poils à poils" : "250 €",
             "Sourcils ombrage" : "200 €",
             "Eye-liner haut" : "150 €",
@@ -15,14 +15,15 @@ export const initialState = {
             "Candy lips" : "400 €",
             "Grain de beauté" : "80 €"
         },
-        "Médicale":{
-            "Cicatrices" : "sur devis",
-            "Aréole mammaire (x1)" : "350 €",
-            "Aréole mammaire (x2)" : "450 €",
-            "Tricopigmentation / densification capilaire" : "sur devis entre 250 € et 650 €",
+        "Médical (sur devis)":{
+            "Cicatrices" : "100 € *",
+            "Aréole mammaire (x1)" : "230 € *",
+            "Aréole mammaire (x2)" : "350 € *",
+            "Tricopigmentation / densification capilaire" : "200 € *",
+            "* prix minimum" : ""
         },
         "Retouches" : {
-            "Retouche comprise" : "le premier mois",
+            "Retouche comprise le premier mois" : "",
             "Retouche annuel" : "100 €"
         }
     },
@@ -52,14 +53,15 @@ export const initialState = {
             "Make-up mariage (Avec un essai)": "45 €",
         }
     },
-    "Epilation" : {
-        "Epilation Homme" : {
+    "Epilations" : {
+        "Epilations Homme" : {
             "Sourcils": "9 €",
             "Narines": "9 €",
             "Oreilles": "9 €",
             "Cou ou nuque": "9 €",
             "Joues": "9 €",
             "Epaules": "10 €",
+            "Ventre" : "10 €",
             "Aisselles": "15 €",
             "Bras": "15 €",
             "Torse": "20 €",
@@ -67,9 +69,10 @@ export const initialState = {
             "1/2 Jambes": "20 €",
             "Jambes entières": "30 €",
             "Maillot simple *": "40 €",
-            "Maillot intégral *": "50 €"
+            "Maillot intégral *": "60 €",
+            "* Sauf mauvaise hygiène" : ""
         },
-        "Epilation Femme" : {
+        "Epilations Femme" : {
             "Sourcils": "7 €",
             "Lèvres": "7 €",
             "Menton": "7 €",
@@ -81,9 +84,10 @@ export const initialState = {
             "Maillot intégral *": "25 €",
             "1/2 Jambes": "15 €",
             "3/4 Jambes": "20 €",
-            "Jambes entières": "25 €"
+            "Jambes entières": "25 €",
+            "* Sauf mauvaise hygiène et hors période menstruel" : ""
         },
-        "Epilation Forfaits" : {
+        "Epilations Forfaits" : {
             "1/2 jambes + aisselles ou maillot simple": "20 €",
             "1/2 jambes + maillot Brésilien": "25 €",
             "1/2 jambes + maillot intégral": "35 €",

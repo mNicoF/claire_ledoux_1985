@@ -21,29 +21,15 @@
     z-index: -1;
 }
 
-/*
-.Accueil::after {
-    content: "";
-    background: url("./../medias/AnnonceTMP_background.jpg");
-    opacity: 0.35;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1;   
-}
-*/
-
 .AccueilLayout > * {
     padding: 10px;
-    font-size: 3vmax;
+    font-size: 4vh; /*3vmax*/
 }
 
 .AccueilH3 {
     padding-top: 50px !important;
     font-weight: bold !important;
-    font-size: 5vmax !important;
+    font-size: 6vh !important; /*5vmax*/
 }
 
 .AccueilBtn {
@@ -59,4 +45,8 @@
     text-decoration: none;
     color: white;
     background-color: #3B5CA0;
+}
+
+.AccueilDev {
+    font-size: 2.5vh; /*2vmax*/
 }

@@ -13,12 +13,12 @@
 }
 
 .TileHeader {
-    font-size: 2.2vmax;
+    font-size: 3.5vh; /*2.2vmax;*/
     font-weight: bold;
 }
 
 .card-header, .card-text {
-    font-size: 1.5vmax;
+    font-size: 2.5vh; /*1.5vmax;*/
 }
 
 .PriceLine {
