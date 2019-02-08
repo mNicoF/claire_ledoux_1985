@@ -14,6 +14,7 @@ import Accueil from './Page/Accueil/Accueil';
 //import Galerie
 import Tarifs from './Page/Tarifs/Tarifs';
 import Contact from './Page/Contact/Contact';
+import NotFound from './Page/NotFound/NotFound';
 
 /**
  * REDUX
@@ -90,8 +91,8 @@ class App extends Component {
                 <Route path="/galerie" component={Galerie}></Route>*/}
                 <Route path="/prestations" component={Tarifs}></Route>
                 <Route path="/contact" component={Contact}></Route>
-                {/* //TODO: redirect juste '/' sur /accueil et le reste sur un 404 */}
-                <Redirect path="*" to="/accueil"/>
+                <Route path="/404" component={NotFound}/>
+                <Redirect from="/" to="/accueil"/>
               </Switch>
               <Footer/>
             </>
