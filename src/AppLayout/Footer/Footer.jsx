@@ -46,7 +46,7 @@ class Footer extends Component {
             title={"MAJ : " + this.state.appInfos.version + " (" + this.state.appInfos.dateMaJ + ")"}
           >
             {" "}
-            claireledoux.fr 
+            claireledoux1985.fr 
           </a>
         </div>
       </div>
