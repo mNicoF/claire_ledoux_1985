@@ -16,23 +16,23 @@ self.__precacheManifest = [
     "url": "/claire_ledoux_1985/static/js/runtime~main.e49ca3f3.js"
   },
   {
-    "revision": "97550000cc51482b1bb5",
-    "url": "/claire_ledoux_1985/static/js/main.97550000.chunk.js"
+    "revision": "2a5fbc54095215cb77ec",
+    "url": "/claire_ledoux_1985/static/js/main.2a5fbc54.chunk.js"
   },
   {
-    "revision": "9d2f53723ef50d4c7194",
-    "url": "/claire_ledoux_1985/static/js/1.9d2f5372.chunk.js"
+    "revision": "da11328103fb0093ba2a",
+    "url": "/claire_ledoux_1985/static/js/1.da113281.chunk.js"
   },
   {
-    "revision": "97550000cc51482b1bb5",
-    "url": "/claire_ledoux_1985/static/css/main.5d98fb20.chunk.css"
+    "revision": "2a5fbc54095215cb77ec",
+    "url": "/claire_ledoux_1985/static/css/main.b2570521.chunk.css"
   },
   {
-    "revision": "9d2f53723ef50d4c7194",
-    "url": "/claire_ledoux_1985/static/css/1.850ca390.chunk.css"
+    "revision": "da11328103fb0093ba2a",
+    "url": "/claire_ledoux_1985/static/css/1.dcbbc469.chunk.css"
   },
   {
-    "revision": "d0f620b66b90dc8b910bd63d47b2134a",
+    "revision": "a52a6e590afa117fccc2cbbe5987a10b",
     "url": "/claire_ledoux_1985/index.html"
   }
 ];

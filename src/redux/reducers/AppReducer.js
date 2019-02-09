@@ -1,10 +1,12 @@
 //import { FUNC } from '../actions';
 
+const pjson = require('./../../../package.json');
+
 export const initialState = {
-    target: "REC", //PROD / REC
+    target: (pjson.homepage)? pjson.homepage : "http://www.claireledoux1985.fr/", //https://mnicof.github.io/claire_ledoux_1985
     menu: ["accueil", /*"presentation", "galerie",*/ "prestations", "contact"],
-    version: "1.0.3",
-    dateMaJ: "06/02/2019",
+    version: pjson.version,
+    dateMaJ: pjson.date,
     author: {
         name: "Nicolas Forget",
         link: "https://www.linkedin.com/in/m-nicolas-forget/"
