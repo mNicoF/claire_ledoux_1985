@@ -38,6 +38,10 @@
     flex-grow: 0;
 }
 
+.card-header:hover {
+    cursor: pointer;
+}
+
 /**
 OLD
 .TarifsLayout {

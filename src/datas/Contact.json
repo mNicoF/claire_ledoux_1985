@@ -1,0 +1,45 @@
+{
+  "fr": [
+    {
+      "title" : "Horaires",
+      "label" : "Lundi au vendredi de 9h à 18h",
+      "value" : "Lundi au vendredi de 9h à 18h",
+      "type" : "text",
+      "icon" : ""
+    },
+    {
+      "title" : "Adresse",
+      "label" : "13 rue de l'Arsenal, 79000 Niort",
+      "value" : "https://goo.gl/maps/iPEkfwdFDiw",
+      "type" : "link",
+      "icon" : ""
+    },{
+      "title" : "Téléphone",
+      "label" : "0983300701",
+      "value" : "+33983300701",
+      "type" : "phone",
+      "icon" : ""
+    },{
+      "title" : "Email",
+      "label" : "claire.ledoux.1985@gmail.com",
+      "value" : "claire.ledoux.1985@gmail.com",
+      "type" : "mail",
+      "icon" : ""
+    },{
+      "title" : "Facebook",
+      "label" : "@claireledoux1985",
+      "value" : "https://www.facebook.com/claireledoux1985/",
+      "type" : "link",
+      "icon" : ""
+    },{
+      "title" : "Site web",
+      "label" : "claireledoux1985.fr/",
+      "value" : "http://www.claireledoux1985.fr/",
+      "type" : "link",
+      "icon" : ""
+    }
+  ],
+  "en": {
+    
+  }
+}

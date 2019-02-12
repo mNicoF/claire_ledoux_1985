@@ -1,3 +1,51 @@
 .NotFoundLayout {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
 
+/* Image de fond dans le ::after pour garder l'écriture net*/
+.NotFoundLayout::after {
+    content: "";
+    background-image: url("./../medias/Accueil_background.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    opacity: 0.35;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.NotFoundLayout > * {
+    padding: 10px;
+    font-size: 4vh; /*3vmax*/
+}
+
+.NotFoundH3 {
+    padding-top: 50px !important;
+    font-weight: bold !important;
+    font-size: 6vh !important; /*5vmax*/
+}
+
+.NotFoundBtn {
+    margin: 20px;
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    color:#37342F;
+    background-color: #F4E7D3;
+    border-radius: 10px;
+    font-family: F25_Executive;
+}
+
+
+.NotFoundBtn:hover{
+    text-decoration: none;
+    color:#837C70;
+    background-color: #F4E7D3;
 }

@@ -1,16 +1,14 @@
 //import { FUNC } from '../actions';
 
-const pjson = require('./../../../package.json');
+const packageJson = require('./../../../package.json');
+const appJson = require('./../../datas/App.json');
 
 export const initialState = {
-    target: (pjson.homepage)? pjson.homepage : "http://www.claireledoux1985.fr/", //https://mnicof.github.io/claire_ledoux_1985
-    menu: ["accueil", /*"presentation", "galerie",*/ "prestations", "contact"],
-    version: pjson.version,
-    dateMaJ: pjson.date,
-    author: {
-        name: "Nicolas Forget",
-        link: "https://www.linkedin.com/in/m-nicolas-forget/"
-    }
+    target: (packageJson.homepage)? packageJson.homepage : "http://www.claireledoux1985.fr/", //https://mnicof.github.io/claire_ledoux_1985
+    version: packageJson.version,
+    dateMaJ: packageJson.date,
+    menu: appJson.fr.menu, /*"presentation", "galerie", "definitions"*/
+    author: appJson.fr.author
 }
 
 export function appReducer(state = initialState, action){

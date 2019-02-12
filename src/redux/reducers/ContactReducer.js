@@ -1,8 +1,6 @@
-//import { FUNC } from '../actions';
+const contactJson = require('./../../datas/Contact.json');
 
-export const initialState = {
-    telephone: "0983300701"
-}
+export const initialState = contactJson.fr
 
 export function contactReducer(state = initialState, action){
     return state;

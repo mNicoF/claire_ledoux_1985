@@ -1,0 +1,16 @@
+{
+  "fr": {
+    "menu": ["accueil", "prestations", "contact"],
+    "author": {
+        "name": "Nicolas Forget",
+        "link": "https://www.linkedin.com/in/m-nicolas-forget/"
+    }
+  },
+  "en": {
+    "menu": ["home", "services", "contact"],
+    "author": {
+        "name": "Nicolas Forget",
+        "link": "https://www.linkedin.com/in/m-nicolas-forget/"
+    }
+  }
+}
