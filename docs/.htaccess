@@ -1,6 +1,52 @@
-ErrorDocument 404 /404
+## **
+## Protège le répertoir courant avec un mot de passe
+## Pour protéger un ficher ajouter les balise ou FilesMatch
+## **
 
+##<Files fichier.txt>
+##AuthUserFile /exemple/.htpasswd
+##AuthName "Accès réservé à l'administrateur"
+##AuthType Basic
+##Require valid-user
+##</Files>
+
+## **
+## Personalise les erreurs
+## **
+
+##ErrorDocument 400 errors/error_400.html
+##ErrorDocument 401 errors/error_401.html
+##ErrorDocument 403 errors/error_403.html
+ErrorDocument 404 errors/error_404.html
+##ErrorDocument 500 errors/error_500.html
+##ErrorDocument 503 errors/error_503.html
+
+## **
+## Défini la redirection vers l'index
+## **
+
+DirectoryIndex index.html /errors/error_404.html
+
+## **
+## Redirige automatiquement vers www (référencement)
+## **
+
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^claireledoux1985.fr$
+RewriteRule ^(.*) http://www.claireledoux1985.fr/$1 [QSA,L,R=301]
+
+## **
+## Gère les redirection des autres routes
+## **
+
+RewriteEngine On
+RewriteCond %{REQUEST_URI} !accueil
+RewriteRule (.*) accueil?var=$1
+
+## **
 ## Contrôle du cache navigateur - Expire headers
+## **
+
 <IfModule mod_expires.c>
     ExpiresActive On
     ExpiresDefault "access plus 7200 secondes"

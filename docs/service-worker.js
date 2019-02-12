@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/claire_ledoux_1985/precache-manifest.7bd26f0a27648e465eef599fa52cc480.js"
+  "/claire_ledoux_1985/precache-manifest.e1a24e57f40898b7c20b2c06643c04d4.js"
 );
 
 workbox.clientsClaim();
