@@ -86,7 +86,7 @@ class App extends Component {
               <Header/>
               <Switch>
                 {/* //TODO: construire les routes en bouclant comme le menu dans le header */}
-                <Redirect exact path="/" to="/accueil"></Redirect>
+                <Redirect exact path="/" to="/accueil"/>
                 <Route path="/accueil" component={Accueil}></Route>
                 {/*<Route path="/presentation" component={Presentation}></Route>
                 <Route path="/galerie" component={Galerie}></Route>*/}
