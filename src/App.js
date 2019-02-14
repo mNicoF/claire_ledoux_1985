@@ -103,7 +103,7 @@ class App extends Component {
                 <Route path="/contact" component={Contact}></Route>
                 <Route path="/404" component={NotFound}/>
                 <Route component={NotFound}/>
-                <Redirect from="/" to="/404"/>
+                <Redirect from="/" to="/accueil"/>
               </Switch>
               <Footer/>
             </>
