@@ -1,4 +1,4 @@
-//import { FUNC } from '../actions';
+import * as types from './../actions/actionTypes';
 
 const packageJson = require('./../../../package.json');
 const appJson = require('./../../datas/App.json');
@@ -8,28 +8,20 @@ export const initialState = {
     version: packageJson.version,
     dateMaJ: packageJson.date,
     menu: appJson.fr.menu, /*"presentation", "galerie", "definitions"*/
-    author: appJson.fr.author
+    author: appJson.fr.author,
+    //device: "Desktop"
 }
 
 export function appReducer(state = initialState, action){
-    return state;
-}
-
-export default {appReducer}
-
-
-
-/*export function appReducer(state = initialState, action){
     switch(action.type){
-        case FUNC:
-            const qqch
-
+        case types.LOAD_DEVICE_SUCCESS:
             return {
                 ...state,
-                list: [...state.list, qqch]
+                device: action.records
             }
         default:
             return state;
     }
-    
-}*/
+}
+
+export default {appReducer}

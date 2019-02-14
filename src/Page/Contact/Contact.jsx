@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { ListGroup, ListGroupItem,ListGroupItemHeading, Button } from 'reactstrap';
+import { ListGroup, ListGroupItem,ListGroupItemHeading/*, Button*/ } from 'reactstrap';
 
 import Infos from './../../Component/Infos/Infos';
 import GenericTag from './../../Component/GenericTag';
@@ -14,14 +14,20 @@ class Contact extends Component {
 
     this.state = {
       contact: this.props.contact,
-      info: ''//(<Infos target={"Horaires"} />)
+      info: ''
     };
   }
 
+  componentDidMount(){
+    this.handleMoreInfo({'target':{'id':0}});
+  }
+
   handleMoreInfo(event) {
+    //besoin du type de device pour forcer la taille de l'info facebook
+    const device = this.props.app.device;
     const currTarget = (this.state.info.props)? this.state.info.props.contact : "";
     let nextTarget = this.state.contact[event.target.id];
-    let tag = (nextTarget.title !== currTarget.title)? (<Infos contact={nextTarget}/>) : "";
+    let tag = (nextTarget.title !== currTarget.title)? (<Infos contact={nextTarget} device={device}/>) : "";
     this.setState({
       info: tag
     })
@@ -33,10 +39,10 @@ class Contact extends Component {
     let listGroupItem = [];
     for(let c in contacts){
       listGroupItem.push(
-        <ListGroupItem key={c}>
-          {contacts[c].title + " : "}
+        <ListGroupItem key={c} className="GroupItem">
+          <span>{contacts[c].title + " : "}</span>
           <GenericTag label={contacts[c].label} value={contacts[c].value} type={contacts[c].type}/>
-          <Button id={c} className="moreInfoBtn theme" onClick={this.handleMoreInfo}>+</Button>
+          {/*<Button id={c} className="moreInfoBtn theme" onClick={this.handleMoreInfo}>+</Button>*/}
         </ListGroupItem>)
     }
 

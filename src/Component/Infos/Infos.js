@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { FacebookProvider, Page } from 'react-facebook';
+import { FacebookProvider, Page } from "react-facebook";
+import MailForm from './MailForm';
 
 class Infos extends Component {
   constructor(props) {
@@ -9,12 +10,8 @@ class Infos extends Component {
 
     this.state = {};
   }
-  
-  componentDidMount() {
-    document.addEventListener('fb_init', e => window.FB.XFBML.parse());
-  }
 
-  renderInfo(contact) {
+  renderInfo(contact, device) {
     let info = "";
     switch (contact.title) {
       case "Horaires":
@@ -49,13 +46,18 @@ class Infos extends Component {
         break;
 
       case "Email":
-        info = <code>{contact.title} en cours de développement</code>;
+        info = <MailForm contact={contact} />;
         break;
 
       case "Facebook":
+        let width = (device === "Mobile")? "300" : "800";
         info = (
           <FacebookProvider appId={contact.title}>
-            <Page href="https://www.facebook.com/claireledoux1985/" tabs="timeline" width="300"/>
+            <Page
+              href="https://www.facebook.com/claireledoux1985/"
+              tabs="timeline"
+              width={width}
+            />
           </FacebookProvider>
         );
         break;
@@ -71,9 +73,9 @@ class Infos extends Component {
   }
 
   render() {
-    let infoContent = this.renderInfo(this.props.contact);
+    let infoContent = this.renderInfo(this.props.contact, this.props.device);
 
-    return <div className="InfoLayout">{infoContent}</div>;
+    return (<div className="InfoLayout">{infoContent}</div>);
   }
 }
 

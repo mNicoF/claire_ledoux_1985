@@ -1,4 +1,5 @@
-import React, { Component/*, PropTypes*/ } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 import '../../Style/Header.css';
@@ -19,6 +20,10 @@ class Header extends Component {
     this.state = {
       isOpen: false
     };
+  }
+
+  componentDidMount() {
+    this.props.loadDeviceType();
   }
 
   toggle(force) {
@@ -60,7 +65,8 @@ class Header extends Component {
 }
 
 Header.propTypes = {
-  //app: PropTypes.object
+  app: PropTypes.object,
+  loadDeviceType: PropTypes.func
 }
 
 export default Header;

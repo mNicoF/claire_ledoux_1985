@@ -9,9 +9,9 @@ import Header from './AppLayout/Header/Header';
 import Footer from './AppLayout/Footer/Footer';
 
 import Accueil from './Page/Accueil/Accueil';
-//TODO: optimiser le chargement des pages
-//import Presentation 
-//import Galerie
+//TODO: optimiser le chargement des pages ?
+import Presentation from './Page/Presentation/Presentation';
+import Galerie from './Page/Galerie/Galerie';
 import Tarifs from './Page/Tarifs/Tarifs';
 import Contact from './Page/Contact/Contact';
 import NotFound from './Page/NotFound/NotFound';
@@ -19,7 +19,9 @@ import NotFound from './Page/NotFound/NotFound';
 /**
  * REDUX
  */
-import { combineReducers, createStore, applyMiddleware } from 'redux';
+import { combineReducers, createStore, applyMiddleware, compose } from 'redux';
+import thunkMiddleware from 'redux-thunk';
+//import { routerMiddleware } from 'react-router-redux'
 import { Provider } from 'react-redux';
 import { createLogger } from 'redux-logger';
 
@@ -52,7 +54,8 @@ const logger = createLogger({
   level: 'log'
 })
 
-const store = createStore(reducers, applyMiddleware(logger));
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+const store = createStore(reducers, composeEnhancers(applyMiddleware(thunkMiddleware,logger)));
 
 /**
  * App Component render
@@ -85,15 +88,22 @@ class App extends Component {
             <>
               <Header/>
               <Switch>
-                {/* //TODO: construire les routes en bouclant comme le menu dans le header */}
-                <Redirect exact path="/" to="/accueil"/>
+                {/* //TODO: construire les routes en bouclant comme le menu dans le header
+                Faire en sorte que le / monte un autre composant qui redirige sur /accueil ?*/}
+                <Route exact path="/" component={Accueil}/>
+                <Route exact path="/" component={Presentation}/>
+                <Route exact path="/" component={Galerie}/>
+                <Route exact path="/" component={Tarifs}/>
+                <Route exact path="/" component={Contact}/>
+
                 <Route path="/accueil" component={Accueil}></Route>
-                {/*<Route path="/presentation" component={Presentation}></Route>
-                <Route path="/galerie" component={Galerie}></Route>*/}
+                <Route path="/presentation" component={Presentation}></Route>
+                <Route path="/galerie" component={Galerie}></Route>
                 <Route path="/prestations" component={Tarifs}></Route>
                 <Route path="/contact" component={Contact}></Route>
                 <Route path="/404" component={NotFound}/>
-                <Redirect from="/*" to="/404"/>
+                <Route component={NotFound}/>
+                <Redirect from="/" to="/404"/>
               </Switch>
               <Footer/>
             </>

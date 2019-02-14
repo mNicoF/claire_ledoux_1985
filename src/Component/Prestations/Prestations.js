@@ -42,7 +42,7 @@ class Prestations extends Component {
     return (
       <div className="PrestationLayout">
         <Card>
-          <CardHeader onClick={() => this.toggle()}>{this.state.presta}</CardHeader>
+          <CardHeader className="theme1" onClick={() => this.toggle()}>{this.state.presta}</CardHeader>
           <Collapse isOpen={this.state.isOpen}>
             <CardBody>
               {prestations}
