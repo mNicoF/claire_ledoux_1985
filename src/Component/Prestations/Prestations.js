@@ -33,16 +33,28 @@ class Prestations extends Component {
       //prestations.push(<div key={e} className="PriceLine">{e} : {prix[e]}</div>);
       prestations.push(
         <div key={e} className="PriceLine card-text">
-          <div>{e} {(prix[e] !== "")? ":" : ""}</div>
+          {(e[0] === '*')? (
+            <div style={{'fontWeight':'bold'}}>{e} {(prix[e] !== "")? ":" : ""}</div>
+          ) : (
+            <div>{e} {(prix[e] !== "")? ":" : ""}</div>
+          )}
           <div className="Price">{prix[e]}</div>
         </div>
       );
     }
 
+    // Personnalisation des headers
+    let header = (this.state.presta === "Médical") ? (
+      <span>
+        {this.state.presta}<span style={{'fontWeight':'bold'}}> (sur devis)</span>
+      </span>
+    ) : this.state.presta; 
+
     return (
+
       <div className="PrestationLayout">
         <Card>
-          <CardHeader className="theme1" onClick={() => this.toggle()}>{this.state.presta}</CardHeader>
+          <CardHeader className="theme1" onClick={() => this.toggle()}>{header}</CardHeader>
           <Collapse isOpen={this.state.isOpen}>
             <CardBody>
               {prestations}
