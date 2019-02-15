@@ -102,8 +102,8 @@ class App extends Component {
                 <Route path="/prestations" component={Tarifs}></Route>
                 <Route path="/contact" component={Contact}></Route>
                 <Route path="/404" component={NotFound}/>
-                <Route component={NotFound}/>
                 <Redirect from="/" to="/accueil"/>
+                <Route component={NotFound}/>
               </Switch>
               <Footer/>
             </>
