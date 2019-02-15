@@ -12,11 +12,15 @@
   /*font-variant: small-caps;*/
 }
 
+.nav-item {
+  padding: 10px;
+}
+
 .nav-item > a, .nav-item > a:hover {
+  font-size: 3vh;
   font-family: F25_Executive;
   color:#37342F;
   text-decoration: none;
-  padding: 10px;
 }
 
 .navbar {

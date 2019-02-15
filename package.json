@@ -1,9 +1,9 @@
 {
   "name": "claire_ledoux_1985",
-  "version": "1.0.6",
-  "date": "14/02/2019",
+  "version": "1.0.7",
+  "date": "15/02/2019",
   "private": true,
-  "homepage": "http://www.claireledoux1985.fr/",
+  "homepage": "https://mnicof.github.io/claire_ledoux_1985",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.4.1",
     "bootstrap": "^4.1.3",
