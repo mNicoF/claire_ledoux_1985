@@ -89,20 +89,15 @@ class App extends Component {
               <Header/>
               <Switch>
                 {/* //TODO: construire les routes en bouclant comme le menu dans le header
-                Faire en sorte que le / monte un autre composant qui redirige sur /accueil ?*/}
+                Faire en sorte que le / monte un autre composant qui redirige sur /accueil et tout charger ?*/}
                 <Route exact path="/" component={Accueil}/>
-                <Route exact path="/" component={Presentation}/>
-                <Route exact path="/" component={Galerie}/>
-                <Route exact path="/" component={Tarifs}/>
-                <Route exact path="/" component={Contact}/>
-
                 <Route path="/accueil" component={Accueil}></Route>
                 <Route path="/presentation" component={Presentation}></Route>
                 <Route path="/galerie" component={Galerie}></Route>
                 <Route path="/prestations" component={Tarifs}></Route>
                 <Route path="/contact" component={Contact}></Route>
                 <Route path="/404" component={NotFound}/>
-                <Redirect from="/" to="/accueil"/>
+                <Redirect from="/" to="/404"/>
                 <Route component={NotFound}/>
               </Switch>
               <Footer/>

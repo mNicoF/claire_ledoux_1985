@@ -17,8 +17,9 @@ class NotFound extends Component {
       <div className="NotFoundLayout Page">
           <div className="NotFoundH3">Error 404</div>
           <div>La page que vous cherchez n'existe pas</div>
-          <div>Revenez sur le site :</div>
-          <a className="NotFoundBtn" rel="noopener noreferrer" href="http://www.claireledoux1985.fr/">CLAIRE LEDOUX 1985</a>
+          <div>
+            <a className="NotFoundBtn" rel="noopener noreferrer" href="http://www.claireledoux1985.fr/">Retour au site</a>
+          </div>
       </div>
     );
   }
