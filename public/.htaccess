@@ -14,12 +14,12 @@
 ## Personalise les erreurs
 ## **
 
-##ErrorDocument 400 errors/error_400.html
-##ErrorDocument 401 errors/error_401.html
-##ErrorDocument 403 errors/error_403.html
-##ErrorDocument 404 errors/error_404.html
-##ErrorDocument 500 errors/error_500.html
-##ErrorDocument 503 errors/error_503.html
+##ErrorDocument 400 /400
+##ErrorDocument 401 /401
+##ErrorDocument 403 /403
+ErrorDocument 404 /404
+##ErrorDocument 500 /500
+##ErrorDocument 503 /503
 
 ## **
 ## Défini la redirection vers l'index
