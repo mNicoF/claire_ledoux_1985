@@ -15,7 +15,11 @@
  * Theme font
 */
 
-@font-face { font-family: F25_Executive; src: url('./font/F25_Executive.otf'); } 
+@font-face {
+  font-family: F25_Executive;
+  src: url('./font/F25_Executive.otf');
+  font-display: swap;
+} 
 
 /* 
  * Theme color

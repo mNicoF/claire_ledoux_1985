@@ -18,7 +18,7 @@ class Infos extends Component {
         info = (
           <img
             className="ContactIMG"
-            src={require("../../medias/horaires.PNG")}
+            src={require("../../medias/horaires.webp")}
             alt={contact.title}
           />
         );
@@ -39,7 +39,7 @@ class Infos extends Component {
         info = (
           <img
             className="ContactIMG"
-            src={require("../../medias/horaires.PNG")}
+            src={require("../../medias/horaires.webp")}
             alt={contact.title}
           />
         );

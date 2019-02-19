@@ -5,10 +5,10 @@
     
 }
 
-/* Image de fond dans le ::after pour garder l'écriture net*/
+
 .AccueilLayout::after {
     content: "";
-    background-image: url("./../medias/Accueil_background.JPG");
+    background-image: url("./../medias/NotFound_background.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;

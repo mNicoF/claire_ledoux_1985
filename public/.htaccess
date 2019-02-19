@@ -1,43 +1,16 @@
 ## **
-## Protège le répertoir courant avec un mot de passe
-## Pour protéger un ficher ajouter les balise ou FilesMatch
+## Personalisation des erreurs (utile?)
 ## **
 
-##<Files fichier.txt>
-##AuthUserFile /exemple/.htpasswd
-##AuthName "Accès réservé à l'administrateur"
-##AuthType Basic
-##Require valid-user
-##</Files>
-
-## **
-## Personalise les erreurs
-## **
-
-##ErrorDocument 400 /400
-##ErrorDocument 401 /401
-##ErrorDocument 403 /403
 ErrorDocument 404 /404
-##ErrorDocument 500 /500
-##ErrorDocument 503 /503
 
 ## **
-## Défini la redirection vers l'index
+## Redirection vers l'index et vers www (référencement)
+## Déjà prises en charge par le server
 ## **
 
-#DirectoryIndex index.html /errors/error_404.html
-
 ## **
-## Redirige automatiquement vers www (référencement)
-## Visiblement déjà implémenté parce que si je décommante sa plante à cause du /$1
-## **
-
-#RewriteEngine On
-#RewriteCond %{HTTP_HOST} ^claireledoux1985.fr$
-#RewriteRule ^(.*) http://www.claireledoux1985.fr/$1 [QSA,L,R=301]
-
-## **
-## Gère les redirection des autres routes
+## Gestion des routes côté server
 ## **
 
 RewriteEngine On
@@ -48,15 +21,25 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-l
 RewriteRule . /index.html [L]
 
+## **
+## Protection du fichier htaccess
+## **
+
+<files .htaccess>
+    order allow,deny
+    deny from all
+</files>
 
 ## **
-## Contrôle du cache navigateur - Expire headers
+## Contrôle du cache navigateur
 ## **
 
 <IfModule mod_expires.c>
     ExpiresActive On
     ExpiresDefault "access plus 7200 secondes"
 
+    AddType       image/webp .webp
+    ExpiresByType image/webp                    "access plus 1 week"
     ExpiresByType image/jpg                     "access plus 1 week"
     ExpiresByType image/jpeg                    "access plus 1 week"
     ExpiresByType image/png                     "access plus 1 week"
@@ -75,27 +58,24 @@ RewriteRule . /index.html [L]
     ExpiresByType application/javascript        "access plus 1 week"
     ExpiresByType application/x-javascript      "access plus 1 week"
     ExpiresByType application/x-shockwave-flash "access plus 1 week"
-
 </IfModule>
 
 <IfModule mod_headers.c>
-
     Header unset Set-Cookie
 
-    <FilesMatch "\\.(ico|jpe?g|png|gif|swf)$">
+    <FilesMatch "\\.(ico|webp|jpe?g|png|gif|swf|otf)$">
         Header set Cache-Control "max-age=2592000, public"
     </FilesMatch>
 
-    <FilesMatch "\\.(css)$">
+    <FilesMatch "\\.(css|css.map|chunk.css)$">
         Header set Cache-Control "max-age=604800, public"
     </FilesMatch>
 
-    <FilesMatch "\\.(js)$">
+    <FilesMatch "\\.(js|js.map)$">
         Header set Cache-Control "max-age=216000, private"
     </FilesMatch>
 
     <FilesMatch "\\.(x?html?|php)$">
         Header set Cache-Control "max-age=600, private, must-revalidate"
     </FilesMatch>
-
 </IfModule>
