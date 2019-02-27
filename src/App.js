@@ -26,6 +26,7 @@ import { Provider } from 'react-redux';
 import { createLogger } from 'redux-logger';
 
 import { appReducer } from './redux/reducers/AppReducer';
+import { presentationReducer } from './redux/reducers/PresentationReducer';
 import { contactReducer } from './redux/reducers/ContactReducer';
 import { tarifsReducer } from './redux/reducers/TarifsReducer';
 
@@ -39,13 +40,17 @@ import './Style/App.css';
  * Library Font-Awesome
  */
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faCopyright } from '@fortawesome/free-regular-svg-icons';
-//import {  } from '@fortawesome/free-solid-svg-icons';
+import { faCopyright, faClock } from '@fortawesome/free-regular-svg-icons';
+import { faAt, faPhone, faMapMarked, faGlobeAfrica } from '@fortawesome/free-solid-svg-icons';
+import { faFacebook } from '@fortawesome/fontawesome-free-brands';
 
-library.add(faCopyright);
+library.add(faCopyright, faClock);
+library.add(faAt, faPhone, faMapMarked, faGlobeAfrica);
+library.add(faFacebook);
 
 const reducers = combineReducers({
   appReducer,
+  presentationReducer,
   tarifsReducer,
   contactReducer
 });

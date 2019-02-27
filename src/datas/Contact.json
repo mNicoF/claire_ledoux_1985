@@ -2,47 +2,80 @@
   "fr": [
     {
       "accueil" : true,
-      "title" : "Horaires",
-      "label" : "Lundi au vendredi de 9h à 18h",
-      "value" : "Lundi au vendredi de 9h à 18h",
-      "type" : "text",
-      "icon" : ""
+      "title" : {
+        "label" : "Horaires",
+        "type" : "text",
+        "icon" : ["far", "clock"]
+      },
+      "value" : {
+        "label" : "Lundi au vendredi de 9h à 18h",
+        "type" : "text"
+      }
+    },
+    {
+      "accueil" : true,
+      "title" : {
+        "label" : "Téléphone",
+        "type" : "text",
+        "icon" : ["fa", "phone"]
+      },
+      "value" : {
+        "label" : "0983300701",
+        "value" : "+33983300701",
+        "type" : "phone"
+      }
     },
     {
       "accueil" : false,
-      "title" : "Adresse",
-      "label" : "13 rue de l'Arsenal, 79000 Niort",
-      "value" : "https://goo.gl/maps/iPEkfwdFDiw",
-      "type" : "link",
-      "icon" : ""
-    },{
-      "accueil" : true,
-      "title" : "Téléphone",
-      "label" : "0983300701",
-      "value" : "+33983300701",
-      "type" : "phone",
-      "icon" : ""
-    },{
+      "title" : {
+        "label" : "Email",
+        "type" : "text",
+        "icon" : ["fa", "at"]
+      },
+      "value" : {
+        "label" : "claire.ledoux.1985@gmail.com",
+        "value" : "claire.ledoux.1985@gmail.com",
+        "type" : "mail"
+      }
+    },
+    {
       "accueil" : false,
-      "title" : "Email",
-      "label" : "claire.ledoux.1985@gmail.com",
-      "value" : "claire.ledoux.1985@gmail.com",
-      "type" : "mail",
-      "icon" : ""
-    },{
+      "title" : {
+        "label" : "Adresse",
+        "type" : "text",
+        "icon" : ["fa", "map-marked"]
+      },
+      "value" : {
+        "label" : "13 rue de l'Arsenal, 79000 Niort",
+        "value" : "https://goo.gl/maps/iPEkfwdFDiw",
+        "type" : "link"
+      }
+    },
+    {
       "accueil" : false,
-      "title" : "Facebook",
-      "label" : "@claireledoux1985",
-      "value" : "https://www.facebook.com/claireledoux1985/",
-      "type" : "link",
-      "icon" : ""
-    },{
+      "title" : {
+        "label" : "Facebook",
+        "type" : "text",
+        "icon" : ["fab", "facebook"]
+      },
+      "value" : {
+        "label" : "@claireledoux1985",
+        "value" : "https://www.facebook.com/claireledoux1985/",
+        "type" : "link"
+      }
+    },
+    {
       "accueil" : false,
-      "title" : "Site web",
-      "label" : "claireledoux1985.fr/",
-      "value" : "http://www.claireledoux1985.fr/",
-      "type" : "link",
-      "icon" : ""
+      "title" : {
+        "label" : "Site web",
+        "type" : "text",
+        "icon" : ["fa", "globe-africa"]
+      },
+      "value" : {
+        "label" : "claireledoux1985.fr/",
+        "value" : "http://www.claireledoux1985.fr/",
+        "type" : "link"
+      }
     }
   ],
   "en": {

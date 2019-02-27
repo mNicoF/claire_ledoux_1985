@@ -2,10 +2,9 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    
 }
 
-
+/*
 .AccueilLayout::after {
     content: "";
     background-image: url("./../medias/NotFound_background.webp");
@@ -20,33 +19,62 @@
     position: absolute;
     z-index: -1;
 }
+*/
 
 .AccueilLayout > * {
-    padding: 10px;
-    font-size: 4vh; /*3vmax*/
+    margin: 10px;
+    font-size: 2vh; /*3vmax*/
 }
 
-.AccueilH3 {
-    padding-top: 50px !important;
-    font-weight: bold !important;
-    font-size: 6vh !important; /*5vmax*/
+.AccueilCenter {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-.AccueilBtn {
-    padding: 10px;
-    font-weight: bold;
-    text-decoration: none;
-    color: white;
-    background-color: #4267B2;
-    border-radius: 10px;
+.AccueilCenter > * {
+    margin: 10px;
 }
 
-.AccueilBtn:hover{
-    text-decoration: none;
-    color: white;
-    background-color: #3B5CA0;
+/**
+ * Partie News
+ */
+
+.jumbotron {
+    padding: 32px !important;
+    margin-bottom: 0px !important;
+    background-color: #C1B7A7 !important;
 }
 
-.AccueilDev {
-    font-size: 2.5vh; /*2vmax*/
+/**
+ * Partie Media
+ */
+
+.VideoLayout > * {
+    min-width: 33vw !important;
+    max-width: 85vw !important;
+    height: 33vh !important;
+}
+
+/**
+ * Partie Presentation
+ */
+
+.PresLayout {
+    padding: 15px;
+    border: solid 1px rgba(0, 0, 0, 0.125);
+    background-color: #F4E7D3;
+    border-radius: 0.25rem;
+    max-width: 50vmax;
+}
+
+/**
+ * Partie Contacts
+ */
+
+.ContactLayout {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }

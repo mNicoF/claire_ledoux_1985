@@ -1,8 +1,38 @@
 {
-  "fr": {
-    
-  },
-  "en": {
-
-  }
+  "fr": [
+    {
+      "type": "paragraphe",
+      "value": "Aujourd’hui, le cabinet Claire Ledoux 1985 vous accueil au 13 rue de l’Arsenal pour vous proposer des services en dermopigmentation. Cette idée est née il y a une dizaine d'année inspiré par une chef d'entreprise qui pratiquait le maquillage permanent avec la technique traditionnelle asiatique dite \"hand-poke\". Après plusieurs années d'expériences, de recherche, d'élaboration, ... ce projet se concrétise finalement à Niort, au cœurs des Deux-Sèvres, il ne restait plus qu’à trouver un espace pour vous accueillir."
+    },
+    { "type": "null", "value": "about1" },
+    {
+      "type": "paragraphe",
+      "value": "Le local trouvé a été aménagé d'une grande salle d'accueil au couleurs chaleureuse et à l'arrière, d'une salle de \"soins\" qui ressemble à une salle opératoire avec toutes les règles d'hygiène et de sécurité requises."
+    },
+    { "type": "//", "value": "about1" },
+    {
+      "type": "paragraphe",
+      "value": "Derrière ce décor cosy et légèrement vintage, il y a néanmoins l'envie de proposer des soins du corps classiques (épilations, massage, maquillage, etc.) mais surtout d'aller plus loin. L'essence même de ce cabinet est de proposer des services de tatouages médicaux afin d'aider des personnes malades ou en rémission à mieux vivre leur quotidien. Ces personnes, fragilisées par la maladie ont besoin de retrouver confiance. L'objectif est de faciliter leur reconstruction physique et psychologique suite à des traitements lourds, et grâce à ses techniques, les aider à reprendre confiance et à aller de l'avant."
+    },
+    { "type": "//", "value": "about2" },
+    {
+      "type": "paragraphe",
+      "value": "Dans les prestations proposées, vous pourriez refaire vos sourcils, le contour de vos yeux, de vos lèvres, un grain de beauté ou encore une aréole mammaire et même camoufler des cicatrices. Le cabinet proposera aussi de la tricopigmentation, ou densification capillaire, technique qui vise à masquer les imperfections causées par la perte de cheveux (calvitie, alopécie, pelade) ou cicatrices suite à une greffe. Par exemple, cette technologie permet à un homme brûlé au visage, qui avait une chevelure et une barbe fournies, de retrouver barbe, cheveux, sourcils qui lui seront redessinés sur la peau. Elle permet également de travailler sur la couleur de la peau dans certains cas."
+    },
+    { "type": "//", "value": "about4" },
+    {
+      "type": "paragraphe",
+      "value": "Depuis l'ouverture, certaines d’entre vous sont déjà venu prendre rendez-vous, ou simplement se renseigner, poser leurs questions..."
+    },
+    { "type": "null", "value": "about5" },
+    {
+      "type": "paragraphe",
+      "value": "Aujourd'hui des partenariats se mettent en place avec les professionnels de santé des hôpitaux et cliniques alentours."
+    },
+    {
+      "type": "paragraphe",
+      "value": "Cette histoire ne fait que commencer et vous pouvez en écrire une partie nous ! Merci"
+    }
+  ],
+  "en": {}
 }

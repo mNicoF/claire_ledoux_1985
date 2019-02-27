@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Carousel extends Component {
+class Photo extends Component {
   constructor(props) {
     super(props);
 
@@ -11,14 +11,14 @@ class Carousel extends Component {
 
   render() {
 
-    let carousel = "Carousel"
+    let Photo = "Photo"
 
     return (
-      <div className="CarouselLayout">
-        {carousel}
+      <div className="PhotoLayout">
+        {Photo}
       </div>
     );
   }
 }
 
-export default Carousel;
+export default Photo;
