@@ -43,6 +43,8 @@
 
 .jumbotron {
     padding: 32px !important;
+    margin-left: 3vw;
+    margin-right: 3vw;
     margin-bottom: 0px !important;
     background-color: #C1B7A7 !important;
 }
