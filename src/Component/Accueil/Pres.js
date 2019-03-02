@@ -4,24 +4,15 @@ class Pres extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {
-
-    };
+    this.state = {};
   }
 
   render() {
 
-    let Pres = (
-      <>
-        <p>Claire Ledoux 1985 est un cabinet de tatouage médical et de dermographie esthétique, qui propose de nombreux services.
-          Parmis eux vous pouvez retrouver de la reconstruction mammaire, le camouflage de cicatrices, la tricopigmentation et le maquillage permanent ou semi-permanent.</p>
-      </>
-    );
-
     return (
       <div className="PresLayout">
-        <h3>La reconstruction dans la peau</h3>
-        {Pres}
+        <h3>{this.props.presentation.title}</h3>
+        {this.props.presentation.content}
       </div>
     );
   }

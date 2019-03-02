@@ -4,6 +4,7 @@ const packageJson = require('./../../../package.json');
 const appJson = require('./../../datas/App.json');
 
 export const initialState = {
+    lang: appJson.default_lang,
     target: (packageJson.homepage)? packageJson.homepage : "http://www.claireledoux1985.fr/", //https://mnicof.github.io/claire_ledoux_1985
     version: packageJson.version,
     dateMaJ: packageJson.date,

@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 class Contact extends Component {
   constructor(props) {
     super(props);
@@ -11,13 +13,20 @@ class Contact extends Component {
 
   render() {
 
-    let adresse = <div>13 Rue de l'Arsenal, 79000 Niort</div>
-    let tel = <div>09 83 30 07 01</div>
-    let mail =  <div>claire.ledoux.1985@gmail.com</div>
+    const contactList = this.props.contact;
+    let contact = [];
+    for(let c in contactList){
+      contact.push(
+        <div key={c}>
+          <FontAwesomeIcon icon={contactList[c].title.icon} />{' '}
+          {contactList[c].value.label}
+        </div>
+      );
+    }
 
     return (
       <div className="ContactLayout">
-        {adresse} {tel} {mail}
+        {contact}
       </div>
     );
   }

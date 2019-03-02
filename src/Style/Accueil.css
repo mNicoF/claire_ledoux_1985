@@ -53,11 +53,12 @@
  * Partie Media
  */
 
-.VideoLayout > * {
+ .PhotoLayout > *, .VideoLayout > * {
     min-width: 33vw !important;
     max-width: 85vw !important;
     height: 33vh !important;
 }
+
 
 /**
  * Partie Presentation

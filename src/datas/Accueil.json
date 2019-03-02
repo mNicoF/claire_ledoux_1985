@@ -1,9 +1,27 @@
 {
   "fr": {
     "news": {
-      "title" : "Nouveau !",
-      "text" : "Nouvelle page d'accueil pour ce site !",
-      "image" : ""
+      "title" : "Nouveau",
+      "content" : [
+        "Découvrez la présentation du cabinet de dermographie",
+        "Retrouvez plus d'informations dans la partie contact"
+      ]
+    },
+    "media": {
+      "type" : "video",
+      "video" : {
+        "title" : "Un cabinet de tatouage médical à Niort",
+        "source" : "https://www.youtube.com/embed/HFgBaR0D8cM"
+      },
+      "photo" : {
+        "items" : [
+          {
+            "source" : "test1.webp",
+            "header" : "TEST JSON",
+            "text" : "text test json"
+          }
+        ]
+      }
     }
   },
   "en": {

@@ -26,6 +26,7 @@ import { Provider } from 'react-redux';
 import { createLogger } from 'redux-logger';
 
 import { appReducer } from './redux/reducers/AppReducer';
+import { accueilReducer } from './redux/reducers/AccueilReducer';
 import { presentationReducer } from './redux/reducers/PresentationReducer';
 import { contactReducer } from './redux/reducers/ContactReducer';
 import { tarifsReducer } from './redux/reducers/TarifsReducer';
@@ -50,6 +51,7 @@ library.add(faFacebook);
 
 const reducers = combineReducers({
   appReducer,
+  accueilReducer,
   presentationReducer,
   tarifsReducer,
   contactReducer

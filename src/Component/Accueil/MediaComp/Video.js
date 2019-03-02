@@ -1,29 +1,25 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 class Video extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-
+      title: this.props.infos.title,
+      source: this.props.infos.source
     };
   }
 
   render() {
-
-    let video = (
-      <iframe
-        title="Un cabinet de tatouage médical à Niort"
-        src="https://www.youtube.com/embed/HFgBaR0D8cM"
-        frameBorder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowFullScreen
-      />
-    );
-
     return (
       <div className="VideoLayout">
-        {video}
+        <iframe
+          title={this.state.title}
+          src={this.state.source}
+          frameBorder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        />
       </div>
     );
   }

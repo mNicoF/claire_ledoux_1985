@@ -1,12 +1,9 @@
 const accueilJson = require('./../../datas/Accueil.json');
 
-export const initialState = {
-    accueil: accueilJson
-    //TODO import les autres Json
-}
+export const initialState = accueilJson.fr
 
-export function appReducer(state = initialState){
+export function accueilReducer(state = initialState){
     return state;
 }
 
-export default {appReducer}
+export default {accueilReducer}

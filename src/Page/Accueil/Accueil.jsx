@@ -11,41 +11,36 @@ class Accueil extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {};
+    this.state = {
+      news: this.props.accueil.news,
+      media: this.props.accueil.media,
+      presentation: {
+        title: this.props.presentation.title,
+        content: this.props.presentation.resume
+      }
+    };
   }
 
   render() {
-    /*
-    let unused = (
-      <div className="AccueilLayout Page">
-        <div className="AccueilH3">Bienvenue</div>
-        <div>Le cabinet de dermographie vous attend !</div>
-        <div>Suivez toutes les informations sur Facebook : </div>
-        <div style={{ margin: "20px" }}>
-          <a
-            className="AccueilBtn"
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.facebook.com/claireledoux1985/"
-          >
-            @claireledoux1985
-          </a>
-        </div>
-        <div className="AccueilDev">
-          - Ce site est toujours en cours de développement -
-        </div>
-      </div>
-    );
-    */
+
+    //Traitement des données de contact
+    const contactList = this.props.contact;
+    let contactAccueil = [];
+    for (let c in contactList) {
+      if(contactList[c].accueil) {
+        contactAccueil.push(contactList[c]);
+      }
+    }
 
     return (
       <div className="AccueilLayout Page">
-        <News />
+        <News news={this.state.news}/>
         <div className="AccueilCenter">
-          <Media type={"Video"} />
-          <Pres />
+          <Media media={this.state.media} />
+          <Pres presentation={this.state.presentation} />
         </div>
-        <Contact />
+        <hr />
+        <Contact contact={contactAccueil} />
       </div>
     );
   }

@@ -7,13 +7,16 @@ class Presentation extends Component {
     super(props);
     
     this.state = {
-      presentation: this.props.presentation
+      presentation: {
+        title: this.props.presentation.title,
+        content: this.props.presentation.complet,
+      }
     };
   }
 
   render() {
 
-    let pres = this.state.presentation;
+    let pres = this.state.presentation.content;
     let presentation = [];
 
     for(let p in pres){
@@ -32,7 +35,7 @@ class Presentation extends Component {
     
     return (
       <div className="PresentationLayout Page">
-        <h2>La reconstruction dans la peau</h2>
+        <h3>{this.state.presentation.title}</h3>
         {presentation}
       </div>
     );
