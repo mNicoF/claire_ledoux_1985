@@ -7,8 +7,15 @@ export function actionAppSuccess(actionType, records) {
   };
 }
 
+export function setAppLang(target) {
+  let records = target;
+  return function(dispatch) {
+    dispatch(actionAppSuccess(types.SET_LANG_SUCCESS, records));
+  };
+}
+
 export function loadDeviceType() {
-  let records = "Desktop";
+  let records = "desktop";
   if (
     /(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|ipad|iris|kindle|Android|Silk|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(
       navigator.userAgent
@@ -17,9 +24,9 @@ export function loadDeviceType() {
       navigator.userAgent.substr(0, 4)
     )
   ) {
-    records = "Mobile";
+    records = "mobile";
   }
-  return function(dispatch){
-      dispatch(actionAppSuccess(types.LOAD_DEVICE_SUCCESS, records));
-  }
+  return function(dispatch) {
+    dispatch(actionAppSuccess(types.LOAD_DEVICE_SUCCESS, records));
+  };
 }

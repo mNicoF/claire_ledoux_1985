@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import { UncontrolledCarousel } from 'reactstrap';
 
-//const ROOT_SRC = "./../../../medias/accueil/";
+const ROOT_SRC = "./../../../medias/accueil/";
 
 class Photo extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      photos: this.props.infos.items
+      photoItems: this.props.infos.items
     };
   }
 
@@ -29,19 +29,21 @@ class Photo extends Component {
       );
     }*/
 
-    //let srcStr = "./../../../medias/horaires.webp";
+    let test = [];
     let listItem = [];
-    const photos = this.state.photoList;
+    const photos = this.state.photoItems;
     for (let p in photos){
-      listItem.push({
-        src: require("./../../../medias/horaires.webp"),
+      test.push(<img src={require(""+ROOT_SRC+photos[p].source)} alt={photos[p].text} />);
+      /*listItem.push({
+        src: require(""+ROOT_SRC+photos[p].source),
         altText: photos[p].text,
         caption: photos[p].text
-      });
+      });*/
     }
 
     return (
       <div className="PhotoLayout">
+      {test}
         <UncontrolledCarousel items={listItem}/>
       </div>
     );

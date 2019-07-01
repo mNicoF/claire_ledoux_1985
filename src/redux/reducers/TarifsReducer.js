@@ -1,6 +1,6 @@
 const tarifsJson = require('./../../datas/Tarifs.json');
 
-export const initialState = tarifsJson.fr
+export const initialState = tarifsJson
 
 export function tarifsReducer(state = initialState){
     return state;

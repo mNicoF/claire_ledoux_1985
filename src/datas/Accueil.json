@@ -3,8 +3,8 @@
     "news": {
       "title" : "Nouveau",
       "content" : [
-        "Découvrez la présentation du cabinet de dermographie",
-        "Retrouvez plus d'informations dans la partie contact"
+        "Nouvelle prestation : Pose de vernis semi permanent - Promotion 22 euros jusqu'au 15 Juillet !",
+        "Arrivée de la marque ONE MINUTE au cabinet - Gommages, huiles et baumes déjà disponible au cabinet !"
       ]
     },
     "media": {
@@ -16,7 +16,7 @@
       "photo" : {
         "items" : [
           {
-            "source" : "test1.webp",
+            "source" : "./../../../medias/accueil/test1.webp",
             "header" : "TEST JSON",
             "text" : "text test json"
           }
@@ -25,6 +25,28 @@
     }
   },
   "en": {
-    
+    "news": {
+      "title" : "News",
+      "content" : [
+        "Learn the history of the cabinet in the about part",
+        "Found more informations in the contact part"
+      ]
+    },
+    "media": {
+      "type" : "video",
+      "video" : {
+        "title" : "Medical tattoo cabine in Niort",
+        "source" : "https://www.youtube.com/embed/HFgBaR0D8cM"
+      },
+      "photo" : {
+        "items" : [
+          {
+            "source" : "./../../../medias/accueil/test1.webp",
+            "header" : "TEST JSON",
+            "text" : "text test json"
+          }
+        ]
+      }
+    }
   }
 }

@@ -1,0 +1,12 @@
+.ProduitsLayout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ProduitsCard {
+    margin: 10px;
+    width: 70vw;
+}
+
+.ProduitsPics {}

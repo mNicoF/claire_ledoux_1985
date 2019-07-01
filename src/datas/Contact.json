@@ -78,7 +78,83 @@
       }
     }
   ],
-  "en": {
-    
-  }
+  "en": [
+    {
+      "accueil" : false,
+      "title" : {
+        "label" : "Schedule",
+        "type" : "text",
+        "icon" : ["far", "clock"]
+      },
+      "value" : {
+        "label" : "Monday to Friday from 9am to 6pm",
+        "type" : "text"
+      }
+    },
+    {
+      "accueil" : true,
+      "title" : {
+        "label" : "Phone",
+        "type" : "text",
+        "icon" : ["fa", "phone"]
+      },
+      "value" : {
+        "label" : "0983300701",
+        "value" : "+33983300701",
+        "type" : "phone"
+      }
+    },
+    {
+      "accueil" : true,
+      "title" : {
+        "label" : "Email",
+        "type" : "text",
+        "icon" : ["fa", "at"]
+      },
+      "value" : {
+        "label" : "claire.ledoux.1985@gmail.com",
+        "value" : "claire.ledoux.1985@gmail.com",
+        "type" : "mail"
+      }
+    },
+    {
+      "accueil" : true,
+      "title" : {
+        "label" : "Address",
+        "type" : "text",
+        "icon" : ["fa", "map-marked"]
+      },
+      "value" : {
+        "label" : "13 rue de l'Arsenal, 79000 Niort",
+        "value" : "https://goo.gl/maps/iPEkfwdFDiw",
+        "type" : "link"
+      }
+    },
+    {
+      "accueil" : false,
+      "title" : {
+        "label" : "Facebook",
+        "type" : "text",
+        "icon" : ["fab", "facebook"]
+      },
+      "value" : {
+        "label" : "@claireledoux1985",
+        "value" : "https://www.facebook.com/claireledoux1985/",
+        "type" : "link"
+      }
+    },
+    {
+      "accueil" : false,
+      "title" : {
+        "label" : "Web site",
+        "type" : "text",
+        "icon" : ["fa", "globe-africa"]
+      },
+      "value" : {
+        "label" : "claireledoux1985.fr/",
+        "value" : "http://www.claireledoux1985.fr/",
+        "type" : "link"
+      }
+    }
+  ]
 }

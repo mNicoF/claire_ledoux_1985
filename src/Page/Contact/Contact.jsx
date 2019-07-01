@@ -24,7 +24,7 @@ class Contact extends Component {
 
   handleMoreInfo(event) {
     //besoin du type de device pour forcer la taille de l'info facebook
-    const device = this.props.app.device;
+    const device = this.props.device;
     const currTarget = (this.state.info.props)? this.state.info.props.contact : "";
     let nextTarget = this.state.contact[event.target.id];
     //TODO: vérifier qu'avec la nouvelle structure de contact il n'y a pas de soucis
