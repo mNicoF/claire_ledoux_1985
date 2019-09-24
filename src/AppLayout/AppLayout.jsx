@@ -20,6 +20,7 @@ class AppLayout extends Component {
   }
 
   render() {
+    console.log(this.props.target);
     return (
       <div>
         <Header
@@ -30,8 +31,8 @@ class AppLayout extends Component {
         />
 
         {this.props.children}
-
-        {this.props.infos.target === "http://www.claireledoux1985.fr/" ? (
+        
+        {this.props.target === "http://www.claireledoux1985.fr/" ? (
           <Footer infos={this.props.infos} />
         ) : (
           <FooterRec infos={this.props.infos} />
@@ -42,6 +43,7 @@ class AppLayout extends Component {
 }
 
 AppLayout.propTypes = {
+  target: PropTypes.string,
   infos: PropTypes.object,
   lang: PropTypes.string,
   menu: PropTypes.array,

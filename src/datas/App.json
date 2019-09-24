@@ -1,38 +1,36 @@
 {
-  "default_lang": "fr",
-  "all_lang": [
-    {
-      "key": "fr",
-      "value": "Français"
+    "default_lang": "fr",
+    "all_lang": [{
+            "key": "fr",
+            "value": "Français"
+        },
+        {
+            "key": "en",
+            "value": "English"
+        }
+    ],
+    "default_device": "desktop",
+    "all_devices": [
+        "desktop",
+        "mobil"
+    ],
+    "menu": {
+        "fr": {
+            "accueil": "accueil",
+            "presentation": "presentation",
+            "prestations": "prestations",
+            "contact": "contact"
+        },
+        "en": {
+            "accueil": "home",
+            "presentation": "about",
+            "prestations": "services",
+            "produits": "products",
+            "contact": "contact"
+        }
     },
-    {
-      "key": "en",
-      "value": "English"
+    "author": {
+        "name": "Nicolas Forget",
+        "link": "https://www.linkedin.com/in/m-nicolas-forget/"
     }
-  ],
-  "default_device": "desktop",
-  "all_devices": [
-    "desktop",
-    "mobil"
-  ],
-  "menu": {
-    "fr": {
-      "accueil": "accueil",
-      "presentation": "presentation",
-      "prestations": "prestations",
-      "produits": "produits",
-      "contact": "contact"
-    },
-    "en": {
-      "accueil": "home",
-      "presentation": "about",
-      "prestations": "services",
-      "produits": "products",
-      "contact": "contact"
-    }
-  },
-  "author": {
-    "name": "Nicolas Forget",
-    "link": "https://www.linkedin.com/in/m-nicolas-forget/"
-  }
 }
