@@ -18,13 +18,13 @@ class Produits extends Component {
     this.state.produits.map((produit) => {
       cards.push(
         <Card className="ProduitsCard">
-          {/*<CardImg src={produit.image} alt={produit.title} className="ProduitsPics"/>*/}
-          <CardBody>
+          <CardBody className="ProduitsBody">
             <CardTitle>{produit.title}</CardTitle>
             <CardSubtitle>{produit.detail}</CardSubtitle>
             <CardText>{produit.info}</CardText>
             <Button disabled color="danger" size="lg">{produit.price} €</Button>
           </CardBody>
+          {/*<CardImg src={produit.image} alt={produit.title} className="ProduitsPics"/>*/}
         </Card>
       )
     });

@@ -4,9 +4,23 @@
     align-items: center;
 }
 
-.ProduitsCard {
+.ProduitsLayout > * {
     margin: 10px;
     width: 70vw;
 }
 
-.ProduitsPics {}
+.ProduitsCard {    
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+}
+
+.ProduitsBody {
+    
+}
+
+.ProduitsPics {
+    padding: 20px;
+    width: 25% !important;
+    height: 100%;
+}

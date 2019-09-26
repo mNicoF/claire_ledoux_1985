@@ -106,7 +106,7 @@ class App extends Component {
                 <Route path="/presentation" component={Presentation} />
                 <Route path="/galerie" component={Galerie} />
                 <Route path="/prestations" component={Tarifs} />
-                {/*<Route path="/produits" component={Produits} />*/}
+                <Route path="/produits" component={Produits} />
                 <Route path="/contact" component={Contact} />
                 {/*<Redirect from="*" to="/404"/>*/}
                 <Route component={NotFound} />
