@@ -67,6 +67,19 @@
     {
       "accueil" : false,
       "title" : {
+        "label" : "Messenger",
+        "type" : "text",
+        "icon" : ["fab", "facebook-messenger"]
+      },
+      "value" : {
+        "label" : "Claire Ledoux",
+        "value" : "https://m.me/claireledoux1985",
+        "type" : "link"
+      }
+    },
+    {
+      "accueil" : false,
+      "title" : {
         "label" : "Site web",
         "type" : "text",
         "icon" : ["fa", "globe-africa"]
