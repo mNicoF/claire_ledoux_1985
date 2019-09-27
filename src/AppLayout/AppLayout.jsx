@@ -46,7 +46,7 @@ AppLayout.propTypes = {
   target: PropTypes.string,
   infos: PropTypes.object,
   lang: PropTypes.string,
-  menu: PropTypes.array,
+  menu: PropTypes.object,
   loadDeviceType: PropTypes.func,
   setAppLang: PropTypes.func
 };
