@@ -40,6 +40,13 @@
 /**
  * Partie News
  */
+.NewsLayout {
+
+}
+
+.NewsHeader{
+    cursor: pointer;
+}
 
 .jumbotron {
     padding: 32px !important;
@@ -70,6 +77,10 @@
     background-color: #F4E7D3;
     border-radius: 0.25rem;
     max-width: 50vmax;
+}
+
+.PresContent {
+    margin: 20px; 
 }
 
 /**
