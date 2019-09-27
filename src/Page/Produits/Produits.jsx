@@ -19,9 +19,8 @@ class Produits extends Component {
     let cards = [];
 
     //<CardImg src={require(img)} alt={produit.title} className="ProduitsPics"/>
-    
+
     this.state.produits.map((produit) => {
-      let img = '../../medias/produits/'+ produit.image;
       cards.push(
         <Card className="ProduitsCard">
           <CardBody className="ProduitsBody">
