@@ -42,7 +42,7 @@ class Contact extends Component {
     let listGroupItem = [];
     for (let c in contacts) {
       const titleLab = contacts[c].title.label;
-      let moreInfo = (titleLab === "Horaires" || titleLab === "Facebook" || titleLab === "Adresse") ? (
+      let moreInfo = (titleLab === "Horaires" || titleLab === "Facebook" || titleLab === "Adresse" || titleLab === "Messenger") ? (
         <Button id={c} className="moreInfoBtn theme" onClick={this.handleMoreInfo}>+</Button>
       ) : (<></>);
       listGroupItem.push(
