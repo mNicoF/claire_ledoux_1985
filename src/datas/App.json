@@ -18,6 +18,7 @@
         "fr": {
             "accueil": "accueil",
             "presentation": "presentation",
+            "galerie":"galerie",
             "prestations": "prestations",
             "produits": "produits",
             "contact": "contact"
@@ -25,6 +26,7 @@
         "en": {
             "accueil": "home",
             "presentation": "about",
+            "galerie": "gallery",
             "prestations": "services",
             "produits": "products",
             "contact": "contact"

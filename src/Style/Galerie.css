@@ -1,3 +1,12 @@
 .GalerieLayout{
-    /**/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.GaleriePics{
+    min-width: 300px;
+    width: 33%;
+    padding: 20px;
+    border: 
 }
