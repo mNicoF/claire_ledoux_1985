@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { FacebookProvider, Page } from "react-facebook";
-import MessengerCustomerChat from 'react-messenger-customer-chat';
 import MailForm from './MailForm';
 
 class Infos extends Component {
@@ -60,14 +59,6 @@ class Infos extends Component {
               width={width}
             />
           </FacebookProvider>
-        );
-        break;
-
-      case "Messenger":
-        info = (
-          <MessengerCustomerChat className="fb-customerchat"
-            pageId="242649823093770" appId="">
-          </MessengerCustomerChat>
         );
         break;
 

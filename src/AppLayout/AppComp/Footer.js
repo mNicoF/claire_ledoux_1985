@@ -19,9 +19,9 @@ class Footer extends Component {
         </div>
         <div
           className="Footer-right"
-          title={"Dernière mise à jour : " + this.props.infos.dateMaJ}
+          title={"Dernière mise à jour : " + this.props.dateMaJ}
         >
-          Version {this.props.infos.version}
+          Version {this.props.version}
         </div>
       </div>
     );

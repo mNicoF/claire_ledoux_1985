@@ -18,9 +18,9 @@ class FooterRec extends Component {
             className="Footer-link"
             title={
               "MAJ : " +
-              this.props.infos.version +
+              this.props.version +
               " (" +
-              this.props.infos.dateMaJ +
+              this.props.dateMaJ +
               ")"
             }
           >

@@ -28,6 +28,7 @@ class Contact extends Component {
     const currTarget = (this.state.info.props) ? this.state.info.props.contact : "";
     let nextTarget = this.state.contact[event.target.id];
     //TODO: vérifier qu'avec la nouvelle structure de contact il n'y a pas de soucis
+    console.log(nextTarget.title);
     let tag = (nextTarget.title !== currTarget.title) ? (
       <Infos contact={nextTarget.title} device={device} />
     ) : "";
@@ -42,7 +43,7 @@ class Contact extends Component {
     let listGroupItem = [];
     for (let c in contacts) {
       const titleLab = contacts[c].title.label;
-      let moreInfo = (titleLab === "Horaires" || titleLab === "Facebook" || titleLab === "Adresse" || titleLab === "Messenger") ? (
+      let moreInfo = (titleLab === "Horaires" || titleLab === "Facebook" || titleLab === "Adresse") ? (
         <Button id={c} className="moreInfoBtn theme" onClick={this.handleMoreInfo}>+</Button>
       ) : (<></>);
       listGroupItem.push(

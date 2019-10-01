@@ -7,7 +7,10 @@ const mapStateToProps = state => ({
   target: state.appReducer.target,
   infos: state.appReducer.infos,
   lang: state.appReducer.lang,
-  menu: state.appReducer.menu[state.appReducer.lang]
+  version: state.appReducer.version,
+  dateMaJ: state.appReducer.dateMaJ,
+  menu: state.appReducer.menu[state.appReducer.lang],
+  device: state.appReducer.device
 });
 
 const mapDispatchToProps = dispatch => ({

@@ -5,6 +5,8 @@ import Header from "./AppComp/Header";
 import Footer from "./AppComp/Footer";
 import FooterRec from "./AppComp/FooterRec";
 
+import MessengerCustomerChat from 'react-messenger-customer-chat';
+
 import "../Style/Header.css";
 import "../Style/Footer.css";
 
@@ -31,12 +33,15 @@ class AppLayout extends Component {
         />
 
         {this.props.children}
-        
+
         {this.props.target === "http://www.claireledoux1985.fr/" ? (
-          <Footer infos={this.props.infos} />
+          <Footer infos={this.props.infos} version={this.props.version} dateMaJ={this.props.dateMaJ} />
         ) : (
-          <FooterRec infos={this.props.infos} />
-        )}
+            <FooterRec infos={this.props.infos} version={this.props.version} dateMaJ={this.props.dateMaJ} />
+          )}
+        <MessengerCustomerChat className="fb-customerchat"
+          pageId="242649823093770" appId="">
+        </MessengerCustomerChat>
       </div>
     );
   }
