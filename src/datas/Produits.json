@@ -4,14 +4,14 @@
       "title": "Huile de beauté",
       "info": "Hydrate, nourrit, protège, lisse et répare ! Appliquez sur l'ensemble du corps, du visage et des cheveux. Idéalement, sur peau mouillée en sortant de la douche ou en ajoutant quelques gouttes dans l'eau du bain.",
       "detail": "Parfum : 'Poire Amandine', 'Fleur de lys', 'Monoï' et 'Cerise noire'",
-      "price": "23",
+      "price": "19",
       "image": "../../medias/produits/huile-de-beaute.webp"
     },
     {
       "title": "Stylo cuticules",
       "info": "Nourrit les cuticules et fortifie les ongles grâce aux huiles végétales naturelles.",
       "detail": "Parfum : 'Poire Amandine', 'Fleur de lys', 'Monoï' et 'Lait d'olives'",
-      "price": "15",
+      "price": "11",
       "image": "../../medias/produits/huile-de-beaute.webp"
     },
     {
@@ -32,7 +32,7 @@
       "title": "Gommage sucrée pour lèvres",
       "info": "Gomme sucrée et comestible ! Nourrit, hydrate, répare et protège vos lèvres.",
       "detail": "Parfum : 'Menthe', 'Grenadine'",
-      "price": "15",
+      "price": "12",
       "image": "../../medias/produits/huile-de-beaute.webp"
     }
   ],

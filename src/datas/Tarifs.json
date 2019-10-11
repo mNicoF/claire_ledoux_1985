@@ -5,13 +5,14 @@
         "Microblading / Maquillage semi-permanent": "170 €",
         "Sourcils poils à poils": "250 €",
         "Sourcils ombrage": "200 €",
+        "Sourcils remplissage": "250 €",
         "Eye-liner haut": "150 €",
         "Eye-liner bas": "100 €",
         "Eye-liner complet": "200 €",
-        "Contour de lèvres": "250 €",
-        "Contour + voilage": "280 €",
+        "Contour de lèvres": "180 €",
+        "Contour + voilage": "220 €",
         "Full lips": "300 €",
-        "Candy lips": "400 €",
+        "Candy lips": "380 €",
         "Grain de beauté": "80 €"
       },
       "Médical": {
@@ -115,10 +116,10 @@
         "Eyeliner top": "150 €",
         "Eyeliner bottom": "100 €",
         "Eyeliner full": "200 €",
-        "Lips contour": "250 €",
-        "Contour + veiling": "280 €",
+        "Lips contour": "180 €",
+        "Contour + veiling": "220 €",
         "Full lips": "300 €",
-        "Candy lips": "400 €",
+        "Candy lips": "380 €",
         "Beauty spot": "80 €"
       },
       "Medical (on quotation)": {
