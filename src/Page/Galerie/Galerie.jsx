@@ -14,7 +14,7 @@ class Galerie extends Component {
   render() {
 
     let images = [];
-    for (let i = 1; i <= 21; i++) {
+    for (let i = 1; i <= 35; i++) {
       images.push(
           <img src={require('../../medias/galerie/' + i + '.jpg')} alt={i} className="GaleriePics" />
       );

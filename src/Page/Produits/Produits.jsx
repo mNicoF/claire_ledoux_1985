@@ -3,8 +3,6 @@ import { Card, CardImg, CardBody, CardTitle, CardSubtitle, CardText, Button } fr
 
 import '../../Style/Produits.css';
 
-const MEDIA_RELATIVE_PATH = '../../medias/produits/';
-
 class Produits extends Component {
   constructor(props) {
     super(props);
@@ -18,17 +16,20 @@ class Produits extends Component {
 
     let cards = [];
 
-    //<CardImg src={require(img)} alt={produit.title} className="ProduitsPics"/>
-
     this.state.produits.map((produit) => {
+      let prices = [];
+      produit.price.map((p) => {
+        prices.push(<Button disabled color="danger" size="lg" style={{'margin-right':'10px'}}>{p} €</Button>)
+      });
       cards.push(
         <Card className="ProduitsCard">
           <CardBody className="ProduitsBody">
             <CardTitle>{produit.title}</CardTitle>
             <CardSubtitle>{produit.detail}</CardSubtitle>
             <CardText>{produit.info}</CardText>
-            <Button disabled color="danger" size="lg">{produit.price} €</Button>
+            {prices}
           </CardBody>
+          <CardImg src={require('../../medias/produits/' + produit.image + '.jpg')} alt={produit.image} className="ProduitsPics" />
         </Card>
       )
     });
