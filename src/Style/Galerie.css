@@ -7,6 +7,6 @@
 .GaleriePics{
     min-width: 300px;
     width: 33%;
+    max-height: inherit;
     padding: 20px;
-    border: 
 }

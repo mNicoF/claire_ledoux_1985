@@ -15,7 +15,9 @@ class Galerie extends Component {
 
     let images = [];
     for (let i = 1; i <= 21; i++) {
-      images.push(<img src={require('../../medias/galerie/'+i+'.jpg')} alt={i} className="GaleriePics" />);
+      images.push(
+          <img src={require('../../medias/galerie/' + i + '.jpg')} alt={i} className="GaleriePics" />
+      );
     }
 
     return (

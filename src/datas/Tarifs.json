@@ -4,16 +4,17 @@
       "Esthétique": {
         "Microblading / Maquillage semi-permanent": "170 €",
         "Sourcils poils à poils": "250 €",
-        "Sourcils ombrage": "200 €",
-        "Sourcils remplissage": "250 €",
+        "Sourcils ombrage / remplissage": "200 €",
         "Eye-liner haut": "150 €",
         "Eye-liner bas": "100 €",
         "Eye-liner complet": "200 €",
-        "Contour de lèvres": "180 €",
-        "Contour + voilage": "220 €",
+        "Glossy Lips": "180 €",
+        "Contour de lèvres": "200 €",
+        "Contour + voilage": "250 €",
         "Full lips": "300 €",
         "Candy lips": "380 €",
-        "Grain de beauté": "80 €"
+        "Grain de beauté": "60 €",
+        "Tâches de rousseurs": "60 €"
       },
       "Médical": {
         "Cicatrices": "100 € *",
@@ -39,12 +40,11 @@
         "Bougie dos ou jambes (30 min)": "35 €"
       },
       "Soins mains et pieds": {
-        "extension au chablon polygel/acrygel": "50 €",
-        "Remplissage": "35 €",
         "Vernis semi-permanent": "24 €",
         "Déco": "1 €",
         "Pose de vernis": "5 €",
         "Pose de vernis 'French'": "10 €",
+        "Manucure express (préparation de l'ongle, gommer hydrater réparer, vernis)": "15 €",
         "Manucure (gommage, masque, vernis)": "35 €",
         "Pédicure (gommage, masque, vernis)": "35 €",
         "Manucure + Pédicure": "60 €"
