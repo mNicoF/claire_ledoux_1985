@@ -1,28 +1,50 @@
 import React, { Component } from 'react';
+import { Button } from "reactstrap";
 
-import '../../Style/Medias.css';
+import Photos from "./../../Component/Photos/Photos";
 
 class Galerie extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {
+    this.handleSelect = this.handleSelect.bind(this);
+    this.handleBack = this.handleBack.bind(this);
 
+    this.state = {
+      inGalerie: false,
+      target: {
+        name: '',
+        size: 0
+      }
     };
+  }
+
+  handleSelect(target) {
+    this.setState({
+      inGalerie: true
+    })
+  }
+
+  handleBack() {
+    this.setState({
+      inGalerie: false
+    })
   }
 
   render() {
 
-    let images = [];
-    for (let i = 1; i <= 67; i++) {
-      images.push(
-          <img src={require('../../medias/galerie/' + i + '.jpg')} alt={i} className="GaleriePics" />
-      );
-    }
-
     return (
-      <div className="GalerieLayout Page">
-        {images}
+      <div className="Page">
+
+        {this.state.inGalerie ? (
+          <React.Fragment>
+            <Button onClick={() => this.handleBack()}>{'< Retour'}</Button>
+            <Photos folderName="ongles" folderSize={13} />
+          </React.Fragment>
+        ) : (
+            <Button onClick={() => this.handleSelect()}>{'Ongles'}</Button>
+          )}
+
       </div>
     );
   }

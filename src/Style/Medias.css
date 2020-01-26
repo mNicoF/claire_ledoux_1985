@@ -1,13 +1,13 @@
 /**
  * Partie Galerie
  */
-.GalerieLayout{
+.PhotoLayout{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
-.GaleriePics{
+.Photo{
     min-width: 300px;
     width: 33%;
     max-height: inherit;
