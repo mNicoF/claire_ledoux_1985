@@ -6,6 +6,7 @@ import AppLayout from "./AppLayout/AppLayout";
 import Accueil from "./Page/Accueil/Accueil";
 import Presentation from "./Page/Presentation/Presentation";
 import Galerie from "./Page/Galerie/Galerie";
+import Videos from "./Page/Videos/Videos";
 import Tarifs from "./Page/Tarifs/Tarifs";
 import Produits from "./Page/Produits/Produits";
 import Contact from "./Page/Contact/Contact";
@@ -26,6 +27,7 @@ import { presentationReducer } from "./redux/reducers/PresentationReducer";
 import { contactReducer } from "./redux/reducers/ContactReducer";
 import { tarifsReducer } from "./redux/reducers/TarifsReducer";
 import { produitReducer } from "./redux/reducers/ProduitsReducer";
+import { mediasReducer } from "./redux/reducers/MediasReducer";
 
 /**
  * CSS
@@ -56,7 +58,8 @@ const reducers = combineReducers({
   presentationReducer,
   tarifsReducer,
   produitReducer,
-  contactReducer
+  contactReducer,
+  mediasReducer
 });
 
 const logger = createLogger({
@@ -105,6 +108,7 @@ class App extends Component {
                 <Route path="/accueil" component={Accueil} />
                 <Route path="/presentation" component={Presentation} />
                 <Route path="/galerie" component={Galerie} />
+                <Route path="/videos" component={Videos} />
                 <Route path="/prestations" component={Tarifs} />
                 <Route path="/produits" component={Produits} />
                 <Route path="/contact" component={Contact} />

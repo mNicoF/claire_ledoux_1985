@@ -11,7 +11,8 @@
       "type" : "video",
       "video" : {
         "title" : "Un cabinet de tatouage médical à Niort",
-        "source" : "https://www.youtube.com/embed/HFgBaR0D8cM"
+        "source" : "https://www.youtube.com/embed/HFgBaR0D8cM",
+        "TODO" : "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fclaireledoux1985%2Fvideos%2F745614512605905%2F"
       },
       "photo" : {
         "items" : [

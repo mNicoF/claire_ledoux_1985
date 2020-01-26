@@ -1,0 +1,40 @@
+/**
+ * Partie Galerie
+ */
+.GalerieLayout{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.GaleriePics{
+    min-width: 300px;
+    width: 33%;
+    max-height: inherit;
+    padding: 20px;
+}
+
+/**
+ * Partie Videos
+ */
+
+.VideosLayout {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.VideoDiv {
+    border: solid black 1px;
+    border-radius: 0.25rem;
+    padding: 10px;
+    margin: 20px;
+    font-size: 2vh;
+}
+    
+
+.VideoFrame {
+    min-width: 33vw !important;
+    max-width: 85vw !important;
+    height: 33vh !important;
+}

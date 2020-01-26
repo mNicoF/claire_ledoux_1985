@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import '../../Style/Galerie.css';
+import '../../Style/Medias.css';
 
 class Galerie extends Component {
   constructor(props) {
@@ -14,7 +14,7 @@ class Galerie extends Component {
   render() {
 
     let images = [];
-    for (let i = 1; i <= 35; i++) {
+    for (let i = 1; i <= 67; i++) {
       images.push(
           <img src={require('../../medias/galerie/' + i + '.jpg')} alt={i} className="GaleriePics" />
       );

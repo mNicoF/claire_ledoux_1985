@@ -16,6 +16,7 @@ class Video extends Component {
         <iframe
           title={this.state.title}
           src={this.state.source}
+          scrolling="no"
           frameBorder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
