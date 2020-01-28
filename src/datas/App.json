@@ -17,10 +17,10 @@
     "menu": {
         "fr": {
             "accueil": "accueil",
-            "presentation": "presentation",
+            "presentation": "présentation",
             "galerie":"galerie",
             "videos":"vidéos",
-            "prestations": "prestations",
+            "prestations": "préstations",
             "produits": "produits",
             "contact": "contact"
         },

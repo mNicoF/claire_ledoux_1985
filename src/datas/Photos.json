@@ -1,0 +1,21 @@
+{
+  "fr": [
+    {
+      "name":"Dermographie réparatrice",
+      "size":11
+    },
+    {
+      "name":"Maquillage permanent",
+      "size":30
+    },
+    {
+      "name":"Maquillage semi-permanent",
+      "size":21
+    },
+    {
+      "name":"Ongles",
+      "size":13
+    }
+  ],
+  "en": []
+}

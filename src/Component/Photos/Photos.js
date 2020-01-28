@@ -14,7 +14,7 @@ class Photos extends Component {
     let images = [];
     for (let i = 1; i <= this.props.folderSize; i++) {
       images.push(
-          <img src={require('../../medias/galerie/' + this.props.folderName + '/' + i + '.webp')} alt={i} className="Photo" />
+          <img src={require('../../medias/galerie/' + this.props.folderName + '/' + i + '.webp')} alt={i} className="PhotoImg" />
       );
     }
 

@@ -11,17 +11,17 @@ class Galerie extends Component {
     this.handleBack = this.handleBack.bind(this);
 
     this.state = {
+      photoList: this.props.photoList,
       inGalerie: false,
-      target: {
-        name: '',
-        size: 0
-      }
+      target: <Photos folderName="ongles" folderSize={13} />
     };
   }
 
   handleSelect(target) {
+    console.log(target)
     this.setState({
-      inGalerie: true
+      inGalerie: true,
+      target: <Photos folderName={target.name} folderSize={target.size} />
     })
   }
 
@@ -33,18 +33,34 @@ class Galerie extends Component {
 
   render() {
 
+    let menuAlbum = [];
+    for (let photo in this.state.photoList) {
+      menuAlbum.push(
+        <div className="GalerieDiv" >
+          <h6 style={{ "textDecoration": "underline" }}>{this.state.photoList[photo].name}</h6>
+          <img
+            className="isBtn GalerieImg"
+            src={require('../../medias/galerie/' + this.state.photoList[photo].name + '/' + this.state.photoList[photo].size + '.webp')}
+            alt={photo}
+            onClick={() => this.handleSelect(this.state.photoList[photo])}
+          />
+        </div>
+      );
+    }
+
     return (
-      <div className="Page">
+      <div className="GalerieLayout Page">
 
         {this.state.inGalerie ? (
           <React.Fragment>
-            <Button onClick={() => this.handleBack()}>{'< Retour'}</Button>
-            <Photos folderName="ongles" folderSize={13} />
+            <Button style={{"marginLeft":"20px", "backgroundColor":"#37342F"}} onClick={() => this.handleBack()}>{'< Retour'}</Button>
+            {this.state.target}
           </React.Fragment>
         ) : (
-            <Button onClick={() => this.handleSelect()}>{'Ongles'}</Button>
+            <React.Fragment>
+              {menuAlbum}
+            </React.Fragment>
           )}
-
       </div>
     );
   }

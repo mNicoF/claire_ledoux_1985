@@ -1,40 +1,53 @@
 /**
  * Partie Galerie
  */
-.PhotoLayout{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+
+.GalerieLayout, .VideosLayout {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
 }
 
-.Photo{
-    min-width: 300px;
-    width: 33%;
-    max-height: inherit;
-    padding: 20px;
-}
-
-/**
- * Partie Videos
- */
-
-.VideosLayout {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.VideoDiv {
-    border: solid black 1px;
+.GalerieDiv, .VideoDiv {
+    border: solid #37342F 1px;
     border-radius: 0.25rem;
     padding: 10px;
     margin: 20px;
     font-size: 2vh;
 }
-    
+
+.GalerieImg {
+    min-width: 23vw !important;
+    max-width: 85vw !important;
+    height: 53vh !important;
+    border-radius: 0.75rem;
+    border-right: double #37342F 10px;
+    border-bottom: double #37342F 10px;
+}
+.GalerieImg:hover {
+    border-right: groove #37342F 12px;
+    border-bottom: groove #37342F 12px;
+}
+
+.PhotoLayout {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+}
+
+.PhotoImg {
+    min-width: 23vw !important;
+    max-width: 85vw !important;
+    height: 53vh !important;
+    padding: 20px;
+}
+
+/**
+ * Partie Videos
+ */    
 
 .VideoFrame {
-    min-width: 33vw !important;
-    max-width: 85vw !important;
-    height: 33vh !important;
+    min-width: 43vw !important;
+    max-width: 95vw !important;
+    height: 43vh !important;
 }
