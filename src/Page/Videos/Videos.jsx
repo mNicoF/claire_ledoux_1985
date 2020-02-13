@@ -16,7 +16,7 @@ class Videos extends Component {
     let videos = [];
     for (let vid in this.state.videoList) {
       videos.push(
-        <div className="VideoDiv">
+        <div className="VideoDiv" key={vid}>
           <h6 style={{"textDecoration":"underline"}}>{this.state.videoList[vid].title}</h6>
           <iframe
             className="VideoFrame"

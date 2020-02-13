@@ -7,7 +7,7 @@ import {
   NavbarToggler,
   Nav,
   NavItem,
-  Input
+  //Input
 } from "reactstrap";
 
 class Header extends Component {
@@ -62,7 +62,7 @@ class Header extends Component {
         </option>
       );
     }
-    let selectLang = (
+    /*let selectLang = (
       <Input
         type="select"
         name="lang"
@@ -72,7 +72,7 @@ class Header extends Component {
       >
         {langOptions}
       </Input>
-    );
+    );*/
 
     return (
       <div>

@@ -12,15 +12,16 @@
 .ProduitsCard {    
     display: flex;
     flex-direction: row !important;
-    justify-content: space-between !important;
+    flex-wrap: wrap !important;;
 }
 
 .ProduitsBody {
-    
+    width: 25vw !important;
 }
 
 .ProduitsPics {
     padding: 20px;
-    width: 25% !important;
+    min-width: 40vh;
+    max-width: 30vw;
     height: 100%;
 }

@@ -27,8 +27,6 @@ class Contact extends Component {
     const device = this.props.device;
     const currTarget = (this.state.info.props) ? this.state.info.props.contact : "";
     let nextTarget = this.state.contact[event.target.id];
-    //TODO: vérifier qu'avec la nouvelle structure de contact il n'y a pas de soucis
-    console.log(nextTarget.title);
     let tag = (nextTarget.title !== currTarget.title) ? (
       <Infos contact={nextTarget.title} device={device} />
     ) : "";

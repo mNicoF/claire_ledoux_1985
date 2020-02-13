@@ -22,7 +22,6 @@ class AppLayout extends Component {
   }
 
   render() {
-    console.log(this.props.target);
     return (
       <div>
         <Header
@@ -39,8 +38,12 @@ class AppLayout extends Component {
         ) : (
             <FooterRec infos={this.props.infos} version={this.props.version} dateMaJ={this.props.dateMaJ} />
           )}
-        <MessengerCustomerChat className="fb-customerchat"
-          pageId="242649823093770" appId="">
+        {/* TODO a tester :*/}
+        <MessengerCustomerChat
+          className="fb-customerchat"
+          pageId="242649823093770"
+          themeColor="#37342F"
+          language="fr_FR">
         </MessengerCustomerChat>
       </div>
     );
