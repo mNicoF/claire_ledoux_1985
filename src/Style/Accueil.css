@@ -19,14 +19,14 @@
 .AccueilCenter > * {
     margin: 10px;
 }
-
+ 
 /**
  * Partie News
  */
  
-/*.NewsLayout {
+.NewsLayout {
 
-}*/
+}
 
 .NewsHeader{
     cursor: pointer;

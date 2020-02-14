@@ -44,12 +44,13 @@ import {
   faAt,
   faPhone,
   faMapMarked,
-  faGlobeAfrica
+  faGlobeAfrica, 
+  faTimes
 } from "@fortawesome/free-solid-svg-icons";
 import { faFacebook } from "@fortawesome/fontawesome-free-brands";
 
 library.add(faCopyright, faClock);
-library.add(faAt, faPhone, faMapMarked, faGlobeAfrica);
+library.add(faAt, faPhone, faMapMarked, faGlobeAfrica, faTimes);
 library.add(faFacebook);
 
 const reducers = combineReducers({

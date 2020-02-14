@@ -12,7 +12,7 @@
 .ProduitsCard {    
     display: flex;
     flex-direction: row !important;
-    flex-wrap: wrap !important;;
+    flex-wrap: wrap !important;
 }
 
 .ProduitsBody {
