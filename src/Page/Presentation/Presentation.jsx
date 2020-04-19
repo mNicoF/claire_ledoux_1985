@@ -13,7 +13,7 @@ class Presentation extends Component {
       }
     };
   }
-
+  
   render() {
 
     let pres = this.state.presentation.content;
@@ -26,7 +26,7 @@ class Presentation extends Component {
           break;
         case 'image':
           presentation.push(
-            <div className="PresentationImg">
+            <div key={p+'_div'} className="PresentationImg">
               <img key={p} src={require('../../medias/presentation/' + pres[p].value + '.webp')} alt={pres[p].value} />
             </div>
           );

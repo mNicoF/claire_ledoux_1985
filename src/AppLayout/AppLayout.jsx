@@ -17,28 +17,47 @@ class AppLayout extends Component {
     this.state = {};
   }
 
+  componentWillMount() {
+    //met a jour la lang dans redux pour la première connection
+    //avec rediraction du '/' vers /:lang
+    let currLang = window.location.pathname.split("/")[1];
+    if(currLang === ""){
+      window.location.pathname = '/'+navigator.language.split('-')[0];
+    }
+    if(this.props.lang === null){
+      this.props.setAppLang(currLang);
+    }
+    this.setState({
+      lang: currLang
+    });
+  }
+
   componentDidMount() {
     this.props.loadDeviceType();
   }
 
   render() {
+    
+    //ajouter les enfants que si la lang a bien été mise à jour
+    let children = (this.props.lang !== null)? this.props.children : "";
+    
     return (
       <div>
         <Header
           infos={this.props.infos}
-          lang={this.props.lang}
-          menu={this.props.menu}
+          lang={this.state.lang}
+          menu={this.props.menu[this.state.lang]}
           setAppLang={this.props.setAppLang}
         />
 
-        {this.props.children}
+        {children}
 
         {this.props.target === "http://www.claireledoux1985.fr/" ? (
           <Footer infos={this.props.infos} version={this.props.version} dateMaJ={this.props.dateMaJ} />
         ) : (
             <FooterRec infos={this.props.infos} version={this.props.version} dateMaJ={this.props.dateMaJ} />
           )}
-        {/* TODO a tester :*/}
+          
         <MessengerCustomerChat
           className="fb-customerchat"
           pageId="242649823093770"

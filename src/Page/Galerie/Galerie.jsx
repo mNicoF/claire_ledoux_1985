@@ -40,7 +40,7 @@ class Galerie extends Component {
     this.setState({
       inGalerie: true,
       prevScroll: windowScrollY,
-      target: <Photos folderName={target.name} folderSize={target.size} />
+      target: <Photos folderName={target.source} folderSize={target.size} />
     })
   }
 
@@ -61,21 +61,25 @@ class Galerie extends Component {
           <h6 style={{ "textDecoration": "underline" }}>{this.state.photoList[photo].name}</h6>
           <img
             className="isBtn GalerieImg"
-            src={require('../../medias/galerie/' + this.state.photoList[photo].name + '/' + this.state.photoList[photo].size + '.webp')}
+            src={require('../../medias/galerie/' + this.state.photoList[photo].source + '/' + this.state.photoList[photo].size + '.webp')}
             alt={photo}
             onClick={() => this.handleSelect(this.state.photoList[photo])}
           />
         </div>
       );
     }
+    
+    let backLabel = (this.props.currLang === 'fr')? '< Retour' : '< Back';
 
     return (
       <div className="GalerieLayout Page">
 
         {this.state.inGalerie ? (
           <React.Fragment>
-            <Button id="dfltBackBtn" style={{"display":"block", "marginLeft":"20px", "backgroundColor":"#37342F",}} onClick={() => this.handleBack()}>{'< Retour'}</Button>
-            <Button id="stkyBackBtn" style={{"display":"none", "marginLeft":"20px", "backgroundColor":"#37342F", "zIndex":100, "position":"fixed", "top":0}} onClick={() => this.handleBack()}>{'< Retour'}</Button>
+            <div>
+              <Button id="dfltBackBtn" style={{"display":"block", "marginLeft":"20px", "backgroundColor":"#37342F",}} onClick={() => this.handleBack()}>{backLabel}</Button>
+              <Button id="stkyBackBtn" style={{"display":"none", "marginLeft":"20px", "backgroundColor":"#37342F", "zIndex":100, "position":"fixed", "top":0}} onClick={() => this.handleBack()}>{'< Retour'}</Button>
+            </div>
             {this.state.target}
           </React.Fragment>
         ) : (

@@ -9,7 +9,7 @@ export const initialState = {
     : "http://www.claireledoux1985.fr/", //https://mnicof.github.io/claire_ledoux_1985 //http://localhost:3000/
   version: packageJson.version,
   dateMaJ: packageJson.date,
-  lang: appJson.default_lang,
+  lang: null,
   device: appJson.default_device,
   menu: appJson.menu,
   infos: appJson,

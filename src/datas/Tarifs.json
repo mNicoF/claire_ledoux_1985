@@ -42,6 +42,7 @@
       "Soins mains et pieds": {
         "Vernis semi-permanent": "24 €",
         "Déco": "1 €",
+        "Bijoux d'ongles": "4 €",
         "Pose de vernis": "5 €",
         "Pose de vernis 'French'": "10 €",
         "Manucure express (préparation de l'ongle, gommer hydrater réparer, vernis)": "15 €",
@@ -55,6 +56,13 @@
         "Make-up grand soir (Avec faux cils)": "25 €",
         "Make-up artistique (Dessins...)": "40 €",
         "Make-up mariage (Avec un essai)": "45 €"
+      },
+      "Beauté du regard": {
+        "Réhaussement de cils": "40 €",
+        "Teinture de cils": "15 €",
+        "Réhaussement + Teinture": "50 €",
+        "Décoloration sourcils" : "10 €",
+        "Restructuration sourcils au henné végétal": "30 €"
       }
     },
     "Epilations": {

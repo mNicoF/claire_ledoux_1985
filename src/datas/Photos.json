@@ -2,20 +2,55 @@
   "fr": [
     {
       "name":"Dermographie réparatrice",
+      "source":"Dermographie réparatrice",
       "size":11
     },
     {
       "name":"Maquillage permanent",
+      "source":"Maquillage permanent",
       "size":30
     },
     {
       "name":"Maquillage semi-permanent",
+      "source":"Maquillage semi-permanent",
       "size":21
     },
     {
       "name":"Ongles",
+      "source":"Ongles",
       "size":13
+    },
+    {
+      "name":"Make up",
+      "source":"Make up",
+      "size":3
     }
   ],
-  "en": []
+  "en": [
+    {
+      "name":"Restorative dermography",
+      "source":"Dermographie réparatrice",
+      "size":11
+    },
+    {
+      "name":"Permanent make up",
+      "source":"Maquillage permanent",
+      "size":30
+    },
+    {
+      "name":"Semi-permanent make up",
+      "source":"Maquillage semi-permanent",
+      "size":21
+    },
+    {
+      "name":"Nails",
+      "source":"Ongles",
+      "size":13
+    },
+    {
+      "name":"Make up",
+      "source":"Make up",
+      "size":3
+    }
+  ]
 }

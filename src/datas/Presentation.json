@@ -14,7 +14,7 @@
       { "type": "image", "value": 1 },
       {
         "type": "paragraphe",
-        "value": "Derrière ce décor cosy et légèrement vintage, il y a néanmoins l'envie de proposer des soins du corps classiques (épilations, massage, maquillage, etc.) mais surtout d'aller plus loin. L'essence même de ce cabinet est de proposer des services de tatouages médicaux afin d'aider des personnes malades ou en rémission à mieux vivre leur quotidien. Ces personnes, fragilisées par la maladie ont besoin de retrouver confiance. L'objectif est de faciliter leur reconstruction physique et psychologique suite à des traitements lourds, et grâce à ses techniques, les aider à reprendre confiance et à aller de l'avant."
+        "value": "Derrière ce décor cosy et légèrement vintage, il y a néanmoins l'envie de proposer des soins du corps classiques (épilations, massage, maquillage, etc.) mais surtout d'aller plus loin. L'essence même de ce cabinet est de proposer des services de tatouages médicaux afin d'aider des personnes malades ou en rémission à mieux vivre leur quotidien. Ces personnes, fragilisées par la maladie ont besoin de retrouver confiance. L'objectif est de faciliter leur reconstruction physique et psychologique suite à des traitements lourds, et grâce à ces techniques, les aider à reprendre confiance et à aller de l'avant."
       },
       { "type": "image", "value": 2 },
       {
@@ -38,6 +38,41 @@
     ]
   },
   "en": {
-    "title": "The reconstruction in the skin"
+    "title": "The reconstruction in the skin",
+    "resume": "Claire Ledoux 1985 is a medical tattoo and aesthetic dermography office, that offers many services. Among them you can find breast reconstruction, camouflage of scars, tricopigmentation and permanent or semi-permanent make up.",
+    "complet": [
+      {
+        "type": "paragraphe",
+        "value": "Today, the Claire Ledoux 1985 office welcome you at 13 rue de l’Arsenal to offer you dermopigmentation services. This idea is born about ten years ago inspired by a business manager who practiced permanent make up with traditional asian technique \"hand-poke\". After several years of experience, research, elaboration, ... this project finally materializes it in Niort, in the center of Deux-Sèvres, it only remained to find a space to welcome you."
+      },
+      {
+        "type": "paragraphe",
+        "value": "Once the office was found and fitted out with a big reception room with warm colors and at the back, the \"care\" room which looks like an operation room with all hygiene security rules needed."
+      },
+      { "type": "image", "value": 1 },
+      {
+        "type": "paragraphe",
+        "value": "Behind this cozy and slightly vintage decor, there is the desire to offer classic body care (hair removal, massage, make up, etc.) but also go further. The very essence of this office is to offer medical tattoo services in order to help people with some diseases or in remission, live their daily lives better. Those peoples, weakened by the diseases need to regain confidence. The objectif is to facilitate their reconstruction physical and psychological after some heavy treatments, and thanks to these techniques, help them regain confidence and go forward."
+      },
+      { "type": "image", "value": 2 },
+      {
+        "type": "paragraphe",
+        "value": "Among the proposed services, you could redo your eyebrows, eye liner, lips, a beauty spot or even a breast areola and camouflage scars. The office also propose tricopigmentation, capillary densification, technique which aims to mask imperfections due to haire loss (baldness, alopecia, alopecia areata) or scars due to a graft. For exemple, this technology allows a men burn in the face, who had a thick hair and beard, find again those hair, beard and eyebrows that will be redrawn on the skin. It also allows to work on skin color in some cases."
+      },
+      { "type": "image", "value": 3 },
+      {
+        "type": "paragraphe",
+        "value": "Since the opening, some of you already came and make an appointment, or just informations, ask questions..."
+      },
+      {
+        "type": "paragraphe",
+        "value": "Today some partnerships are being put in place with health professionals, hospitals and clinics around."
+      },
+      {
+        "type": "paragraphe",
+        "value": "This story has just started and you can write a part with us ! Thank you"
+      },
+      { "type": "image", "value": 4 }
+    ]
   }
 }

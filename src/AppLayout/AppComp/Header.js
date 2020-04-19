@@ -7,7 +7,7 @@ import {
   NavbarToggler,
   Nav,
   NavItem,
-  //Input
+  Input
 } from "reactstrap";
 
 class Header extends Component {
@@ -31,8 +31,7 @@ class Header extends Component {
   handleLang(e) {
     let targetLang = e.target.value;
     this.props.setAppLang(targetLang);
-    console.log(window.location.pathname);
-    //window.location.pathname = '/'targetLang+window.location.pathname;
+    window.location.pathname = '/'+targetLang+'/'+window.location.pathname.split("/")[2];
   }
 
   render() {
@@ -43,7 +42,7 @@ class Header extends Component {
       menuItemsList.push(
         <NavItem key={menuList[item]}>
           <Link
-            to={/*"/"+this.props.lang+*/ "/" + item}
+            to={"/"+this.props.lang+ "/" + item}
             onClick={() => this.toggle(false)}
           >
             {menuList[item].toUpperCase()}
@@ -62,7 +61,7 @@ class Header extends Component {
         </option>
       );
     }
-    /*let selectLang = (
+    let selectLang = (
       <Input
         type="select"
         name="lang"
@@ -72,7 +71,7 @@ class Header extends Component {
       >
         {langOptions}
       </Input>
-    );*/
+    );
 
     return (
       <div>
@@ -84,7 +83,7 @@ class Header extends Component {
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav navbar>{menuItemsList}</Nav>
             </Collapse>
-            {/*selectLang*/}
+            {selectLang}
           </Navbar>
         </header>
       </div>

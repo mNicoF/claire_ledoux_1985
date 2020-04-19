@@ -52,18 +52,20 @@ class Annonce extends Component {
       document.getElementById('annonceLayout').style.display = 'none';
     }
 
+    let title = (this.props.lang === 'fr')? "Annonce :": "Advert :";
+    let text = (this.props.lang === 'fr')? 
+      "Bonjour, Recherche de personnes qui serait dans cette situation et qui accepterais d’être modèles. N'hésitez pas à prendre contact pour tout renseignement et n'hésitez pas à partager autour de vous !" : 
+      "Hello, Looking for people in those situation and willing to be a model. Do not hesitate to contact me for any information and do not hesitate to share around you !";
+    let emphase = (this.props.lang === 'fr')? "Source photos : internet": "Pictures source : internet";
     return (
       <div id='annonceLayout' style={annonceLayoutStyle}>
         <Button onClick={() => handleClose()} style={closeBtnStyle} color="danger"><FontAwesomeIcon icon={["fas", "times"]} /></Button>
         <div style={annonceContentStyle}>
           <img src={require('../../medias/accueil/test1.webp')} alt='test1' style={picStyle} />
           <div>
-            <h3 style={titleStyle}>Annonce :</h3>
-            <p style={textStyle}>
-              Bonjour, Recherche de personnes qui serait dans cette situation et qui accepterais d’être modèles.
-              N'hésitez pas à prendre contact pour tout renseignement et n'hésitez pas à partager autour de vous !
-          </p>
-            <p style={emphaseStyle}>Source photos : internet</p>
+            <h3 style={titleStyle}>{title}</h3>
+            <p style={textStyle}>{text}</p>
+            <p style={emphaseStyle}>{emphase}</p>
           </div>
           <img src={require('../../medias/accueil/test2.webp')} alt='test2' style={picStyle} />
         </div>

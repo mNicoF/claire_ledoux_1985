@@ -2,6 +2,7 @@
   "fr": [
     {
       "accueil" : false,
+      "moreInfo" : true,
       "title" : {
         "label" : "Horaires",
         "type" : "text",
@@ -14,6 +15,7 @@
     },
     {
       "accueil" : true,
+      "moreInfo" : false,
       "title" : {
         "label" : "Téléphone",
         "type" : "text",
@@ -27,6 +29,7 @@
     },
     {
       "accueil" : true,
+      "moreInfo" : false,
       "title" : {
         "label" : "Email",
         "type" : "text",
@@ -40,6 +43,7 @@
     },
     {
       "accueil" : true,
+      "moreInfo" : true,
       "title" : {
         "label" : "Adresse",
         "type" : "text",
@@ -53,6 +57,7 @@
     },
     {
       "accueil" : false,
+      "moreInfo" : true,
       "title" : {
         "label" : "Facebook",
         "type" : "text",
@@ -66,6 +71,7 @@
     },
     {
       "accueil" : false,
+      "moreInfo" : false,
       "title" : {
         "label" : "Messenger",
         "type" : "text",
@@ -79,6 +85,7 @@
     },
     {
       "accueil" : false,
+      "moreInfo" : false,
       "title" : {
         "label" : "Site web",
         "type" : "text",
@@ -94,6 +101,7 @@
   "en": [
     {
       "accueil" : false,
+      "moreInfo" : true,
       "title" : {
         "label" : "Schedule",
         "type" : "text",
@@ -106,6 +114,7 @@
     },
     {
       "accueil" : true,
+      "moreInfo" : false,
       "title" : {
         "label" : "Phone",
         "type" : "text",
@@ -119,6 +128,7 @@
     },
     {
       "accueil" : true,
+      "moreInfo" : false,
       "title" : {
         "label" : "Email",
         "type" : "text",
@@ -132,6 +142,7 @@
     },
     {
       "accueil" : true,
+      "moreInfo" : true,
       "title" : {
         "label" : "Address",
         "type" : "text",
@@ -145,6 +156,7 @@
     },
     {
       "accueil" : false,
+      "moreInfo" : true,
       "title" : {
         "label" : "Facebook",
         "type" : "text",
@@ -158,6 +170,21 @@
     },
     {
       "accueil" : false,
+      "moreInfo" : false,
+      "title" : {
+        "label" : "Messenger",
+        "type" : "text",
+        "icon" : ["fab", "facebook-messenger"]
+      },
+      "value" : {
+        "label" : "Claire Ledoux",
+        "value" : "https://m.me/claireledoux1985",
+        "type" : "link"
+      }
+    },
+    {
+      "accueil" : false,
+      "moreInfo" : false,
       "title" : {
         "label" : "Web site",
         "type" : "text",

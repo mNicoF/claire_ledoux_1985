@@ -9,7 +9,8 @@ const mapStateToProps = state => ({
   lang: state.appReducer.lang,
   version: state.appReducer.version,
   dateMaJ: state.appReducer.dateMaJ,
-  menu: state.appReducer.menu[state.appReducer.lang],
+  menu: state.appReducer.menu,
+  //menu: state.appReducer.menu[state.appReducer.lang],
   device: state.appReducer.device
 });
 

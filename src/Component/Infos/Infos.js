@@ -11,9 +11,25 @@ class Infos extends Component {
     this.state = {};
   }
 
+  translate(label) {
+    switch (label) {
+      case "Schedule":
+        return "Horaires";
+      case "Phone":
+        return "Téléphone";
+      case "Address":
+        return "Adresse";
+      case "Web site":
+        return "Site web";
+      default:
+        return label;
+    }
+  }
+
   renderInfo(contact, device) {
     let info = "";
-    switch (contact.label) {
+    let transLabel = this.translate(contact.label);
+    switch (transLabel) {
       case "Horaires":
         info = (
           <img
@@ -50,7 +66,7 @@ class Infos extends Component {
         break;
 
       case "Facebook":
-        let width = (device === "Mobile") ? "300" : "800";
+        let width = (device === "mobile") ? "300" : "800";
         info = (
           <FacebookProvider appId={contact.label}>
             <Page

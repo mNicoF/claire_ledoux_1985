@@ -35,11 +35,11 @@ class Accueil extends Component {
 
     return (
       <div className="AccueilLayout Page">
-        <Annonce />
+        <Annonce lang={this.props.lang}/>
         <News news={this.state.news}/>
         <div className="AccueilCenter">
           <Media media={this.state.media} />
-          <Pres presentation={this.state.presentation} />
+          <Pres lang={this.props.lang} presentation={this.state.presentation} />
         </div>
         <hr />
         <Contact contact={contactAccueil} />

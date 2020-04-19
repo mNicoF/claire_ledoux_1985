@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-dom";
 
 import AppLayout from "./AppLayout/AppLayout";
+import Loading from "./Page/Loading/Loading";
 import Accueil from "./Page/Accueil/Accueil";
 import Presentation from "./Page/Presentation/Presentation";
 import Galerie from "./Page/Galerie/Galerie";
@@ -95,24 +96,31 @@ class App extends Component {
   }
 
   render() {
-    /** TODO
-     * Préfixer avec la lang
-     * Placer les images directement sur le server
-     *  */
+
     return (
       <div className="App">
         <Provider store={store}>
           <Router>
             <AppLayout>
               <Switch>
-                <Route exact path="/" component={Accueil} />
-                <Route path="/accueil" component={Accueil} />
-                <Route path="/presentation" component={Presentation} />
-                <Route path="/galerie" component={Galerie} />
-                <Route path="/videos" component={Videos} />
-                <Route path="/prestations" component={Tarifs} />
-                <Route path="/produits" component={Produits} />
-                <Route path="/contact" component={Contact} />
+                <Route exact path="/" component={Loading} />
+                <Route path="/:lang/accueil" component={Accueil} />
+                <Route path="/:lang/presentation" component={Presentation} />
+                <Route path="/:lang/galerie" component={Galerie} />
+                <Route path="/:lang/videos" component={Videos} />
+                <Route path="/:lang/prestations" component={Tarifs} />
+                <Route path="/:lang/produits" component={Produits} />
+                <Route path="/:lang/contact" component={Contact} />
+                <Route 
+                  path="/:lang"
+                  render={props =>
+                    props.match.params.lang === 'fr' || props.match.params.lang === 'en' ? (
+                      <Accueil />
+                    ) : (
+                      <NotFound />
+                    )
+                  }
+                />
                 {/*<Redirect from="*" to="/404"/>*/}
                 <Route component={NotFound} />
               </Switch>
