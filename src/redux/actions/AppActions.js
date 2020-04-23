@@ -7,13 +7,6 @@ export function actionAppSuccess(actionType, records) {
   };
 }
 
-export function setAppLang(target) {
-  let records = target;
-  return function(dispatch) {
-    dispatch(actionAppSuccess(types.SET_LANG_SUCCESS, records));
-  };
-}
-
 export function loadDeviceType() {
   let records = "desktop";
   if (

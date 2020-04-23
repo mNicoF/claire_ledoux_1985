@@ -24,7 +24,7 @@ class Produits extends Component {
           })
         );
         return (
-          <Card className="ProduitsCard">
+          <Card key={"card_"+produit.image} className="ProduitsCard">
             <CardBody className="ProduitsBody">
               <CardTitle>{produit.title}</CardTitle>
               <CardSubtitle>{produit.detail}</CardSubtitle>

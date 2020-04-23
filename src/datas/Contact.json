@@ -57,7 +57,7 @@
     },
     {
       "accueil" : false,
-      "moreInfo" : true,
+      "moreInfo" : false,
       "title" : {
         "label" : "Facebook",
         "type" : "text",
@@ -156,7 +156,7 @@
     },
     {
       "accueil" : false,
-      "moreInfo" : true,
+      "moreInfo" : false,
       "title" : {
         "label" : "Facebook",
         "type" : "text",

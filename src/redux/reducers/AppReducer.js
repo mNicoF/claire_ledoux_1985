@@ -9,7 +9,6 @@ export const initialState = {
     : "http://www.claireledoux1985.fr/", //https://mnicof.github.io/claire_ledoux_1985 //http://localhost:3000/
   version: packageJson.version,
   dateMaJ: packageJson.date,
-  lang: null,
   device: appJson.default_device,
   menu: appJson.menu,
   infos: appJson,
@@ -22,11 +21,6 @@ export function appReducer(state = initialState, action) {
       return {
         ...state,
         device: action.records
-      };
-    case types.SET_LANG_SUCCESS:
-      return {
-        ...state,
-        lang: action.records
       };
     default:
       return state;

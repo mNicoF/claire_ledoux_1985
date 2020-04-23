@@ -2,10 +2,10 @@ import { connect } from 'react-redux';
 import Accueil from './Accueil.jsx';
 
 const mapStateToProps = state => ({
-    lang: state.appReducer.lang,
-    accueil: state.accueilReducer[state.appReducer.lang],
-    presentation: state.presentationReducer[state.appReducer.lang],
-    contact: state.contactReducer[state.appReducer.lang]
+    lang: localStorage.getItem('siteLang'),
+    accueil: state.accueilReducer[localStorage.getItem('siteLang')],
+    presentation: state.presentationReducer[localStorage.getItem('siteLang')],
+    contact: state.contactReducer[localStorage.getItem('siteLang')]
 })
 
 export default connect(mapStateToProps)(Accueil);

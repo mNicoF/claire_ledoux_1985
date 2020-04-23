@@ -17,19 +17,36 @@ class AppLayout extends Component {
     this.state = {};
   }
 
-  componentWillMount() {
-    //met a jour la lang dans redux pour la première connection
-    //avec rediraction du '/' vers /:lang
-    let currLang = window.location.pathname.split("/")[1];
-    if(currLang === ""){
-      window.location.pathname = '/'+navigator.language.split('-')[0];
+  UNSAFE_componentWillMount() {    
+
+    //Mise à jour des localStorage
+    if(localStorage.getItem('appVersion') !== this.props.version){
+      //mise a jour de la version
+      localStorage.setItem('appVersion', this.props.version);
+      //mise a jour 
+      localStorage.setItem('newsSeen', "danger");
     }
-    if(this.props.lang === null){
-      this.props.setAppLang(currLang);
+
+    //Mise à jour des sessionStorage
+    sessionStorage.setItem('newsToggle', 'close');
+    sessionStorage.setItem('displayAnnonce', 'block');
+
+    //Mise à jour de la langue
+    let currLang = "";
+    //Récupération de la langue du localStorage et s'il y en a une on la met dans currLang
+    let langStorage = localStorage.getItem('siteLang');
+    //Sinon on met celle du navigateur et on met à jour le localStorage
+    if(langStorage !== null && langStorage !== undefined && langStorage !== ""){
+      currLang = langStorage;
+    } else {
+      currLang = navigator.language.split('-')[0];
+      localStorage.setItem('siteLang', currLang);
     }
-    this.setState({
-      lang: currLang
-    });
+
+    //Vérification du pathname avec la langue, si vide on redirige vers /currLang
+    if(window.location.pathname.split("/")[1] === ""){
+      window.location.pathname = '/' + currLang;
+    }
   }
 
   componentDidMount() {
@@ -39,15 +56,14 @@ class AppLayout extends Component {
   render() {
     
     //ajouter les enfants que si la lang a bien été mise à jour
-    let children = (this.props.lang !== null)? this.props.children : "";
+    let children = (localStorage.getItem('siteLang') !== null)? this.props.children : "";
     
     return (
       <div>
         <Header
           infos={this.props.infos}
-          lang={this.state.lang}
-          menu={this.props.menu[this.state.lang]}
-          setAppLang={this.props.setAppLang}
+          lang={localStorage.getItem('siteLang')}
+          menu={this.props.menu[localStorage.getItem('siteLang')]}
         />
 
         {children}
@@ -58,12 +74,13 @@ class AppLayout extends Component {
             <FooterRec infos={this.props.infos} version={this.props.version} dateMaJ={this.props.dateMaJ} />
           )}
           
-        <MessengerCustomerChat
+        {/*<MessengerCustomerChat
+          appId=""
           className="fb-customerchat"
           pageId="242649823093770"
           themeColor="#37342F"
           language="fr_FR">
-        </MessengerCustomerChat>
+        </MessengerCustomerChat>*/}
       </div>
     );
   }
@@ -72,10 +89,8 @@ class AppLayout extends Component {
 AppLayout.propTypes = {
   target: PropTypes.string,
   infos: PropTypes.object,
-  lang: PropTypes.string,
   menu: PropTypes.object,
-  loadDeviceType: PropTypes.func,
-  setAppLang: PropTypes.func
+  loadDeviceType: PropTypes.func
 };
 
 export default AppLayout;

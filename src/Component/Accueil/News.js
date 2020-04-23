@@ -8,16 +8,33 @@ class News extends Component {
     this.toggle = this.toggle.bind(this);
 
     this.state = {
-      isOpen: false,
+      isOpen: (sessionStorage.getItem('newsToggle') === "close")? false : true,
+      badgeColor: localStorage.getItem('newsSeen'),
       title: this.props.news.title,
       news: this.props.news.content
     };
   }
 
-  toggle(force) {
-    this.setState({
-      isOpen: (force != null) ? force : !this.state.isOpen
-    });
+  toggle() {
+    let open = !this.state.isOpen;
+    if(open){
+      sessionStorage.setItem('newsToggle', "open");
+    } else {
+      sessionStorage.setItem('newsToggle', "close");
+    }
+
+    if(this.state.badgeColor === 'danger'){
+      localStorage.setItem('newsSeen', 'secondary');
+      this.setState({
+        isOpen: open,
+        badgeColor: 'secondary'
+      })
+    } else {
+      this.setState({
+        isOpen: open
+      });
+    }
+    
   }
 
   render() {
@@ -32,7 +49,7 @@ class News extends Component {
     return (
       <div className="NewsLayout">
         <Jumbotron>
-          <h3 className="NewsHeader" onClick={() => this.toggle()}>{this.state.title} <Badge color="danger">{this.state.news.length}</Badge></h3>
+          <h3 className="NewsHeader" onClick={() => this.toggle()}>{this.state.title} <Badge color={this.state.badgeColor}>{this.state.news.length}</Badge></h3>
           {this.state.isOpen && jumboContent}
         </Jumbotron>
       </div>

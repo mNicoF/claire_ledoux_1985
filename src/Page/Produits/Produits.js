@@ -2,7 +2,7 @@ import { connect } from 'react-redux';
 import Produits from './Produits.jsx';
 
 const mapStateToProps = state => ({
-    produits: state.produitReducer[state.appReducer.lang]
+    produits: state.produitReducer[localStorage.getItem('siteLang')]
 })
 
 export default connect(mapStateToProps)(Produits);

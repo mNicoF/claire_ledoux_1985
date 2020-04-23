@@ -125,30 +125,28 @@
 
   <!-- 
     This part is for Facebook Messenger,
-    Currently implement with the npm react-messenger-customer-chat package
-    
-  <! -- Load Facebook SDK for JavaScript -- >
-  <div id="fb-root"></div>
-  <script>
-    window.fbAsyncInit = function () {
-      FB.init({
-        xfbml: true,
-        version: 'v5.0'
-      });
-    };
+    Currently implement with the npm react-messenger-customer-chat package -->
 
-    (function (d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = 'https://connect.facebook.net/fr_FR/sdk/xfbml.customerchat.js';
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
+  <!-- Load Facebook SDK for JavaScript -->
+  <div id="fb-root">
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v6.0"></script>
+    <!--<script>
+      window.fbAsyncInit = function () {
+        FB.init({
+          xfbml: true,
+          version: 'v6.0'
+        });
+      };
 
-  <! -- Your customer chat code -- >
-  <div class="fb-customerchat" attribution=setup_tool page_id="242649823093770" theme_color="#37342F">
+      (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/fr_FR/sdk.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>-->
   </div>
-  -->
 
 </body>
 

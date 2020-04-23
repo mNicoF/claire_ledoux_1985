@@ -7,6 +7,7 @@ class Annonce extends Component {
   render() {
 
     let annonceLayoutStyle = {
+      "display": sessionStorage.getItem('displayAnnonce'),
       "border": "solid #37342F 1px",
       "marginRight": "50px",
       "marginLeft": "50px",
@@ -42,7 +43,7 @@ class Annonce extends Component {
       "height": "40px",
       "width": "40px",
       "position": "absolute",
-      "zIndex":1000,
+      "zIndex":1,
       "top": 0,
       "right": 0,
       "opacity":0.5
@@ -50,6 +51,7 @@ class Annonce extends Component {
 
     let handleClose = function() {
       document.getElementById('annonceLayout').style.display = 'none';
+      sessionStorage.setItem('displayAnnonce', 'none');
     }
 
     let title = (this.props.lang === 'fr')? "Annonce :": "Advert :";

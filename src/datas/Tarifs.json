@@ -124,18 +124,20 @@
         "Eyeliner top": "150 €",
         "Eyeliner bottom": "100 €",
         "Eyeliner full": "200 €",
-        "Lips contour": "180 €",
+        "Glossy Lips": "180 €",
+        "Lips contour": "200 €",
         "Contour + veiling": "220 €",
         "Full lips": "300 €",
         "Candy lips": "380 €",
-        "Beauty spot": "80 €"
+        "Beauty spot": "60 €",
+        "Freckle": "60 €"
       },
       "Medical (on quotation)": {
         "Scars": "100 € *",
         "Areola breast (x1)": "230 € *",
         "Areola breast (x2)": "350 € *",
         "Tricopigmentation / capillary densification": "200 € *",
-        "* minimum price": ""
+        "* minimum price only on quotation": ""
       },
       "Retouch": {
         "Included retouch the first month": "",
@@ -154,18 +156,29 @@
         "Back or legs Candle (30 min)": "35 €"
       },
       "Hands and feet care": {
+        "Semi permanent polish": "24 €",
+        "ornament": "1 €",
+        "Nail jewelry": "4 €",
         "Nail polish": "5 €",
         "Nail polish 'French'": "10 €",
+        "Express manicure (nail prepare, scrub, hydrate, repare, polish)": "15 €",
         "Manicure (scrub, mask, nail polish)": "35 €",
         "Pedicure (scrub, mask, nail polish)": "35 €",
         "Manicure + Pedicure": "60 €"
       },
-      "Makeup": {
-        "Makeup day (Beauty treatment)": "15 €",
-        "Makeup evening (Sophisticated)": "20 €",
-        "Makeup great evening (With fake eyelashes)": "25 €",
-        "Makeup artistic (Draw...)": "40 €",
-        "Makeup wedding (With one try)": "45 €"
+      "Make-up": {
+        "Make-up day (Beauty treatment)": "15 €",
+        "Make-up evening (Sophisticated)": "20 €",
+        "Make-up great evening (With fake eyelashes)": "25 €",
+        "Make-up artistic (Draw...)": "40 €",
+        "Make-up wedding (With one try)": "45 €"
+      },
+      "Beauty of the look": {
+        "Eyelash enhancement": "40 €",
+        "Eyelash color": "15 €",
+        "Enhancement + color": "50 €",
+        "Eyebrow discoloration": "10 €",
+        "Restructuring eyebrows with vegetable henna": "30 €"
       }
     },
     "Hair removal": {

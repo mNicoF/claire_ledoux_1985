@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { FacebookProvider, Page } from "react-facebook";
 import MailForm from './MailForm';
 
 class Infos extends Component {
@@ -67,15 +66,45 @@ class Infos extends Component {
 
       case "Facebook":
         let width = (device === "mobile") ? "300" : "800";
-        info = (
-          <FacebookProvider appId={contact.label}>
+        /*
+        <FacebookProvider appId="242649823093770">
             <Page
               href="https://www.facebook.com/claireledoux1985/"
               tabs="timeline"
               width={width}
             />
           </FacebookProvider>
+        */
+
+        info = (
+          <div className="fb-page"
+            data-href="https://www.facebook.com/claireledoux1985/"
+            data-tabs="timeline"
+            data-width={width}
+            data-height=""
+            data-small-header="false"
+            data-adapt-container-width="true"
+            data-hide-cover="false"
+            data-show-facepile="true">
+            <blockquote cite="https://www.facebook.com/claireledoux1985/" className="fb-xfbml-parse-ignore">
+              <a href="https://www.facebook.com/claireledoux1985/">Claire Ledoux 1985 / Maquillage Permanent</a>
+            </blockquote>
+          </div>
         );
+
+
+        /*info = (
+          <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fclaireledoux1985%2F&tabs=timeline&appId='242649823093770'&SameSite='none"
+            width="340"
+            height="500"
+            style={{'border':'none','overflow':'hidden'}}
+            scrolling="no"
+            frameBorder="0"
+            allowtransparency="true"
+            allow="encrypted-media">
+
+          </iframe>
+        );*/
         break;
 
       case "Site web":
@@ -92,6 +121,7 @@ class Infos extends Component {
     let infoContent = this.renderInfo(this.props.contact, this.props.device);
 
     return (<div className="InfoLayout">{infoContent}</div>);
+
   }
 }
 

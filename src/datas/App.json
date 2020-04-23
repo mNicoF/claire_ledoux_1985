@@ -1,13 +1,16 @@
 {
-    "all_lang": [{
-            "key": "fr",
-            "value": "Français"
+    "all_lang": {
+        "fr": {
+            "value": "fr",
+            "label": "Français",
+            "icon": "fr.png"
         },
-        {
-            "key": "en",
-            "value": "English"
+        "en": {
+            "value": "en",
+            "label": "English",
+            "icon": "en.png"
         }
-    ],
+    },
     "default_device": "desktop",
     "all_devices": [
         "desktop",
@@ -17,8 +20,8 @@
         "fr": {
             "accueil": "accueil",
             "presentation": "présentation",
-            "galerie":"galerie",
-            "videos":"vidéos",
+            "galerie": "galerie",
+            "videos": "vidéos",
             "prestations": "préstations",
             "produits": "produits",
             "contact": "contact"
@@ -27,7 +30,7 @@
             "accueil": "home",
             "presentation": "about",
             "galerie": "gallery",
-            "videos":"videos",
+            "videos": "videos",
             "prestations": "services",
             "produits": "products",
             "contact": "contact"

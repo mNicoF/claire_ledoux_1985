@@ -1,13 +1,12 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-
+import Select from "react-select";
 import {
   Collapse,
   Navbar,
   NavbarToggler,
   Nav,
-  NavItem,
-  Input
+  NavItem
 } from "reactstrap";
 
 class Header extends Component {
@@ -18,7 +17,8 @@ class Header extends Component {
     this.handleLang = this.handleLang.bind(this);
 
     this.state = {
-      isOpen: false
+      isOpen: false,
+      selectedLang: (this.props.lang)? this.props.infos.all_lang[this.props.lang] : ""
     };
   }
 
@@ -29,9 +29,12 @@ class Header extends Component {
   }
 
   handleLang(e) {
-    let targetLang = e.target.value;
-    this.props.setAppLang(targetLang);
-    window.location.pathname = '/'+targetLang+'/'+window.location.pathname.split("/")[2];
+    localStorage.setItem('siteLang', e.value);
+    this.setState({
+      selectedLang: e
+    });
+    let currPath = (window.location.pathname.split("/")[2])? "/"+window.location.pathname.split("/")[2] : "";
+    window.location.pathname = '/' + e.value + currPath;
   }
 
   render() {
@@ -42,7 +45,7 @@ class Header extends Component {
       menuItemsList.push(
         <NavItem key={menuList[item]}>
           <Link
-            to={"/"+this.props.lang+ "/" + item}
+            to={"/" + this.props.lang + "/" + item}
             onClick={() => this.toggle(false)}
           >
             {menuList[item].toUpperCase()}
@@ -52,25 +55,29 @@ class Header extends Component {
     }
 
     //LANG
-    const langList = this.props.infos.all_lang;
-    let langOptions = [];
-    for (let l in langList) {
-      langOptions.push(
-        <option key={langList[l].key} value={langList[l].key}>
-          {langList[l].value}
-        </option>
-      );
+    const allLang = this.props.infos.all_lang;
+    let langList = [];
+    for (let l in allLang) {
+      langList.push(allLang[l]);
     }
+
+    const formatOptionLabel = ({ value, label, icon }) => (
+      <div style={{ display: "flex" }}>
+        <div>{label}</div>
+        <div style={{ marginLeft: "10px" }}>
+          <img key={icon} src={require('../../medias/lang/' + icon)} alt={icon} style={{ height: "12px" }}/>
+        </div>
+      </div>
+    );
+
     let selectLang = (
-      <Input
-        type="select"
-        name="lang"
-        value={this.props.lang}
+      <Select
         className="selectLang"
+        value={this.state.selectedLang}
         onChange={this.handleLang}
-      >
-        {langOptions}
-      </Input>
+        options={langList}
+        formatOptionLabel={formatOptionLabel}
+      />
     );
 
     return (
