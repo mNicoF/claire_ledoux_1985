@@ -10,30 +10,24 @@ class Infos extends Component {
     this.state = {};
   }
 
-  translate(label) {
-    switch (label) {
-      case "Schedule":
-        return "Horaires";
-      case "Phone":
-        return "Téléphone";
-      case "Address":
-        return "Adresse";
-      case "Web site":
-        return "Site web";
-      default:
-        return label;
-    }
-  }
-
   renderInfo(contact, device) {
     let info = "";
-    let transLabel = this.translate(contact.label);
-    switch (transLabel) {
+    switch (contact.label) {
       case "Horaires":
         info = (
           <img
             className="ContactIMG"
             src={require("../../medias/horaires.webp")}
+            alt={contact.label}
+          />
+        );
+        break;
+
+      case "Opening hours":
+        info = (
+          <img
+            className="ContactIMG"
+            src={require("../../medias/schedule.webp")}
             alt={contact.label}
           />
         );
@@ -47,7 +41,18 @@ class Infos extends Component {
             width="800"
             height="600"
           />
-        ); //{contact.info} />);
+        );
+        break;
+
+      case "Address":
+        info = (
+          <iframe
+            title={contact.label}
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2755.308366391724!2d-0.4649403844135393!3d46.32357177912051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4807302d49a7fac7%3A0xf6504c9d332526e9!2s13+Rue+de+l&#39;Arsenal%2C+79000+Niort!5e0!3m2!1sfr!2sfr!4v1550002441007"
+            width="800"
+            height="600"
+          />
+        );
         break;
 
       case "Téléphone":

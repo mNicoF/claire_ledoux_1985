@@ -103,7 +103,7 @@
       "accueil" : false,
       "moreInfo" : true,
       "title" : {
-        "label" : "Schedule",
+        "label" : "Opening hours",
         "type" : "text",
         "icon" : ["far", "clock"]
       },

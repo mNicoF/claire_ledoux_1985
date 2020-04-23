@@ -17,10 +17,10 @@ class AppLayout extends Component {
     this.state = {};
   }
 
-  UNSAFE_componentWillMount() {    
+  UNSAFE_componentWillMount() {
 
     //Mise à jour des localStorage
-    if(localStorage.getItem('appVersion') !== this.props.version){
+    if (localStorage.getItem('appVersion') !== this.props.version) {
       //mise a jour de la version
       localStorage.setItem('appVersion', this.props.version);
       //mise a jour 
@@ -33,19 +33,24 @@ class AppLayout extends Component {
 
     //Mise à jour de la langue
     let currLang = "";
-    //Récupération de la langue du localStorage et s'il y en a une on la met dans currLang
-    let langStorage = localStorage.getItem('siteLang');
-    //Sinon on met celle du navigateur et on met à jour le localStorage
-    if(langStorage !== null && langStorage !== undefined && langStorage !== ""){
-      currLang = langStorage;
-    } else {
-      currLang = navigator.language.split('-')[0];
-      localStorage.setItem('siteLang', currLang);
-    }
 
-    //Vérification du pathname avec la langue, si vide on redirige vers /currLang
-    if(window.location.pathname.split("/")[1] === ""){
+    //Vérification du pathname avec la langue
+    //s'il n'y en a pas
+    if (window.location.pathname.split("/")[1] === "") {
+      //Récupération de la langue du localStorage et s'il y en a une on la met dans currLang
+      let langStorage = localStorage.getItem('siteLang');
+      //Sinon on met celle du navigateur et on met à jour le localStorage
+      if (langStorage !== null && langStorage !== undefined && langStorage !== "") {
+        currLang = langStorage;
+      } else {
+        currLang = navigator.language.split('-')[0];
+        localStorage.setItem('siteLang', currLang);
+      }
+      //Puis on redirige vers le path avec la langue
       window.location.pathname = '/' + currLang;
+    } else {
+      //au cas ou il ne soit pas initialisé
+      localStorage.setItem('siteLang', window.location.pathname.split("/")[1]);
     }
   }
 
@@ -54,10 +59,10 @@ class AppLayout extends Component {
   }
 
   render() {
-    
+
     //ajouter les enfants que si la lang a bien été mise à jour
-    let children = (localStorage.getItem('siteLang') !== null)? this.props.children : "";
-    
+    let children = (localStorage.getItem('siteLang') !== null) ? this.props.children : "";
+
     return (
       <div>
         <Header
@@ -73,14 +78,14 @@ class AppLayout extends Component {
         ) : (
             <FooterRec infos={this.props.infos} version={this.props.version} dateMaJ={this.props.dateMaJ} />
           )}
-          
-        {/*<MessengerCustomerChat
+
+        <MessengerCustomerChat
           appId=""
           className="fb-customerchat"
           pageId="242649823093770"
           themeColor="#37342F"
           language="fr_FR">
-        </MessengerCustomerChat>*/}
+        </MessengerCustomerChat>
       </div>
     );
   }

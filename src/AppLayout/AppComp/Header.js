@@ -73,6 +73,8 @@ class Header extends Component {
     let selectLang = (
       <Select
         className="selectLang"
+        isSearchable={false}
+        isClearable={false}
         value={this.state.selectedLang}
         onChange={this.handleLang}
         options={langList}

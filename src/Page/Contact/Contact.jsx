@@ -51,10 +51,12 @@ class Contact extends Component {
         </ListGroupItem>)
     }
 
+    let listGroupHeading = (this.props.currLang === 'fr')? 'Information et contacts' : 'Information and contact';
+
     let listGroup = (
       <ListGroup className="ListGroup">
         <ListGroupItem className="GroupItemHeader theme1">
-          <ListGroupItemHeading>Informations et contacts</ListGroupItemHeading>
+          <ListGroupItemHeading>{listGroupHeading}</ListGroupItemHeading>
         </ListGroupItem>
         {listGroupItem}
       </ListGroup>

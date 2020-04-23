@@ -56,7 +56,7 @@ class Annonce extends Component {
 
     let title = (this.props.lang === 'fr')? "Annonce :": "Advert :";
     let text = (this.props.lang === 'fr')? 
-      "Bonjour, Recherche de personnes qui serait dans cette situation et qui accepterais d’être modèles. N'hésitez pas à prendre contact pour tout renseignement et n'hésitez pas à partager autour de vous !" : 
+      "Bonjour, Recherche de personnes qui seraient dans cette situation et qui accepteraient d’être modèles. N'hésitez pas à prendre contact pour tout renseignements et n'hésitez pas à partager autour de vous !" : 
       "Hello, Looking for people in those situation and willing to be a model. Do not hesitate to contact me for any information and do not hesitate to share around you !";
     let emphase = (this.props.lang === 'fr')? "Source photos : internet": "Pictures source : internet";
     return (
