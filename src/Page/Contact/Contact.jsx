@@ -10,6 +10,7 @@ class Contact extends Component {
   constructor(props) {
     super(props);
 
+    this.sendMail = this.sendMail.bind(this);
     this.handleMoreInfo = this.handleMoreInfo.bind(this);
 
     this.state = {
@@ -22,13 +23,17 @@ class Contact extends Component {
     this.handleMoreInfo({ 'target': { 'id': 0 } });
   }
 
+  sendMail(mail){
+    this.props.sendMail(mail);
+  }
+
   handleMoreInfo(event) {
     //besoin du type de device pour forcer la taille de l'info facebook
     const device = this.props.device;
     const currTarget = (this.state.info.props) ? this.state.info.props.contact : "";
     let nextTarget = this.state.contact[event.target.id];
     let tag = (nextTarget.title !== currTarget.title) ? (
-      <Infos contact={nextTarget.title} device={device} />
+      <Infos contact={nextTarget.title} device={device} sendMail={(mail) => this.sendMail(mail)}/>
     ) : "";
     this.setState({
       info: tag

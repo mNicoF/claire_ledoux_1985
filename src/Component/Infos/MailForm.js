@@ -9,11 +9,11 @@ import {
   Button
 } from "reactstrap";
 
-const resetMail = ({
+const RESET_MAIL = ({
+  email: "",
   subject: "",
   content: "",
-  sendCopy: false,
-  copyMail: ""
+  sendCopy: false
 });
 
 class MailForm extends Component {
@@ -24,43 +24,78 @@ class MailForm extends Component {
     this.cancelMail = this.cancelMail.bind(this);
 
     this.state = {
-      mail: resetMail
+      mail: RESET_MAIL
     };
   }
 
   handleChange(event) {
     let id = event.target.id;
-    let value = (event.target.value)? event.target.value : event.target.checked;
+    let value = (event.target.value) ? event.target.value : event.target.checked;
 
     let newMail = Object.assign({}, this.state.mail);
     newMail[id] = value;
-    
+
     this.setState({
       mail: newMail
     });
   }
 
+  handleFormSubmit(event) {
+    event.preventDefault();
+    this.props.sendMail(this.state.mail);
+  }
+
   cancelMail() {
     this.setState({
-      mail: resetMail
+      mail: RESET_MAIL
     });
-    //TODO fermer 
+    //TODO fermer ?
   }
 
   render() {
 
-    //TODO Utiliser une liste d'objets prédéfini ?
-
     let form = (
 
-      <Form acceptCharset="UTF-8" action="https://usebasin.com/f/d69dea17e168" method="POST">
+      <Form
+        acceptCharset="UTF-8"
+        action="#" //"https://usebasin.com/f/d69dea17e168"
+        method="POST"
+        className="MailForm">
+
+        <FormGroup>
+          <Label>Adresse email</Label>
+          <Input
+            id="email"
+            type="text"
+            name="Email"
+            value={this.state.mail.email}
+            placeholder="ex : marcel.dupont@exemple.com"
+            onChange={this.handleChange}
+          />
+        </FormGroup>
+
+        {/*<FormGroup>
+          <Label>
+            Recevoir une copie
+            <Input
+              id="sendCopy"
+              type="checkbox"
+              value={this.state.mail.sendCopy}
+              placeholder=""
+              style={{ marginLeft: '20px' }}
+              onChange={this.handleChange}
+            />
+          </Label>
+        </FormGroup>
+        */}
+
         <FormGroup>
           <Label>Sujet</Label>
           <Input
             id="subject"
             type="text"
             name="Sujet"
-            value={this.state.subject}
+            value={this.state.mail.subject}
             placeholder="ex : Demande d'information"
             onChange={this.handleChange}
           />
@@ -72,38 +107,15 @@ class MailForm extends Component {
             id="content"
             type="textarea"
             name="Contenu"
-            value={this.state.content}
+            value={this.state.mail.content}
             placeholder="ex : Bonjour, ..."
             onChange={this.handleChange}
           />
         </FormGroup>
 
-        {/*<FormGroup check>
-          <Label check>
-            <Input
-              id="sendCopy"
-              type="checkbox"
-              value={this.state.sendCopy}
-              placeholder=""
-              onChange={this.handleChange}
-            />
-            Recevoir une copie
-          </Label>
-        </FormGroup>
-
-        (this.state.mail.sendCopy) && (<FormGroup>
-          <Label>Mail</Label>
-          <Input
-            id="copyMail"
-            type="email"
-            value={this.state.copyMail}
-            placeholder="mon.adresse@mail.qqch"
-          />
-        </FormGroup>)*/}
-
-        <ButtonToolbar>
-          <Button onClick={this.cancelMail}>Annuler</Button>
-          <Button type="submit">Envoyer</Button>
+        <ButtonToolbar className="MailToolbar">
+          <Button color="danger" onClick={this.cancelMail}>Annuler</Button>
+          <Button color="success" type="submit" disabled={this.state.mail.email === ""} onClick={e => this.handleFormSubmit(e)}>Envoyer</Button>
         </ButtonToolbar>
       </Form>
     );
@@ -111,9 +123,9 @@ class MailForm extends Component {
     let alert = '';
 
     return (
-      <div>
-        {form}
+      <div className="MailFormLayout">
         {alert}
+        {form}
       </div>
     );
   }

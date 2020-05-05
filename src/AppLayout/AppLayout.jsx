@@ -14,44 +14,9 @@ class AppLayout extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {};
-  }
-
-  UNSAFE_componentWillMount() {
-
-    //Mise à jour des localStorage
-    if (localStorage.getItem('appVersion') !== this.props.version) {
-      //mise a jour de la version
-      localStorage.setItem('appVersion', this.props.version);
-      //mise a jour 
-      localStorage.setItem('newsSeen', "danger");
-    }
-
-    //Mise à jour des sessionStorage
-    sessionStorage.setItem('newsToggle', 'close');
-    sessionStorage.setItem('displayAnnonce', 'block');
-
-    //Mise à jour de la langue
-    let currLang = "";
-
-    //Vérification du pathname avec la langue
-    //s'il n'y en a pas
-    if (window.location.pathname.split("/")[1] === "") {
-      //Récupération de la langue du localStorage et s'il y en a une on la met dans currLang
-      let langStorage = localStorage.getItem('siteLang');
-      //Sinon on met celle du navigateur et on met à jour le localStorage
-      if (langStorage !== null && langStorage !== undefined && langStorage !== "") {
-        currLang = langStorage;
-      } else {
-        currLang = navigator.language.split('-')[0];
-        localStorage.setItem('siteLang', currLang);
-      }
-      //Puis on redirige vers le path avec la langue
-      window.location.pathname = '/' + currLang;
-    } else {
-      //au cas ou il ne soit pas initialisé
-      localStorage.setItem('siteLang', window.location.pathname.split("/")[1]);
-    }
+    this.state = {
+      lang: this.props.lang
+    };
   }
 
   componentDidMount() {
@@ -61,14 +26,16 @@ class AppLayout extends Component {
   render() {
 
     //ajouter les enfants que si la lang a bien été mise à jour
-    let children = (localStorage.getItem('siteLang') !== null) ? this.props.children : "";
+    let children = (this.state.lang !== null) ? this.props.children : "";
+
+    let messengerLang = (this.state.lang === 'fr')? "fr_FR" : "en_US";
 
     return (
       <div>
         <Header
           infos={this.props.infos}
-          lang={localStorage.getItem('siteLang')}
-          menu={this.props.menu[localStorage.getItem('siteLang')]}
+          lang={this.state.lang}
+          menu={this.props.menu[this.state.lang]}
         />
 
         {children}
@@ -84,7 +51,7 @@ class AppLayout extends Component {
           className="fb-customerchat"
           pageId="242649823093770"
           themeColor="#37342F"
-          language="fr_FR">
+          language={messengerLang}>
         </MessengerCustomerChat>
       </div>
     );

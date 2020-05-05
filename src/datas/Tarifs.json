@@ -61,8 +61,18 @@
         "Réhaussement de cils": "40 €",
         "Teinture de cils": "15 €",
         "Réhaussement + Teinture": "50 €",
+        "Teinture sourcils": "10 €",
         "Décoloration sourcils" : "10 €",
         "Restructuration sourcils au henné végétal": "30 €"
+      },
+      "Cours / Ateliers": {
+        "Cours d'auto maquillage privé (1h)": "40 €",
+        "Cours d'auto coiffure privé (1h)": "40 €",
+        "Cours mixte privé (1h)": "40 €",
+        "Cours d'auto maquillage en groupe (1h30)": "30 €",
+        "Cours d'auto coiffure en groupe (1h30)": "30 €",
+        "Cours mixte en groupe (1h30)": "30 €",
+        "Atelier DIY Cosmétique : faire son gloss (1h30)": "15 €"
       }
     },
     "Epilations": {
@@ -177,8 +187,18 @@
         "Eyelash enhancement": "40 €",
         "Eyelash color": "15 €",
         "Enhancement + color": "50 €",
+        "Eyebrow color": "10 €",
         "Eyebrow discoloration": "10 €",
         "Restructuring eyebrows with vegetable henna": "30 €"
+      },
+      "Lessons / Workshops": {
+        "Self makeup private lesson (1h)": "40 €",
+        "Self hairstyle private lesson (1h)": "40 €",
+        "Mixed private lesson (1h)": "40 €",
+        "Self makeup group lesson (1h30)": "30 €",
+        "Self hairstyle group lesson (1h30)": "30 €",
+        "Mixed group lesson (1h30)": "30 €",
+        "DIY cosmetic workshop : do your gloss (1h30)": "15 €"
       }
     },
     "Hair removal": {

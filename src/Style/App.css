@@ -28,7 +28,7 @@ h2, h3, h4, h5, h6 {
  */
 
 .fb_customer_chat_bounce_in_v2{
-  top: 65pt !important;
+  bottom: 85pt !important;
   right: 10pt !important;
   /*
   border: none;
@@ -47,12 +47,12 @@ h2, h3, h4, h5, h6 {
 }
 
 .fb_customer_chat_bounce_out_v2{
-  top: 65pt !important;
+  bottom: 85pt !important;
   right: 10pt !important;
 }
 
 .fb_customer_chat_bubble_pop_in{
-  top: 20pt !important;
+  bottom: 40pt !important;
   right: 10pt !important;
   /*
   background: none;

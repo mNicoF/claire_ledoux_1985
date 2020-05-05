@@ -66,7 +66,7 @@ class Infos extends Component {
         break;
 
       case "Email":
-        info = <MailForm contact={contact} />;
+        info = <MailForm contact={contact} sendMail={this.props.sendMail}/>;
         break;
 
       case "Facebook":

@@ -42,3 +42,21 @@
     height: 100%;
     max-width: 85vw !important;
 }
+
+.MailFormLayout {
+    min-width: 50vh;
+    min-height: 100% !important;
+    height: auto !important;
+    background-color: #F4E7D3;
+    margin-bottom: 3rem;
+    border-radius: 0.25rem;
+}
+
+.MailForm  > * {
+    padding: 15px;
+    margin-bottom: 0 !important;
+}
+
+.MailToolbar > * {
+    margin: 10px;
+}

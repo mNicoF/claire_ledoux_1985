@@ -1,199 +1,246 @@
 {
+  "api": {
+    "sending": false,
+    "sended": false,
+    "sendError": ""
+  },
   "fr": [
     {
-      "accueil" : false,
-      "moreInfo" : true,
-      "title" : {
-        "label" : "Horaires",
-        "type" : "text",
-        "icon" : ["far", "clock"]
+      "accueil": false,
+      "moreInfo": true,
+      "title": {
+        "label": "Horaires",
+        "type": "text",
+        "icon": [
+          "far",
+          "clock"
+        ]
       },
-      "value" : {
-        "label" : "Lundi au vendredi de 9h à 18h",
-        "type" : "text"
+      "value": {
+        "label": "Lundi au vendredi de 9h à 18h",
+        "type": "text"
       }
     },
     {
-      "accueil" : true,
-      "moreInfo" : false,
-      "title" : {
-        "label" : "Téléphone",
-        "type" : "text",
-        "icon" : ["fa", "phone"]
+      "accueil": true,
+      "moreInfo": false,
+      "title": {
+        "label": "Téléphone",
+        "type": "text",
+        "icon": [
+          "fa",
+          "phone"
+        ]
       },
-      "value" : {
-        "label" : "0983300701",
-        "value" : "+33983300701",
-        "type" : "phone"
+      "value": {
+        "label": "0983300701",
+        "value": "+33983300701",
+        "type": "phone"
       }
     },
     {
-      "accueil" : true,
-      "moreInfo" : false,
-      "title" : {
-        "label" : "Email",
-        "type" : "text",
-        "icon" : ["fa", "at"]
+      "accueil": true,
+      "moreInfo": false,
+      "title": {
+        "label": "Email",
+        "type": "text",
+        "icon": [
+          "fa",
+          "at"
+        ]
       },
-      "value" : {
-        "label" : "claire.ledoux.1985@gmail.com",
-        "value" : "claire.ledoux.1985@gmail.com",
-        "type" : "mail"
+      "value": {
+        "label": "claire.ledoux.1985@gmail.com",
+        "value": "claire.ledoux.1985@gmail.com",
+        "type": "mail"
       }
     },
     {
-      "accueil" : true,
-      "moreInfo" : true,
-      "title" : {
-        "label" : "Adresse",
-        "type" : "text",
-        "icon" : ["fa", "map-marked"]
+      "accueil": true,
+      "moreInfo": true,
+      "title": {
+        "label": "Adresse",
+        "type": "text",
+        "icon": [
+          "fa",
+          "map-marked"
+        ]
       },
-      "value" : {
-        "label" : "13 rue de l'Arsenal, 79000 Niort",
-        "value" : "https://goo.gl/maps/iPEkfwdFDiw",
-        "type" : "link"
+      "value": {
+        "label": "13 rue de l'Arsenal, 79000 Niort",
+        "value": "https://goo.gl/maps/iPEkfwdFDiw",
+        "type": "link"
       }
     },
     {
-      "accueil" : false,
-      "moreInfo" : false,
-      "title" : {
-        "label" : "Facebook",
-        "type" : "text",
-        "icon" : ["fab", "facebook"]
+      "accueil": false,
+      "moreInfo": false,
+      "title": {
+        "label": "Facebook",
+        "type": "text",
+        "icon": [
+          "fab",
+          "facebook"
+        ]
       },
-      "value" : {
-        "label" : "@claireledoux1985",
-        "value" : "https://www.facebook.com/claireledoux1985/",
-        "type" : "link"
+      "value": {
+        "label": "@claireledoux1985",
+        "value": "https://www.facebook.com/claireledoux1985/",
+        "type": "link"
       }
     },
     {
-      "accueil" : false,
-      "moreInfo" : false,
-      "title" : {
-        "label" : "Messenger",
-        "type" : "text",
-        "icon" : ["fab", "facebook-messenger"]
+      "accueil": false,
+      "moreInfo": false,
+      "title": {
+        "label": "Messenger",
+        "type": "text",
+        "icon": [
+          "fab",
+          "facebook-messenger"
+        ]
       },
-      "value" : {
-        "label" : "Claire Ledoux",
-        "value" : "https://m.me/claireledoux1985",
-        "type" : "link"
+      "value": {
+        "label": "Claire Ledoux",
+        "value": "https://m.me/claireledoux1985",
+        "type": "link"
       }
     },
     {
-      "accueil" : false,
-      "moreInfo" : false,
-      "title" : {
-        "label" : "Site web",
-        "type" : "text",
-        "icon" : ["fa", "globe-africa"]
+      "accueil": false,
+      "moreInfo": false,
+      "title": {
+        "label": "Site web",
+        "type": "text",
+        "icon": [
+          "fa",
+          "globe-africa"
+        ]
       },
-      "value" : {
-        "label" : "claireledoux1985.fr/",
-        "value" : "http://www.claireledoux1985.fr/",
-        "type" : "link"
+      "value": {
+        "label": "claireledoux1985.fr/",
+        "value": "http://www.claireledoux1985.fr/",
+        "type": "link"
       }
     }
   ],
   "en": [
     {
-      "accueil" : false,
-      "moreInfo" : true,
-      "title" : {
-        "label" : "Opening hours",
-        "type" : "text",
-        "icon" : ["far", "clock"]
+      "accueil": false,
+      "moreInfo": true,
+      "title": {
+        "label": "Opening hours",
+        "type": "text",
+        "icon": [
+          "far",
+          "clock"
+        ]
       },
-      "value" : {
-        "label" : "Monday to Friday from 9am to 6pm",
-        "type" : "text"
+      "value": {
+        "label": "Monday to Friday from 9am to 6pm",
+        "type": "text"
       }
     },
     {
-      "accueil" : true,
-      "moreInfo" : false,
-      "title" : {
-        "label" : "Phone",
-        "type" : "text",
-        "icon" : ["fa", "phone"]
+      "accueil": true,
+      "moreInfo": false,
+      "title": {
+        "label": "Phone",
+        "type": "text",
+        "icon": [
+          "fa",
+          "phone"
+        ]
       },
-      "value" : {
-        "label" : "0983300701",
-        "value" : "+33983300701",
-        "type" : "phone"
+      "value": {
+        "label": "0983300701",
+        "value": "+33983300701",
+        "type": "phone"
       }
     },
     {
-      "accueil" : true,
-      "moreInfo" : false,
-      "title" : {
-        "label" : "Email",
-        "type" : "text",
-        "icon" : ["fa", "at"]
+      "accueil": true,
+      "moreInfo": false,
+      "title": {
+        "label": "Email",
+        "type": "text",
+        "icon": [
+          "fa",
+          "at"
+        ]
       },
-      "value" : {
-        "label" : "claire.ledoux.1985@gmail.com",
-        "value" : "claire.ledoux.1985@gmail.com",
-        "type" : "mail"
+      "value": {
+        "label": "claire.ledoux.1985@gmail.com",
+        "value": "claire.ledoux.1985@gmail.com",
+        "type": "mail"
       }
     },
     {
-      "accueil" : true,
-      "moreInfo" : true,
-      "title" : {
-        "label" : "Address",
-        "type" : "text",
-        "icon" : ["fa", "map-marked"]
+      "accueil": true,
+      "moreInfo": true,
+      "title": {
+        "label": "Address",
+        "type": "text",
+        "icon": [
+          "fa",
+          "map-marked"
+        ]
       },
-      "value" : {
-        "label" : "13 rue de l'Arsenal, 79000 Niort",
-        "value" : "https://goo.gl/maps/iPEkfwdFDiw",
-        "type" : "link"
+      "value": {
+        "label": "13 rue de l'Arsenal, 79000 Niort",
+        "value": "https://goo.gl/maps/iPEkfwdFDiw",
+        "type": "link"
       }
     },
     {
-      "accueil" : false,
-      "moreInfo" : false,
-      "title" : {
-        "label" : "Facebook",
-        "type" : "text",
-        "icon" : ["fab", "facebook"]
+      "accueil": false,
+      "moreInfo": false,
+      "title": {
+        "label": "Facebook",
+        "type": "text",
+        "icon": [
+          "fab",
+          "facebook"
+        ]
       },
-      "value" : {
-        "label" : "@claireledoux1985",
-        "value" : "https://www.facebook.com/claireledoux1985/",
-        "type" : "link"
+      "value": {
+        "label": "@claireledoux1985",
+        "value": "https://www.facebook.com/claireledoux1985/",
+        "type": "link"
       }
     },
     {
-      "accueil" : false,
-      "moreInfo" : false,
-      "title" : {
-        "label" : "Messenger",
-        "type" : "text",
-        "icon" : ["fab", "facebook-messenger"]
+      "accueil": false,
+      "moreInfo": false,
+      "title": {
+        "label": "Messenger",
+        "type": "text",
+        "icon": [
+          "fab",
+          "facebook-messenger"
+        ]
       },
-      "value" : {
-        "label" : "Claire Ledoux",
-        "value" : "https://m.me/claireledoux1985",
-        "type" : "link"
+      "value": {
+        "label": "Claire Ledoux",
+        "value": "https://m.me/claireledoux1985",
+        "type": "link"
       }
     },
     {
-      "accueil" : false,
-      "moreInfo" : false,
-      "title" : {
-        "label" : "Web site",
-        "type" : "text",
-        "icon" : ["fa", "globe-africa"]
+      "accueil": false,
+      "moreInfo": false,
+      "title": {
+        "label": "Web site",
+        "type": "text",
+        "icon": [
+          "fa",
+          "globe-africa"
+        ]
       },
-      "value" : {
-        "label" : "claireledoux1985.fr/",
-        "value" : "http://www.claireledoux1985.fr/",
-        "type" : "link"
+      "value": {
+        "label": "claireledoux1985.fr/",
+        "value": "http://www.claireledoux1985.fr/",
+        "type": "link"
       }
     }
   ]

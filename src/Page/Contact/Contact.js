@@ -1,5 +1,6 @@
 import { connect } from 'react-redux';
 import Contact from './Contact.jsx';
+import { sendMail } from '../../redux/actions/ContactActions'
 
 const mapStateToProps = state => ({
     contact: state.contactReducer[localStorage.getItem('siteLang')],
@@ -7,4 +8,10 @@ const mapStateToProps = state => ({
     currLang: localStorage.getItem('siteLang')
 })
 
-export default connect(mapStateToProps)(Contact);
+const mapDispatchToProps = dispatch => ({
+    sendMail: (mail) => {
+        return (dispatch(sendMail(mail)));
+    }
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Contact);

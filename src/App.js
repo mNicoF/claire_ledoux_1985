@@ -85,6 +85,44 @@ class App extends Component {
     this.state = {};
   }
 
+  UNSAFE_componentWillMount() {
+    const packageJson = require("./../package.json");
+
+    //Mise à jour des localStorage
+    if (localStorage.getItem('appVersion') !== packageJson.version) {
+      //mise a jour de la version
+      localStorage.setItem('appVersion', packageJson.version);
+      //mise a jour 
+      localStorage.setItem('newsSeen', "danger");
+    }
+
+    //Mise à jour des sessionStorage
+    sessionStorage.setItem('newsToggle', 'close');
+    sessionStorage.setItem('displayAnnonce', 'block');
+
+    //Mise à jour de la langue
+    let currLang = "";
+
+    //Vérification du pathname avec la langue
+    //s'il n'y en a pas
+    if (window.location.pathname.split("/")[1] === "") {
+      //Récupération de la langue du localStorage et s'il y en a une on la met dans currLang
+      let langStorage = localStorage.getItem('siteLang');
+      //Sinon on met celle du navigateur et on met à jour le localStorage
+      if (langStorage !== null && langStorage !== undefined && langStorage !== "") {
+        currLang = langStorage;
+      } else {
+        currLang = navigator.language.split('-')[0];
+        localStorage.setItem('siteLang', currLang);
+      }
+      //Puis on redirige vers le path avec la langue
+      window.location.pathname = '/' + currLang;
+    } else {
+      //au cas ou il ne soit pas initialisé
+      localStorage.setItem('siteLang', window.location.pathname.split("/")[1]);
+    }
+  }
+
   componentDidMount() {
     window.addEventListener("pushstate", this.handleHistory, false);
     window.addEventListener("popstate", this.handleHistory, false);
@@ -101,7 +139,7 @@ class App extends Component {
       <div className="App">
         <Provider store={store}>
           <Router>
-            <AppLayout>
+            <AppLayout lang={localStorage.getItem('siteLang')}>
               <Switch>
                 <Route exact path="/" component={Loading} />
                 <Route path="/:lang/accueil" component={Accueil} />
