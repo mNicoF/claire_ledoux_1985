@@ -42,7 +42,7 @@ class Photo extends Component {
     }
 
     return (
-      <div className="PhotoLayout">
+      <div className="CarouselLayout">
       {test}
         <UncontrolledCarousel items={listItem}/>
       </div>

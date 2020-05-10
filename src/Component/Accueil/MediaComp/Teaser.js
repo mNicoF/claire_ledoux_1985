@@ -12,7 +12,7 @@ class Video extends Component {
 
   render() {
     return (
-      <div className="VideoLayout">
+      <div className="TeaserLayout">
         <iframe
           title={this.state.title}
           src={this.state.source}

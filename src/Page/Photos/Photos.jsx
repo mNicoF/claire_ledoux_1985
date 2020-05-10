@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Button } from "reactstrap";
 
-import Photos from "./../../Component/Photos/Photos";
+import Images from "../../Component/Images/Images";
 
-class Galerie extends Component {
+class Photos extends Component {
   constructor(props) {
     super(props);
 
@@ -14,7 +14,7 @@ class Galerie extends Component {
       photoList: this.props.photoList,
       inGalerie: false,
       prevScroll: 0,
-      target: <Photos folderName="ongles" folderSize={13} />
+      target: <Images folderName="ongles" folderSize={13} />
     };
   }
 
@@ -40,7 +40,7 @@ class Galerie extends Component {
     this.setState({
       inGalerie: true,
       prevScroll: windowScrollY,
-      target: <Photos folderName={target.source} folderSize={target.size} />
+      target: <Images folderName={target.source} folderSize={target.size} />
     })
   }
 
@@ -92,4 +92,4 @@ class Galerie extends Component {
   }
 }
 
-export default Galerie;
+export default Photos;

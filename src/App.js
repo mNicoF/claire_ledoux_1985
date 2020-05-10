@@ -6,7 +6,7 @@ import AppLayout from "./AppLayout/AppLayout";
 import Loading from "./Page/Loading/Loading";
 import Accueil from "./Page/Accueil/Accueil";
 import Presentation from "./Page/Presentation/Presentation";
-import Galerie from "./Page/Galerie/Galerie";
+import Photos from "./Page/Photos/Photos";
 import Videos from "./Page/Videos/Videos";
 import Tarifs from "./Page/Tarifs/Tarifs";
 import Produits from "./Page/Produits/Produits";
@@ -144,9 +144,9 @@ class App extends Component {
                 <Route exact path="/" component={Loading} />
                 <Route path="/:lang/accueil" component={Accueil} />
                 <Route path="/:lang/presentation" component={Presentation} />
-                <Route path="/:lang/galerie" component={Galerie} />
+                <Route path="/:lang/photos" component={Photos} />
                 <Route path="/:lang/videos" component={Videos} />
-                <Route path="/:lang/prestations" component={Tarifs} />
+                <Route path="/:lang/tarifs" component={Tarifs} />
                 <Route path="/:lang/produits" component={Produits} />
                 <Route path="/:lang/contact" component={Contact} />
                 <Route 

@@ -44,7 +44,7 @@
  * Partie Media
  */
 
- .PhotoLayout > *, .VideoLayout > * {
+ .CarouselLayout > *, .TeaserLayout > * {
     min-width: 33vw !important;
     max-width: 85vw !important;
     height: 33vh !important;

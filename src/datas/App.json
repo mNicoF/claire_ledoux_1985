@@ -21,8 +21,7 @@
             "accueil": "accueil",
             "presentation": "présentation",
             "galerie": "galerie",
-            "videos": "vidéos",
-            "prestations": "préstations",
+            "tarifs": "tarifs",
             "produits": "produits",
             "contact": "contact"
         },
@@ -30,8 +29,7 @@
             "accueil": "home",
             "presentation": "about",
             "galerie": "gallery",
-            "videos": "videos",
-            "prestations": "services",
+            "tarifs": "prices",
             "produits": "products",
             "contact": "contact"
         }

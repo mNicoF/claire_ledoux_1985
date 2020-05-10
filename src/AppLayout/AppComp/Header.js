@@ -6,7 +6,11 @@ import {
   Navbar,
   NavbarToggler,
   Nav,
-  NavItem
+  NavItem,
+  Dropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem
 } from "reactstrap";
 
 class Header extends Component {
@@ -14,11 +18,13 @@ class Header extends Component {
     super(props);
 
     this.toggle = this.toggle.bind(this);
+    this.toggleDrop = this.toggleDrop.bind(this);
     this.handleLang = this.handleLang.bind(this);
 
     this.state = {
       isOpen: false,
-      selectedLang: (this.props.lang)? this.props.infos.all_lang[this.props.lang] : ""
+      dropOpen: false,
+      selectedLang: (this.props.lang) ? this.props.infos.all_lang[this.props.lang] : ""
     };
   }
 
@@ -28,12 +34,18 @@ class Header extends Component {
     });
   }
 
+  toggleDrop() {
+    this.setState({
+      dropOpen: !this.state.dropOpen
+    });
+  }
+
   handleLang(e) {
     localStorage.setItem('siteLang', e.value);
     this.setState({
       selectedLang: e
     });
-    let currPath = (window.location.pathname.split("/")[2])? "/"+window.location.pathname.split("/")[2] : "";
+    let currPath = (window.location.pathname.split("/")[2]) ? "/" + window.location.pathname.split("/")[2] : "";
     window.location.pathname = '/' + e.value + currPath;
   }
 
@@ -42,16 +54,47 @@ class Header extends Component {
     let menuList = this.props.menu;
     let menuItemsList = [];
     for (let item in menuList) {
-      menuItemsList.push(
-        <NavItem key={menuList[item]}>
-          <Link
-            to={"/" + this.props.lang + "/" + item}
-            onClick={() => this.toggle(false)}
-          >
-            {menuList[item].toUpperCase()}
-          </Link>
-        </NavItem>
-      );
+
+      if (item === "galerie") {
+        menuItemsList.push(
+          <Dropdown nav isOpen={this.state.dropOpen} toggle={this.toggleDrop}>
+            <DropdownToggle nav>
+              {menuList[item].toUpperCase()}
+            </DropdownToggle>
+            <DropdownMenu>
+              <DropdownItem>
+                <Link className="dropdownLink"
+                  to={"/" + this.props.lang + "/photos"}
+                  onClick={() => this.toggle(false)}
+                >
+                  {(this.props.lang === 'en')? 'PICTURES' : 'PHOTOS'}
+                </Link>
+              </DropdownItem>
+              <DropdownItem divider />
+              <DropdownItem>
+                <Link className="dropdownLink"
+                  to={"/" + this.props.lang + "/videos"}
+                  onClick={() => this.toggle(false)}
+                >
+                  VIDEOS
+                </Link>
+              </DropdownItem>
+            </DropdownMenu>
+          </Dropdown>
+        );
+      } else {
+        menuItemsList.push(
+          <NavItem key={menuList[item]}>
+            <Link
+              to={"/" + this.props.lang + "/" + item}
+              onClick={() => this.toggle(false)}
+            >
+              {menuList[item].toUpperCase()}
+            </Link>
+          </NavItem>
+        );
+      }
+
     }
 
     //LANG
@@ -65,7 +108,7 @@ class Header extends Component {
       <div style={{ display: "flex" }}>
         <div>{label}</div>
         <div style={{ marginLeft: "10px" }}>
-          <img key={icon} src={require('../../medias/lang/' + icon)} alt={icon} style={{ height: "12px" }}/>
+          <img key={icon} src={require('../../medias/lang/' + icon)} alt={icon} style={{ height: "12px" }} />
         </div>
       </div>
     );

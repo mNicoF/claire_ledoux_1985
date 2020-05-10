@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
-import Photo from "./MediaComp/Photo";
-import Video from "./MediaComp/Video";
+import Carousel from "./MediaComp/Carousel";
+import Teaser from "./MediaComp/Teaser";
 
 class Media extends Component {
   constructor(props) {
@@ -16,11 +16,11 @@ class Media extends Component {
     let media = <></>;
     let type = this.state.type;
     switch (type) {
-      case "photo":
-        media = <Photo infos={this.props.media[type]}/>;
+      case "carousel":
+        media = <Carousel infos={this.props.media[type]}/>;
         break;
-      case "video":
-        media = <Video infos={this.props.media[type]}/>;
+      case "teaser":
+        media = <Teaser infos={this.props.media[type]}/>;
         break;
       default:
         break;

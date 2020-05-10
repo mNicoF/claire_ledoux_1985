@@ -69,10 +69,10 @@
         "Cours d'auto maquillage privé (1h)": "40 €",
         "Cours d'auto coiffure privé (1h)": "40 €",
         "Cours mixte privé (1h)": "40 €",
-        "Cours d'auto maquillage en groupe (1h30)": "30 €",
-        "Cours d'auto coiffure en groupe (1h30)": "30 €",
-        "Cours mixte en groupe (1h30)": "30 €",
-        "Atelier DIY Cosmétique : faire son gloss (1h30)": "15 €"
+        "Cours d'auto maquillage en groupe (1h30)": "30 €/prs",
+        "Cours d'auto coiffure en groupe (1h30)": "30 €/prs",
+        "Cours mixte en groupe (1h30)": "30 €/prs",
+        "Atelier DIY Cosmétique : faire son gloss (1h30)": "15 €/prs"
       }
     },
     "Epilations": {
@@ -195,10 +195,10 @@
         "Self makeup private lesson (1h)": "40 €",
         "Self hairstyle private lesson (1h)": "40 €",
         "Mixed private lesson (1h)": "40 €",
-        "Self makeup group lesson (1h30)": "30 €",
-        "Self hairstyle group lesson (1h30)": "30 €",
-        "Mixed group lesson (1h30)": "30 €",
-        "DIY cosmetic workshop : do your gloss (1h30)": "15 €"
+        "Self makeup group lesson (1h30)": "30 €/ppl",
+        "Self hairstyle group lesson (1h30)": "30 €/ppl",
+        "Mixed group lesson (1h30)": "30 €/ppl",
+        "DIY cosmetic workshop : do your gloss (1h30)": "15 €/ppl"
       }
     },
     "Hair removal": {
