@@ -2,31 +2,31 @@ import React, { Component } from 'react';
 
 import '../../Style/Tarifs.css';
 
-import Prestations from './../../Component/Prestations/Prestations';
+import Services from './../../Component/Services/Services';
 
 class Tarifs extends Component {
   constructor(props) {
     super(props);
     
     this.state = {
-      prestations: this.props.prestations
+      services: this.props.services
     };
   }
 
   render() {
 
     let tiles = [];
-    let prestaGroups = this.state.prestations;
+    let servicesGroups = this.state.services;
 
-    for (let g in prestaGroups) {
-      let prestations = [];
-      prestations.push(<div className="TileHeader" key={g}>{g.toUpperCase()}</div>);
-      let prestaList = prestaGroups[g];
+    for (let sg in servicesGroups) {
+      let services = [];
+      services.push(<div className="TileHeader" key={sg}>{sg.toUpperCase()}</div>);
+      let servicesList = servicesGroups[sg];
 
-      for (let p in prestaList){
-        prestations.push(<Prestations key={p} presta={p} list={prestaList[p]}/>);
+      for (let sl in servicesList){
+        services.push(<Services key={sl} services={sl} list={servicesList[sl]}/>);
       }
-      tiles.push(<div key={"tile_"+g} className="TarifsTiles">{prestations}</div>);
+      tiles.push(<div key={"tile_"+sg} className="TarifsTiles">{services}</div>);
     }
 
     return (

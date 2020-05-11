@@ -1,0 +1,70 @@
+{
+  "fr": [
+    {
+      "title": "Cours d’auto maquillage et d’auto coiffure",
+      "photos": {
+        "desktop": "cours_desk.webp",
+        "mobile": "cours_mobi.webp"
+      },
+      "content": [
+        {
+          "type": "text",
+          "icon": [
+            "far",
+            "clock"
+          ],
+          "label": "Et oui les hommes aussi ont le droit de prendre soin d’eux ; conseils coiffure, produits ou soins du visage… Je réponds aussi à vos demandes."
+        },
+        {
+          "type": "text",
+          "icon": null,
+          "label": "Pour les cours collectifs d’environs 4-5 personnes (si plus, me demander)."
+        },
+        {
+          "type": "text",
+          "icon": null,
+          "label": "Vous êtes mineur ou majeurs, EVJF (enterrement de vie de jeune fille), anniversaire, etc…"
+        },
+        {
+          "type": "list",
+          "icon": "",
+          "label": [
+            "Le programme : ",
+            "Colorimétrie",
+            "Les bases du maquillage et/ou de la coiffure",
+            "Diagnostic de peau et/ou de cheveux",
+            "Différents types de pinceaux et à quoi ils servent",
+            "Différents types de peignes et brosses et à quoi ils servent",
+            "Conseils, soins, astuces, technique, application…"
+          ]
+        }
+      ],
+      "prices": {
+        "Tarif du cours privé (environs 1h)": "40 €*",
+        "Tarif de groupe (1h30)": "30 € par personnes*"
+      },
+      "notes": [
+        "Venir démaquiller et/ou cheveux lavés du jour même"
+      ]
+    },
+    {
+      "title": "Atelier DIY cosmétique : Faire son gloss",
+      "photos": {
+        "desktop": "gloss_desk.webp",
+        "mobile": "gloss_mobi.webp"
+      },
+      "content": [
+        {
+          "type": "text",
+          "icon": "",
+          "label": "C’est un atelier convivial, qui se déroule dans une bonne ambiance. Nous allons apprendre à faire soi même son gloss et repartir avec à la maison. Tout le matériel vous sera fourni."
+        }
+      ],
+      "prices": {
+        "Tarif de groupe (environ 1h30)": "15€ par personnes*"
+      },
+      "notes": []
+    }
+  ],
+  "en": []
+}

@@ -2,6 +2,8 @@ import React, { Component } from "react";
 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
+//npx react-codemod rename-unsafe-lifecycles
+
 import AppLayout from "./AppLayout/AppLayout";
 import Loading from "./Page/Loading/Loading";
 import Accueil from "./Page/Accueil/Accueil";
@@ -9,6 +11,7 @@ import Presentation from "./Page/Presentation/Presentation";
 import Photos from "./Page/Photos/Photos";
 import Videos from "./Page/Videos/Videos";
 import Tarifs from "./Page/Tarifs/Tarifs";
+import Ateliers from "./Page/Ateliers/Ateliers";
 import Produits from "./Page/Produits/Produits";
 import Contact from "./Page/Contact/Contact";
 import NotFound from "./Page/NotFound/NotFound";
@@ -27,6 +30,7 @@ import { accueilReducer } from "./redux/reducers/AccueilReducer";
 import { presentationReducer } from "./redux/reducers/PresentationReducer";
 import { contactReducer } from "./redux/reducers/ContactReducer";
 import { tarifsReducer } from "./redux/reducers/TarifsReducer";
+import { ateliersReducer } from "./redux/reducers/AteliersReducer";
 import { produitReducer } from "./redux/reducers/ProduitsReducer";
 import { mediasReducer } from "./redux/reducers/MediasReducer";
 
@@ -59,6 +63,7 @@ const reducers = combineReducers({
   accueilReducer,
   presentationReducer,
   tarifsReducer,
+  ateliersReducer,
   produitReducer,
   contactReducer,
   mediasReducer
@@ -147,6 +152,7 @@ class App extends Component {
                 <Route path="/:lang/photos" component={Photos} />
                 <Route path="/:lang/videos" component={Videos} />
                 <Route path="/:lang/tarifs" component={Tarifs} />
+                <Route path="/:lang/ateliers" component={Ateliers} />
                 <Route path="/:lang/produits" component={Produits} />
                 <Route path="/:lang/contact" component={Contact} />
                 <Route 

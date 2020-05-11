@@ -57,13 +57,13 @@ class Header extends Component {
 
       if (item === "galerie") {
         menuItemsList.push(
-          <Dropdown nav isOpen={this.state.dropOpen} toggle={this.toggleDrop}>
+          <Dropdown nav isOpen={this.state.dropOpen} toggle={this.toggleDrop} key={menuList[item]}>
             <DropdownToggle nav>
               {menuList[item].toUpperCase()}
             </DropdownToggle>
             <DropdownMenu>
               <DropdownItem>
-                <Link className="dropdownLink"
+                <Link className="dropdownLinks"
                   to={"/" + this.props.lang + "/photos"}
                   onClick={() => this.toggle(false)}
                 >
@@ -72,7 +72,7 @@ class Header extends Component {
               </DropdownItem>
               <DropdownItem divider />
               <DropdownItem>
-                <Link className="dropdownLink"
+                <Link className="dropdownLinks"
                   to={"/" + this.props.lang + "/videos"}
                   onClick={() => this.toggle(false)}
                 >

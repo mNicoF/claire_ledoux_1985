@@ -30,4 +30,4 @@ class FicheProduit extends Component {
   }
 }
 
-export default Prestations;
+export default FicheProduit;

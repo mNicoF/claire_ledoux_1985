@@ -1,0 +1,64 @@
+.AteliersLayout {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    font-size: 2.5vh;
+    width: 80vw;
+}
+
+.AteliersCond{
+    font-style: italic;
+    text-align: right;
+}
+
+/* Class par atelier */
+
+.AtelierLayout {
+    margin-bottom: 60px;
+}
+
+.AtelierLayout > * {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.AtelierTitle {
+    text-align: center;
+}
+
+.AtelierPhoto {
+    width: 100%;
+    height: auto;
+}
+
+.AtelierPrix {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    border: solid 1px rgba(0, 0, 0, 0.125);
+    background-color: #F4E7D3;
+    border-radius: 0.25rem;
+    width: fit-content;
+}
+
+.AtelierNote {
+    text-align: center;
+    font-style: italic;
+}
+
+/*
+.AteliersImg {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.AteliersImg > img {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    max-width: 60vw;
+    max-height: 60vh;
+    justify-content: space-around;
+}
+*/

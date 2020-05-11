@@ -15,7 +15,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 class GenericTag extends Component {
   constructor(props) {
     super(props);
-    
+
     this.setTag = this.setTag.bind(this);
 
     this.state = {
@@ -26,28 +26,46 @@ class GenericTag extends Component {
   setTag(target) {
     const label = target.label;
     const type = target.type;
-    const value = (target.value)? target.value : "";
-    const cName = (target.classN)? target.classN : [];
+    const value = (target.value) ? target.value : "";
+    const cName = (target.classN) ? target.classN : [];
 
     let tag = (<></>);
-    switch(type) {
+    switch (type) {
       case 'link':
         tag = (<a className={cName} rel="noopener noreferrer" target="_blank" href={value}>{label}</a>);
         break;
       case 'mail':
-        tag = (<a className={cName} rel="noopener noreferrer" href={"mailto:"+value}>{label}</a>);
+        tag = (<a className={cName} rel="noopener noreferrer" href={"mailto:" + value}>{label}</a>);
         break;
       case 'phone':
-        tag = (<a className={cName} rel="noopener noreferrer" href={"tel:"+value}>{label}</a>);
+        tag = (<a className={cName} rel="noopener noreferrer" href={"tel:" + value}>{label}</a>);
         break;
       case 'text':
         tag = (<span className={cName}>{label}</span>);
+        break;
+      case 'list':
+        //on retire le premier élément qui sera le titre de la liste
+        let list = label.slice(1).map((l, i) => {
+          let li = [];
+          li.push(<li key={"line"+i}>{l}</li>);
+          return (
+            <ul key={"liste"+i}>
+              {li}
+            </ul>
+          )
+        });
+        tag = (
+          <div className={cName}>
+            <h4>{label[0]}</h4>
+            {list}
+          </div>
+        );
         break;
       default:
         return;
     }
 
-    if(target.icon){//target.icon){
+    if (target.icon) {
       tag = (
         <>
           <FontAwesomeIcon icon={target.icon} />{' '}

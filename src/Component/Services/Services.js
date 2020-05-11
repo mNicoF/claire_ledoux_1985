@@ -7,7 +7,7 @@ import {
   CardBody,
   /*CardText*/ } from 'reactstrap';
 
-class Prestations extends Component {
+class Services extends Component {
   constructor(props) {
     super(props);
 
@@ -15,8 +15,8 @@ class Prestations extends Component {
     
     this.state = {
       isOpen: false,
-      presta: this.props.presta,
-      prestaList: this.props.list
+      services: this.props.services,
+      servicesList: this.props.list
     };
   }
 
@@ -27,11 +27,10 @@ class Prestations extends Component {
   }
 
   render() {
-    let prestations = [];
-    let prix = this.state.prestaList;
+    let services = [];
+    let prix = this.state.servicesList;
     for (let e in prix) {
-      //prestations.push(<div key={e} className="PriceLine">{e} : {prix[e]}</div>);
-      prestations.push(
+      services.push(
         <div key={e} className="PriceLine card-text">
           {(e[0] === '*')? (
             <div style={{'fontWeight':'bold'}}>{e} {(prix[e] !== "")? ":" : ""}</div>
@@ -44,20 +43,20 @@ class Prestations extends Component {
     }
 
     // Personnalisation des headers
-    let header = (this.state.presta === "Médical") ? (
+    let header = (this.state.services === "Médical") ? (
       <span>
-        {this.state.presta}<span style={{'fontWeight':'bold'}}> (sur devis)</span>
+        {this.state.services}<span style={{'fontWeight':'bold'}}> (sur devis)</span>
       </span>
-    ) : this.state.presta; 
+    ) : this.state.services; 
 
     return (
 
-      <div className="PrestationLayout">
+      <div className="ServicesLayout">
         <Card>
           <CardHeader className="theme1" onClick={() => this.toggle()}>{header}</CardHeader>
           <Collapse isOpen={this.state.isOpen}>
             <CardBody>
-              {prestations}
+              {services}
             </CardBody>
           </Collapse>
         </Card>
@@ -66,4 +65,4 @@ class Prestations extends Component {
   }
 }
 
-export default Prestations;
+export default Services;

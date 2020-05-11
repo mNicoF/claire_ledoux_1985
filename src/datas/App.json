@@ -3,12 +3,12 @@
         "fr": {
             "value": "fr",
             "label": "Français",
-            "icon": "fr.png"
+            "icon": "fr.webp"
         },
         "en": {
             "value": "en",
             "label": "English",
-            "icon": "en.png"
+            "icon": "en.webp"
         }
     },
     "default_device": "desktop",
@@ -22,6 +22,7 @@
             "presentation": "présentation",
             "galerie": "galerie",
             "tarifs": "tarifs",
+            "ateliers": "ateliers",
             "produits": "produits",
             "contact": "contact"
         },
@@ -30,6 +31,7 @@
             "presentation": "about",
             "galerie": "gallery",
             "tarifs": "prices",
+            "ateliers": "workshop",
             "produits": "products",
             "contact": "contact"
         }

@@ -1,8 +1,8 @@
-const videosJson = require('./../../datas/Videos.json');
+const VideosJson = require('./../../datas/Videos.json');
 const PhotosJson = require('./../../datas/Photos.json');
 
 export const initialState = {
-    videos: videosJson,
+    videos: VideosJson,
     photos: PhotosJson
 }
 
