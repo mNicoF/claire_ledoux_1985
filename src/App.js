@@ -2,8 +2,6 @@ import React, { Component } from "react";
 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-//npx react-codemod rename-unsafe-lifecycles
-
 import AppLayout from "./AppLayout/AppLayout";
 import Loading from "./Page/Loading/Loading";
 import Accueil from "./Page/Accueil/Accueil";
@@ -50,12 +48,13 @@ import {
   faPhone,
   faMapMarked,
   faGlobeAfrica, 
-  faTimes
+  faTimes,
+  faMars
 } from "@fortawesome/free-solid-svg-icons";
 import { faFacebook } from "@fortawesome/fontawesome-free-brands";
 
 library.add(faCopyright, faClock);
-library.add(faAt, faPhone, faMapMarked, faGlobeAfrica, faTimes);
+library.add(faAt, faPhone, faMapMarked, faGlobeAfrica, faTimes, faMars);
 library.add(faFacebook);
 
 const reducers = combineReducers({
@@ -87,10 +86,15 @@ const store = createStore(
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      lang: (localStorage.getItem('siteLang'))? localStorage.getItem('siteLang') : 'fr'
+    };
   }
 
-  UNSAFE_componentWillMount() {
+  componentDidMount() {
+    window.addEventListener("pushstate", this.handleHistory, false);
+    window.addEventListener("popstate", this.handleHistory, false);
+
     const packageJson = require("./../package.json");
 
     //Mise à jour des localStorage
@@ -126,11 +130,11 @@ class App extends Component {
       //au cas ou il ne soit pas initialisé
       localStorage.setItem('siteLang', window.location.pathname.split("/")[1]);
     }
-  }
 
-  componentDidMount() {
-    window.addEventListener("pushstate", this.handleHistory, false);
-    window.addEventListener("popstate", this.handleHistory, false);
+    this.setState({
+      lang: currLang
+    });
+
   }
 
   componentWillUnmount() {
@@ -144,7 +148,7 @@ class App extends Component {
       <div className="App">
         <Provider store={store}>
           <Router>
-            <AppLayout lang={localStorage.getItem('siteLang')}>
+            <AppLayout lang={this.state.lang}>
               <Switch>
                 <Route exact path="/" component={Loading} />
                 <Route path="/:lang/accueil" component={Accueil} />

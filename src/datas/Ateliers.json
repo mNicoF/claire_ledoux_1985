@@ -9,9 +9,39 @@
       "content": [
         {
           "type": "text",
+          "icon": null,
+          "label": "Vous vous êtes déjà posé la question ; quel couleur irai le mieux à mes yeux ? Comment camoufler cette imperfection ?"
+        },
+        {
+          "type": "text",
+          "icon": null,
+          "label": "Qui n’a jamais rêvé de savoir réaliser sa mise en beauté à la perfection ?"
+        },
+        {
+          "type": "text",
+          "icon": null,
+          "label": "C’est ce que nous allons voir dans ces cours d’auto maquillage et d’auto coiffure."
+        },
+        {
+          "type": "text",
+          "icon": null,
+          "label": "Que ce soit en cours privé ou en collectif, le principe est simple ; pendant environs 1h nous allons aborder le sujet de façon théorique et pratique. Pour cela vous devrez apporter vos affaires de travail (trousse de maquillage de la maison et ustensiles de coiffure) afin que je vous guide au mieux. Je suis là pour vous donner tous mes secrets pour réussir."
+        },
+        {
+          "type": "text",
+          "icon": null,
+          "label": "A qui cela s’adresse ?"
+        },
+        {
+          "type": "text",
+          "icon": null,
+          "label": "Et bien à tout le monde, que vous soyez mineur ou majeur, homme ou femme. Je m’adapte à votre demande et à vos besoins."
+        },
+        {
+          "type": "text",
           "icon": [
-            "far",
-            "clock"
+            "fa",
+            "mars"
           ],
           "label": "Et oui les hommes aussi ont le droit de prendre soin d’eux ; conseils coiffure, produits ou soins du visage… Je réponds aussi à vos demandes."
         },
@@ -66,5 +96,101 @@
       "notes": []
     }
   ],
-  "en": []
+  "en": [
+    {
+      "title": "Self makeup and self hairstyle lessons",
+      "photos": {
+        "desktop": "cours_desk.webp",
+        "mobile": "cours_mobi.webp"
+      },
+      "content": [
+        {
+          "type": "text",
+          "icon": null,
+          "label": "You already ask yourself ; which color suits best my eyes ? How to camouflage this imperfection ?"
+        },
+        {
+          "type": "text",
+          "icon": null,
+          "label": "Who never dream about achieve its beauty perfectly ?"
+        },
+        {
+          "type": "text",
+          "icon": null,
+          "label": "This is what we will see in this self makeup and self hairstyle lessons"
+        },
+        {
+          "type": "text",
+          "icon": null,
+          "label": "Whether in private or in group lessons, the principle is simple ; far about 1h we will bring up the topic theorically and practically. To do so, you will have to bring your personnal suff (home makeup kit and hairstyling utensils) in order to guide you the best way. I’m here to give you all of my success secrets."
+        },
+        {
+          "type": "text",
+          "icon": null,
+          "label": "Who is this for ?"
+        },
+        {
+          "type": "text",
+          "icon": null,
+          "label": "Well everybody, you can be minor, major, men, women. I adapt myself to your requests and your needs."
+        },
+        {
+          "type": "text",
+          "icon": [
+            "fa",
+            "mars"
+          ],
+          "label": "And yes, men too have the rigth to take care of themselves ; hairstyle advice, products or skin care… I will answer all your requests."
+        },
+        {
+          "type": "text",
+          "icon": null,
+          "label": "For group lessons, about 4-5 people (if more, please ask me)."
+        },
+        {
+          "type": "text",
+          "icon": null,
+          "label": "You are minor or major, Bachelorette party, birthday, etc…"
+        },
+        {
+          "type": "list",
+          "icon": "",
+          "label": [
+            "The program : ",
+            "Colorimetry",
+            "Makeup and/or harstyle basics",
+            "Skin and/or hair diagnostic",
+            "Different types of makeup brushes and their uses",
+            "Differents types of combs and brushes and their uses ",
+            "Advice, care, tips, technique, application…"
+          ]
+        }
+      ],
+      "prices": {
+        "Private lesson (about 1h)": "40 €*",
+        "Group prices (1h30)": "30€ per people*"
+      },
+      "notes": [
+        "Come cleanse and/or with the hair washed from the day"
+      ]
+    },
+    {
+      "title": "DIY cosmetic workshop : do your gloss",
+      "photos": {
+        "desktop": "gloss_desk.webp",
+        "mobile": "gloss_mobi.webp"
+      },
+      "content": [
+        {
+          "type": "text",
+          "icon": "",
+          "label": "This is a friendly workshop, which is happening with the good atmosphere. We will learn to make our gloss ourselves and take it back home. All the materials will be provided to you."
+        }
+      ],
+      "prices": {
+        "Group prices (about 1h30) ": "15€ per people*"
+      },
+      "notes": []
+    }
+  ]
 }

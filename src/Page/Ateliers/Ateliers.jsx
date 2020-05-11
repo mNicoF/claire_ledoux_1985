@@ -43,7 +43,7 @@ class Ateliers extends Component {
           let contenu = [];
           contenu.push(<GenericTag target={c} key={"contentLine"+i}></GenericTag>);
           return (
-            <div key={"content"+a}>
+            <div key={"content"+a+"."+i}>
               {contenu}
             </div>
           )
@@ -63,30 +63,34 @@ class Ateliers extends Component {
         </div>
       );
       //notes
-      atelier.push(
-        <div key={"notes"+a} className="AtelierNote">
-          A noter :
-          {this.props.ateliers[a].notes.map((n, i) => {
-          let notes = [];
-          notes.push(n);
-          return (<div key={"noteLine"+i}>{notes}</div>);
-        })}
-        </div>
-      );
+      if(this.props.ateliers[a].notes[0]) {
+        atelier.push(
+          <div key={"notes"+a} className="AtelierNote">
+            {(localStorage.getItem('siteLang') === "fr")? "A noter :": "Please note :"}
+            {this.props.ateliers[a].notes.map((n, i) => {
+            let notes = [];
+            notes.push(n);
+            return (<div key={"noteLine"+i}>{notes}</div>);
+          })}
+          </div>
+        );
+      }
 
       //ajout à la liste d'ateliers
       ateliersList.push(
         <div key={"atelier"+a} className="AtelierLayout">
           {atelier}
-          <hr />
+          <hr style={{'border': 'solid 1px rgba(0, 0, 0, 0.250)', 'margin': '60px'}}/>
         </div>
       );
     }
 
+    let conditions = (localStorage.getItem('siteLang') === "fr")? "* Cours et ateliers mixte et tous âges confondus.": "* Lessons and workshop gender mixte and for all ages";
+
     return (
       <div className="AteliersLayout Page">
         {ateliersList}
-        <div className="AteliersCond">* Cours et ateliers mixte et tous âges confondus.</div>
+        <div className="AteliersCond">{conditions}</div>
       </div>
     );
   }

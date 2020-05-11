@@ -13,10 +13,6 @@
 
 /* Class par atelier */
 
-.AtelierLayout {
-    margin-bottom: 60px;
-}
-
 .AtelierLayout > * {
     margin-top: 20px;
     margin-bottom: 20px;
