@@ -6,24 +6,29 @@
       "size":11
     },
     {
+      "name":"Dermographie esthétique",
+      "source":"Dermographie esthétique",
+      "size":3
+    },
+    {
       "name":"Maquillage permanent",
       "source":"Maquillage permanent",
-      "size":30
+      "size":35
     },
     {
       "name":"Maquillage semi-permanent",
       "source":"Maquillage semi-permanent",
-      "size":21
+      "size":26
     },
     {
       "name":"Ongles",
       "source":"Ongles",
-      "size":13
+      "size":14
     },
     {
       "name":"Make up",
       "source":"Make up",
-      "size":3
+      "size":7
     }
   ],
   "en": [
@@ -33,24 +38,29 @@
       "size":11
     },
     {
+      "name":"Esthetic dermography",
+      "source":"Dermographie esthétique",
+      "size":3
+    },
+    {
       "name":"Permanent make up",
       "source":"Maquillage permanent",
-      "size":30
+      "size":35
     },
     {
       "name":"Semi-permanent make up",
       "source":"Maquillage semi-permanent",
-      "size":21
+      "size":26
     },
     {
       "name":"Nails",
       "source":"Ongles",
-      "size":13
+      "size":14
     },
     {
       "name":"Make up",
       "source":"Make up",
-      "size":3
+      "size":7
     }
   ]
 }

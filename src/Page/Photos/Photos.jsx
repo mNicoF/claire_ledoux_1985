@@ -58,7 +58,7 @@ class Photos extends Component {
     for (let photo in this.state.photoList) {
       menuAlbum.push(
         <div className="GalerieDiv" key={photo}>
-          <h6 style={{ "textDecoration": "underline" }}>{this.state.photoList[photo].name}</h6>
+          <h6 style={{ "textDecoration": "underline" }}>{this.state.photoList[photo].name+" ("+this.state.photoList[photo].size+")"}</h6>
           <img
             className="isBtn GalerieImg"
             src={require('../../medias/galerie/' + this.state.photoList[photo].source + '/' + this.state.photoList[photo].size + '.webp')}
