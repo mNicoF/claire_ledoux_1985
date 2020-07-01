@@ -3,9 +3,26 @@
     "news": {
       "title" : "Nouveau",
       "content" : [
-        "Votre site est maintenant en anglais !",
-        "Cours d'auto maquillage et d'auto coiffure",
-        "Atelier DIY cosmétique : faire son gloss"
+        {
+          "text":"ATTENTION NOUVEAUX TARIFS ; profitez des prix actuels avant changement le 1er septembre 2020 !",
+          "link":"",
+          "url":""
+        },
+        {
+          "text":"Découvrez le détatouage sans laser, ni produits chimiques, ni acides... plus d'informations : @link",
+          "link":"ici",
+          "url":"https://www.facebook.com/detatouagebyCL85"
+        },
+        {
+          "text":"Retrouvez les informations sur notre partenaire de pigments, Biotic Phocea, dans la partie Présentation",
+          "link":"",
+          "url":""
+        },
+        {
+          "text":"Cours d'auto maquillage et d'auto coiffure toujours possibles",
+          "link":"",
+          "url":""
+        }
       ]
     },
     "media": {
@@ -30,9 +47,26 @@
     "news": {
       "title" : "News",
       "content" : [
-        "Your website is now in English !",
-        "Self makeup and self hairstyle lessons",
-        "DIY cosmetic workshop : do your gloss"
+        {
+          "text":"WARNING NEW PRICES ; enjoy the current prices befor they change the 1st of september 2020 !",
+          "link":"",
+          "url":""
+        },
+        {
+          "text":"Discover tattoo remove, no laser, no chimic, ni acide... more information : @link",
+          "link":"here",
+          "url":"https://www.facebook.com/detatouagebyCL85"
+        },
+        {
+          "text":"Find information about our pigments partner, Biotic Phocea, in the About section",
+          "link":"",
+          "url":""
+        },
+        {
+          "text":"DIY cosmetic workshop : do your gloss, is still available",
+          "link":"",
+          "url":""
+        }
       ]
     },
     "media": {

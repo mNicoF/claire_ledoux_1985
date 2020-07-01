@@ -23,7 +23,7 @@ class Header extends Component {
 
     this.state = {
       isOpen: false,
-      dropOpen: false,
+      dropOpen: {},
       selectedLang: (this.props.lang) ? this.props.infos.all_lang[this.props.lang] : ""
     };
   }
@@ -34,9 +34,11 @@ class Header extends Component {
     });
   }
 
-  toggleDrop() {
+  toggleDrop(target) {
+    let newDrop = Object.assign({}, this.state.dropOpen);
+    newDrop[target] = !this.state.dropOpen[target];
     this.setState({
-      dropOpen: !this.state.dropOpen
+      dropOpen: newDrop
     });
   }
 
@@ -55,46 +57,43 @@ class Header extends Component {
     let menuItemsList = [];
     for (let item in menuList) {
 
-      if (item === "galerie") {
+      //s'il y a des sous menus on va boucler dessus pour les ajouter au dropdown
+      if (menuList[item].sub) {
+        let dropItems = [];
+        for (let s in menuList[item].sub) {
+          dropItems.push(
+            <DropdownItem>
+              <Link className="dropdownLinks"
+                to={"/" + this.props.lang + "/" + s}
+                onClick={() => this.toggle(false)}
+              >
+                {menuList[item].sub[s].toUpperCase()}
+                </Link>
+            </DropdownItem>
+          );
+        }
         menuItemsList.push(
-          <Dropdown nav isOpen={this.state.dropOpen} toggle={this.toggleDrop} key={menuList[item]}>
+          <Dropdown nav isOpen={this.state.dropOpen[item]} toggle={() => this.toggleDrop(item)} key={menuList[item].title}>
             <DropdownToggle nav>
-              {menuList[item].toUpperCase()}
+              {menuList[item].title.toUpperCase()}
             </DropdownToggle>
             <DropdownMenu>
-              <DropdownItem>
-                <Link className="dropdownLinks"
-                  to={"/" + this.props.lang + "/photos"}
-                  onClick={() => this.toggle(false)}
-                >
-                  {(this.props.lang === 'en')? 'PICTURES' : 'PHOTOS'}
-                </Link>
-              </DropdownItem>
-              <DropdownItem divider />
-              <DropdownItem>
-                <Link className="dropdownLinks"
-                  to={"/" + this.props.lang + "/videos"}
-                  onClick={() => this.toggle(false)}
-                >
-                  VIDEOS
-                </Link>
-              </DropdownItem>
+              {dropItems}
             </DropdownMenu>
           </Dropdown>
         );
       } else {
         menuItemsList.push(
-          <NavItem key={menuList[item]}>
+          <NavItem key={menuList[item].title}>
             <Link
               to={"/" + this.props.lang + "/" + item}
               onClick={() => this.toggle(false)}
             >
-              {menuList[item].toUpperCase()}
+              {menuList[item].title.toUpperCase()}
             </Link>
           </NavItem>
         );
       }
-
     }
 
     //LANG

@@ -1,0 +1,117 @@
+{
+  "fr": {
+    "title": "Biotic Phocea",
+    "complet": [
+      {
+        "type": "paragraphe",
+        "value": "Premier fabricant reconnu depuis 1999 pour la qualité et l’efficacité de ses pigment, les laboratoires Biotic Phocea vous offrent tout leur savoir-faire au travers de la gamme Airless Color. Fabriqué en France sous atmosphère contrôlée par du personnel hautement qualifié, Airless color répond aux critères législatifs français les plus stricts."
+      },
+      { "type": "image", "value": 1 },
+      {
+        "type": "liste",
+        "value": "100%",
+        "content": [
+          "Biocompatible",
+          "Matière première ultrapures et réputée non allergisantes",
+          "Stérilité garantie entre chaque utilisation",
+          "Dispersant d’origine végétale",
+          "Adapté au ph de la peau",
+          "Cosmétique BIO, ECO et VEGAN",
+          "AB certification ISO"
+        ]
+      },
+      {
+        "type": "liste",
+        "value": "0%",
+        "content": [
+          "Parabène",
+          "Conservateur",
+          "PPD paraphénylène diamine",
+          "Test sur les animaux"
+        ]
+      },
+      {
+        "type": "titre",
+        "value": "Maquillage Permanent"
+      },
+      {
+        "type": "paragraphe",
+        "value": "Fruit des recherches menées en matière de dermo-pigmentation médical, le maquillage permanent by Biotic Phocéa s’est imposé dans le monde de la beauté grâce à la facilité d’utilisation et la sécurité des pigments stériles. Implantés dans la peau à l’aide d’un dermographe, ces pigments esthétiques permettent de maquiller lèvres, sourcils ou de souligner le regard à la manière d’un eye-liner, pour un résultat visible sur plusieurs années. Enfin il est également possible d’ajouter ou de renforcer des tâches de rousseur, des « mouches » ou des faux grains de beauté."
+      },
+      { "type": "image", "value": 2 },
+      {
+        "type": "titre",
+        "value": "Tatouage médical"
+      },
+      {
+        "type": "paragraphe",
+        "value": "La dermo-pigemntation médicale consiste à redonner la couleur d’origine par « tatouage » à une zone de peau pathologique pour corriger une achromie ou masquer une cicatrice. Il est aussi possible par cette technique de corriger une altération tissulaire comme une lèvre déformé par une fente labio-maxilaire (« bec de lièvre »). Cette technique permet également de reconstruire une aréole mammaire amputé lors d’une chirurgie d’exérèse pour cancer. Inséré à l’aide d’un appareil de précision appelé dermographe, les pigments stériles à usage unique, bien tolérés par l’organisme vous sont proposés dans une grande gamme de teintes variées pour le bien-être des patients."
+      },
+      {
+        "type": "titre",
+        "value": "Airless Color"
+      },
+      {
+        "type": "paragraphe",
+        "value": "Issu d’un mélange de pigments et d’un dispersant 100% naturel d’origine végétale, Airless color ne contient ni eau, ni produits pétrochimiques. Cette formule sans conservateur est contenue dans un flacon privé d’air pour une stérilisation conformes aux législations actuelles."
+      },
+      { "type": "image", "value": 3 }
+    ]
+  },
+  "en": {
+    "title": "Biotic Phocea",
+    "complet": [
+      {
+        "type": "paragraphe",
+        "value": "First manufacturer recognized since 1999 for the quality and effectiveness of its pigments, Biotic Phocea laboratories offer you all their knowledge through the Airless Color product range. Made in France under controlled atmosphere by highly qualified personnel, Airless color meets the strictest French legislative criteria."
+      },
+      {
+        "type": "liste",
+        "value": "100%",
+        "content": [
+          "Biocompatible",
+          "Raw material ultra-pure and with non-allergenic reputation",
+          "Guaranteed sterility between each use",
+          "Plant-based dispersant",
+          "Adapted to skin ph",
+          "ORGANIC, ECO and VEGAN cosmetics",
+          "AB ISO certification"
+        ]
+      },
+      {
+        "type": "liste",
+        "value": "0%",
+        "content": [
+          "Paraben",
+          "Conservative",
+          "PPD paraphenylene diamine",
+          "Animal testing"
+        ]
+      },
+      {
+        "type": "titre",
+        "value": "Permanent makeup"
+      },
+      {
+        "type": "paragraphe",
+        "value": "In result of research conducted in medical dermo-pigmentation, permanent makeup by Biotic Phocéa has established itself as a reference in the world of beauty thanks to the ease of use and the safety of sterile pigments. Implanted in the skin using a dermograph, these cosmetic pigments make it possible to do a lips make up, eyebrows or to highlight the look as an eyeliner, for a visible result over several years. Finally it is also possible to add or strengthen freckles, «flies » or false beauty spot."
+      },
+      {
+        "type": "titre",
+        "value": "Medical tattoo"
+      },
+      {
+        "type": "paragraphe",
+        "value": "Medical skin pigmentation consists in restoring the original skin color by « tattooing » a ​​pathological area to correct an achromia or hide a scar. It is also possible with this technique to correct tissue damage such as a lip deformed by a labio-maxillary cleft (« hare's beak »). This technique also makes it possible to reconstruct a breast areola that was amputated during excision surgery for cancer. Inserted using a precision device called dermograph, sterile single-use pigments, well tolerated by the body, are available in a wide range of varied shades for the well-being of patients."
+      },
+      {
+        "type": "titre",
+        "value": "Airless Color"
+      },
+      {
+        "type": "paragraphe",
+        "value": "Coming from a mixture of pigments and a 100% natural plant-based dispersant, Airless color contains no water or petrochemicals. This preservative-free formula is contained in an airless bottle for sterilization in accordance with current legislation."
+      }
+    ]
+  }
+}

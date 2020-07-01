@@ -18,22 +18,66 @@
     ],
     "menu": {
         "fr": {
-            "accueil": "accueil",
-            "presentation": "présentation",
-            "galerie": "galerie",
-            "tarifs": "tarifs",
-            "ateliers": "ateliers",
-            "produits": "produits",
-            "contact": "contact"
+            "accueil": {
+                "title": "accueil"
+            },
+            "presentation": {
+                "title": "présentation",
+                "sub": {
+                    "presentation": "entreprise",
+                    "partenaires": "partenaires"
+                }
+            },
+            "galerie": {
+                "title": "galerie",
+                "sub": {
+                    "photos": "photos",
+                    "videos": "videos"
+                }
+            },
+            "tarifs": {
+                "title": "tarifs"
+            },
+            "ateliers": {
+                "title": "ateliers"
+            },
+            "produits": {
+                "title": "produits"
+            },
+            "contact": {
+                "title": "contact"
+            }
         },
         "en": {
-            "accueil": "home",
-            "presentation": "about",
-            "galerie": "gallery",
-            "tarifs": "prices",
-            "ateliers": "workshop",
-            "produits": "products",
-            "contact": "contact"
+            "accueil": {
+                "title": "home"
+            },
+            "presentation": {
+                "title": "about",
+                "sub": {
+                    "presentation": "company",
+                    "partenaires": "partners"
+                }
+            },
+            "galerie": {
+                "title": "gallery",
+                "sub": {
+                    "photos": "pictures",
+                    "videos": "videos"
+                }
+            },
+            "tarifs": {
+                "title": "prices"
+            },
+            "ateliers": {
+                "title": "workshop"
+            },
+            "produits": {
+                "title": "products"
+            },
+            "contact": {
+                "title": "contact"
+            }
         }
     },
     "author": {

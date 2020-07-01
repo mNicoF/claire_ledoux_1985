@@ -6,6 +6,11 @@
     width: 80vw;
 }
 
+.PresentationTitle {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
 .PresentationImg {
     display: flex;
     flex-direction: row;

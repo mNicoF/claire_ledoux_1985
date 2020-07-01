@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import Annonce from "./../../Component/Accueil/Annonce";
+//import Annonce from "./../../Component/Accueil/Annonce";
 import News from "./../../Component/Accueil/News";
 import Media from "./../../Component/Accueil/Media";
 import Pres from "./../../Component/Accueil/Pres";
@@ -35,7 +35,7 @@ class Accueil extends Component {
 
     return (
       <div className="AccueilLayout Page">
-        <Annonce lang={this.props.lang}/>
+        {/*<Annonce lang={this.props.lang}/>*/}
         <News news={this.state.news}/>
         <div className="AccueilCenter">
           <Media media={this.state.media} />

@@ -64,6 +64,7 @@ class Annonce extends Component {
     let img2 = (<img src={require('../../medias/accueil/img2.webp')} alt='img2' style={picStyle} />);
     */
 
+    /*
     let title = (this.props.lang === 'fr') ? "Annonce :" : "Advert :";
     let text = (this.props.lang === 'fr') ?
       "Pour tous les clients qui avaient un rendez-vous de retouche prévu pendant la période du confinement, merci de reprendre rendez-vous avant le 31 mai. Au delà de cette date le rendez-vous devra être réglé" :
@@ -71,6 +72,7 @@ class Annonce extends Component {
     let emphase = (this.props.lang === 'fr') ? "Source photos : internet" : "Pictures source : internet";
     let img1 = (<img src={require('../../medias/accueil/covid19.webp')} alt='img1' style={picStyle} />);
     let img2 = (<div></div>);
+    */
 
     return (
       <div id='annonceLayout' style={annonceLayoutStyle}>

@@ -2,12 +2,27 @@
   "fr": {
     "Dermopigmentation": {
       "Esthétique": {
-        "Microblading / Maquillage semi-permanent": "170 €",
-        "Sourcils poils à poils": "250 €",
-        "Sourcils ombrage / remplissage": "200 €",
-        "Eye-liner haut": "150 €",
+        "Microblading / Maquillage semi-permanent": {
+          "oldPrice": "170 €",
+          "newPrice": "180 €"
+        },
+        "Sourcils poils à poils": {
+          "oldPrice": "250 €",
+          "newPrice": "280 €"
+        },
+        "Sourcils ombrage / remplissage": {
+          "oldPrice": "200 €",
+          "newPrice": "220 €"
+        },
+        "Eye-liner haut": {
+          "oldPrice": "150 €",
+          "newPrice": "170 €"
+        },
         "Eye-liner bas": "100 €",
-        "Eye-liner complet": "200 €",
+        "Eye-liner complet": {
+          "oldPrice": "200 €",
+          "newPrice": "250 €"
+        },
         "Glossy Lips": "180 €",
         "Contour de lèvres": "200 €",
         "Contour + voilage": "250 €",
@@ -24,7 +39,9 @@
         "* prix minimum uniquement sur devis": ""
       },
       "Retouches": {
-        "Retouche comprise le premier mois": "",
+        "Retouche comprise le mois suivant": "",
+        "Retouche le 3ème mois": "30 €",
+        "Retouche le 4ème mois": "50 €",
         "Retouche annuel": "100 €"
       }
     },
@@ -128,12 +145,27 @@
   "en": {
     "Dermopigmentation": {
       "Esthetic": {
-        "Microblading / Semi permanent makeup": "170 €",
-        "Bristle hairs eyebrows": "250 €",
-        "Shady eyebrows": "200 €",
-        "Eyeliner top": "150 €",
+        "Microblading / Semi permanent makeup": {
+          "oldPrice": "170 €",
+          "newPrice": "180 €"
+        },
+        "Bristle hairs eyebrows": {
+          "oldPrice": "250 €",
+          "newPrice": "280 €"
+        },
+        "Shady eyebrows": {
+          "oldPrice": "200 €",
+          "newPrice": "220 €"
+        },
+        "Eyeliner top": {
+          "oldPrice": "150 €",
+          "newPrice": "170 €"
+        },
         "Eyeliner bottom": "100 €",
-        "Eyeliner full": "200 €",
+        "Eyeliner full": {
+          "oldPrice": "200 €",
+          "newPrice": "250 €"
+        },
         "Glossy Lips": "180 €",
         "Lips contour": "200 €",
         "Contour + veiling": "220 €",
@@ -150,7 +182,9 @@
         "* minimum price only on quotation": ""
       },
       "Retouch": {
-        "Included retouch the first month": "",
+        "Included retouch the next month": "",
+        "Retouch the 3rd month": "30 €",
+        "Retouch the 4th month": "50 €",
         "Annual retouch": "100 €"
       }
     },

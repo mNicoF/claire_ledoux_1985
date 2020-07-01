@@ -6,6 +6,7 @@ import AppLayout from "./AppLayout/AppLayout";
 import Loading from "./Page/Loading/Loading";
 import Accueil from "./Page/Accueil/Accueil";
 import Presentation from "./Page/Presentation/Presentation";
+import Partenaires from "./Page/Presentation/Partenaires";
 import Photos from "./Page/Photos/Photos";
 import Videos from "./Page/Videos/Videos";
 import Tarifs from "./Page/Tarifs/Tarifs";
@@ -49,12 +50,13 @@ import {
   faMapMarked,
   faGlobeAfrica, 
   faTimes,
-  faMars
+  faMars,
+  faChartLine
 } from "@fortawesome/free-solid-svg-icons";
 import { faFacebook } from "@fortawesome/fontawesome-free-brands";
 
 library.add(faCopyright, faClock);
-library.add(faAt, faPhone, faMapMarked, faGlobeAfrica, faTimes, faMars);
+library.add(faAt, faPhone, faMapMarked, faGlobeAfrica, faTimes, faMars, faChartLine);
 library.add(faFacebook);
 
 const reducers = combineReducers({
@@ -153,6 +155,7 @@ class App extends Component {
                 <Route exact path="/" component={Loading} />
                 <Route path="/:lang/accueil" component={Accueil} />
                 <Route path="/:lang/presentation" component={Presentation} />
+                <Route path="/:lang/partenaires" component={Partenaires} />
                 <Route path="/:lang/photos" component={Photos} />
                 <Route path="/:lang/videos" component={Videos} />
                 <Route path="/:lang/tarifs" component={Tarifs} />
@@ -160,7 +163,7 @@ class App extends Component {
                 <Route path="/:lang/produits" component={Produits} />
                 <Route path="/:lang/contact" component={Contact} />
                 <Route 
-                  path="/:lang"
+                  exact path="/:lang"
                   render={props =>
                     props.match.params.lang === 'fr' || props.match.params.lang === 'en' ? (
                       <Accueil />

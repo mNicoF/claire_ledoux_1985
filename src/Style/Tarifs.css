@@ -1,5 +1,12 @@
 .TarifsLayout {
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.TilesLayout {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -40,6 +47,18 @@
 
 .card-header:hover {
     cursor: pointer;
+}
+
+.BioticLayout {
+    padding: 15px;
+    margin: 30px; 
+    border: solid 1px rgba(0, 0, 0, 0.125);
+    background-color: #F4E7D3;
+    border-radius: 0.25rem;
+}
+
+.BioticContent {
+    margin: 20px; 
 }
 
 /**

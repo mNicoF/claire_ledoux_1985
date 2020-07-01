@@ -1,11 +1,10 @@
 import { connect } from 'react-redux';
-import Tarifs from './Tarifs.jsx';
+import Partenaires from './Partenaires.jsx';
 
 let siteLang = (localStorage.getItem('siteLang'))? (localStorage.getItem('siteLang')) : 'fr';
 
 const mapStateToProps = state => ({
-    lang: siteLang,
-    services: state.tarifsReducer[siteLang]
+    partenaires: state.presentationReducer.partenaires[siteLang]
 })
 
-export default connect(mapStateToProps)(Tarifs);
+export default connect(mapStateToProps)(Partenaires);

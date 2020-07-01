@@ -1,11 +1,13 @@
 import { connect } from 'react-redux';
 import Accueil from './Accueil.jsx';
 
+let siteLang = (localStorage.getItem('siteLang'))? (localStorage.getItem('siteLang')) : 'fr';
+
 const mapStateToProps = state => ({
-    lang: localStorage.getItem('siteLang'),
-    accueil: state.accueilReducer[localStorage.getItem('siteLang')],
-    presentation: state.presentationReducer[localStorage.getItem('siteLang')],
-    contact: state.contactReducer[localStorage.getItem('siteLang')]
+    lang: siteLang,
+    accueil: state.accueilReducer[siteLang],
+    presentation: state.presentationReducer.presentation[siteLang],
+    contact: state.contactReducer[siteLang]
 })
 
 export default connect(mapStateToProps)(Accueil);
