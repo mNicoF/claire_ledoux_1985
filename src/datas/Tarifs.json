@@ -40,8 +40,8 @@
       },
       "Retouches": {
         "Retouche comprise le mois suivant": "",
-        "Retouche le 3ème mois": "30 €",
-        "Retouche le 4ème mois": "50 €",
+        "Retouche le 3ème mois": "40 €",
+        "Retouche le 4ème mois": "80 €",
         "Retouche annuel": "100 €"
       }
     },
@@ -183,8 +183,8 @@
       },
       "Retouch": {
         "Included retouch the next month": "",
-        "Retouch the 3rd month": "30 €",
-        "Retouch the 4th month": "50 €",
+        "Retouch the 3rd month": "40 €",
+        "Retouch the 4th month": "80 €",
         "Annual retouch": "100 €"
       }
     },
