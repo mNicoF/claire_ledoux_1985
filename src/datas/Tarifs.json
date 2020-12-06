@@ -2,27 +2,12 @@
   "fr": {
     "Dermopigmentation": {
       "Esthétique": {
-        "Microblading / Maquillage semi-permanent": {
-          "oldPrice": "170 €",
-          "newPrice": "180 €"
-        },
-        "Sourcils poils à poils": {
-          "oldPrice": "250 €",
-          "newPrice": "280 €"
-        },
-        "Sourcils ombrage / remplissage": {
-          "oldPrice": "200 €",
-          "newPrice": "220 €"
-        },
-        "Eye-liner haut": {
-          "oldPrice": "150 €",
-          "newPrice": "170 €"
-        },
+        "Microblading / Maquillage semi-permanent": "180 €",
+        "Sourcils poils à poils": "280 €",
+        "Sourcils ombrage / remplissage": "220 €",
+        "Eye-liner haut": "170 €",
         "Eye-liner bas": "100 €",
-        "Eye-liner complet": {
-          "oldPrice": "200 €",
-          "newPrice": "250 €"
-        },
+        "Eye-liner complet": "250 €",
         "Glossy Lips": "180 €",
         "Contour de lèvres": "200 €",
         "Contour + voilage": "250 €",
@@ -45,42 +30,71 @@
         "Retouche annuel": "100 €"
       }
     },
-    "Soins": {
-      "Soins du corps": {
-        "Gommage corps": "30 €",
-        "Gommage dos ou jambes": "15 €",
-        "Modelage Californien (1h)": "60 €",
-        "Californien dos ou jambes (30 min)": "30 €",
-        "Modelage énergisant (1h)": "60 €",
-        "Energisant dos ou jambes (30 min)": "30 €",
-        "Modelage à la bougie (1h)": "70 €",
-        "Bougie dos ou jambes (30 min)": "35 €"
+    "Homme":{
+      "Coiffure" : {
+        "Coupe classique (shamp, coupe, rinçage, coiffage)" : "17 €",
+        "Coupe dégradée à blanc (shamp, coupe, rinçage, coiffage)" : "22 €"
       },
-      "Soins mains et pieds": {
-        "Vernis semi-permanent": "24 €",
-        "Déco": "1 €",
-        "Bijoux d'ongles": "4 €",
-        "Pose de vernis": "5 €",
-        "Pose de vernis 'French'": "10 €",
-        "Manucure express (préparation de l'ongle, gommer hydrater réparer, vernis)": "15 €",
-        "Manucure (gommage, masque, vernis)": "35 €",
-        "Pédicure (gommage, masque, vernis)": "35 €",
-        "Manucure + Pédicure": "60 €"
+      "Barbe" : {
+        "Taille de barbe (taille et tracé tondeuse + huile ou crème)" : "12 €",
+        "Taille de moustache (taille et cire)" : "5 €"
+      }, 
+      "Epilations" : {
+        "Sourcils" : "9 €",
+        "Narines" : "9 €",
+        "Oreilles" : "9 €",
+        "Cou ou nuque" : "9 €",
+        "Joues" : "9 €",
+        "Visage" : "25 €"
       },
-      "Maquillage": {
-        "Make-up jour (Mise en beauté)": "15 €",
-        "Make-up soir (Sophistiqué)": "20 €",
-        "Make-up grand soir (Avec faux cils)": "25 €",
-        "Make-up artistique (Dessins...)": "40 €",
-        "Make-up mariage (Avec un essai)": "45 €"
+      "Rituel soins visage : 30€" : {
+        "(Durée : 30 min.)" : "",
+        "- Serviette d’eau chaude" : "",
+        "- Gel moussant nettoyant" : "",
+        "- Patch désincrustant black" : "",
+        "- Masque au choix (Détox / Collagène / Rafraichissant)" : "",
+        "- Serviette d’eau froide" : ""
+      },
+      "Suppléments" : {
+        "Patch yeux" : "3 €",
+        "Masque rafraichissant visage et cou après rasage" : "3 €"
+      }
+    }, 
+    "Femme" :{
+      "Soins mains et pieds" : {
+        "Vernis semi-permanent" : "24 €",
+        "Bijoux d'ongles" : "4 €",
+        "Manucure express (préparation de l'ongle, gommer hydrater réparer, vernis)" : "15 €",
+        "Manucure (gommage, masque, vernis)" : "35 €",
+        "Pédicure (gommage, masque, vernis)" : "35 €",
+        "Manucure + Pédicure" : "60 €"
+      },
+      "Maquillage" : {
+        "Make-up jour (Mise en beauté)" : "15 €",
+        "Make-up soir (Sophistiqué)" : "20 €" 
       },
       "Beauté du regard": {
-        "Réhaussement de cils": "40 €",
-        "Teinture de cils": "15 €",
-        "Réhaussement + Teinture": "50 €",
-        "Teinture sourcils": "10 €",
+        "Rehaussement de cils" : "40 €",
+        "Teinture de cils" : "15 €",
+        "Rehaussement + Teinture" : "50 €",
+        "Teinture sourcils" : "10 €",
         "Décoloration sourcils" : "10 €",
-        "Restructuration sourcils au henné végétal": "30 €"
+        "Restructuration sourcils au henné végétal" : "30 €"
+      },
+      "Epilations": {
+        "Sourcils" : "7 €",
+        "Lèvres" : "7 €",
+        "Menton" : "7 €",
+        "Aisselles" : "10 €",
+        "Bras" : "10 €",
+        "Visage" : "15 €",
+        "Maillot simple *" : "10 €",
+        "Maillot Brésilien *" : "15 €",
+        "Maillot intégral *" : "25 €",
+        "1/2 Jambes" : "15 €",
+        "3/4 Jambes" : "20 €",
+        "Jambes entières" : "25 €",
+        "* Sauf mauvaise hygiène et hors période menstruel": ""
       },
       "Cours / Ateliers": {
         "Cours d'auto maquillage privé (1h)": "40 €",
@@ -91,81 +105,22 @@
         "Cours mixte en groupe (1h30)": "30 €/prs",
         "Atelier DIY Cosmétique : faire son gloss (1h30)": "15 €/prs"
       }
-    },
-    "Epilations": {
-      "Epilations Homme": {
-        "Sourcils": "9 €",
-        "Narines": "9 €",
-        "Oreilles": "9 €",
-        "Cou ou nuque": "9 €",
-        "Joues": "9 €",
-        "Epaules": "10 €",
-        "Ventre": "10 €",
-        "Aisselles": "15 €",
-        "Bras": "15 €",
-        "Torse": "20 €",
-        "Dos": "20 €",
-        "1/2 Jambes": "20 €",
-        "Jambes entières": "30 €",
-        "Maillot simple *": "40 €",
-        "Maillot intégral *": "60 €",
-        "* Sauf mauvaise hygiène": ""
-      },
-      "Epilations Femme": {
-        "Sourcils": "7 €",
-        "Lèvres": "7 €",
-        "Menton": "7 €",
-        "Aisselles": "10 €",
-        "Bras": "10 €",
-        "Visage": "15 €",
-        "Maillot simple *": "10 €",
-        "Maillot Brésilien *": "15 €",
-        "Maillot intégral *": "25 €",
-        "1/2 Jambes": "15 €",
-        "3/4 Jambes": "20 €",
-        "Jambes entières": "25 €",
-        "* Sauf mauvaise hygiène et hors période menstruel": ""
-      },
-      "Epilations Forfaits": {
-        "1/2 jambes + aisselles ou maillot simple": "20 €",
-        "1/2 jambes + maillot Brésilien": "25 €",
-        "1/2 jambes + maillot intégral": "35 €",
-        "1/2 jambes + aisselles + maillot simple": "30 €",
-        "1/2 jambes + aisselles + maillot Brésilien": "35 €",
-        "1/2 jambes + aisselles + maillot intégral": "45 €",
-        "Jambes entières + aisselles ou maillot simple": "30 €",
-        "Jambes entières + maillot Brésilien": "35 €",
-        "Jambes entières + maillot intégral": "45 €",
-        "Jambes entières + aisselles + maillot simple": "40 €",
-        "Jambes entières + aisselles + maillot Brésilien": "45 €",
-        "Jambes entières + aisselles ou maillot intégral": "55 €"
-      }
     }
   },
+
+
+
+
+
   "en": {
     "Dermopigmentation": {
       "Esthetic": {
-        "Microblading / Semi permanent makeup": {
-          "oldPrice": "170 €",
-          "newPrice": "180 €"
-        },
-        "Bristle hairs eyebrows": {
-          "oldPrice": "250 €",
-          "newPrice": "280 €"
-        },
-        "Shady eyebrows": {
-          "oldPrice": "200 €",
-          "newPrice": "220 €"
-        },
-        "Eyeliner top": {
-          "oldPrice": "150 €",
-          "newPrice": "170 €"
-        },
+        "Microblading / Semi permanent makeup": "180 €",
+        "Bristle hairs eyebrows": "280 €",
+        "Shady eyebrows": "220 €",
+        "Eyeliner top": "170 €",
         "Eyeliner bottom": "100 €",
-        "Eyeliner full": {
-          "oldPrice": "200 €",
-          "newPrice": "250 €"
-        },
+        "Eyeliner full": "250 €",
         "Glossy Lips": "180 €",
         "Lips contour": "200 €",
         "Contour + veiling": "220 €",
@@ -188,23 +143,40 @@
         "Annual retouch": "100 €"
       }
     },
-    "Care": {
-      "Body care": {
-        "Body scrub": "30 €",
-        "Back or legs scrub": "15 €",
-        "Californian modeling (1h)": "60 €",
-        "Back or legs Californian (30 min)": "30 €",
-        "Energizing modeling (1h)": "60 €",
-        "Back or legs Energizing (30 min)": "30 €",
-        "Candle modeling (1h)": "70 €",
-        "Back or legs Candle (30 min)": "35 €"
+    "Man":{
+      "Hairstyle" : {
+        "Classic haircut (shamp, cut, rinsing, styling)" : "17 €",
+        "Haircut with gradient to white (shamp, cut, rinsing, styling)" : "22 €"
       },
+      "Beard" : {
+        "Beard trimming (trim and trimmer tracing + oil or cream)" : "12 €",
+        "Mustache trimming (trim and wax)" : "5 €"
+      }, 
+      "Hair removal": {
+        "Eyebrows": "9 €",
+        "Nostrils": "9 €",
+        "Ears": "9 €",
+        "Neck": "9 €",
+        "Cheeks": "9 €",
+        "Face": "25 €"
+      },
+      "Face care ritual : 30€" : {
+        "(Duration : 30 min.)" : "",
+        "- Hot water towel" : "",
+        "- Foaming cleansing gel" : "",
+        "- Black scrub patch" : "",
+        "- Mask of your choice (Detox / Collagen / Refreshing)" : "",
+        "- Cold water towel" : ""
+      },
+      "Extra" : {
+        "Eye patch" : "3 €",
+        "Refreshing face and neck mask after shaving" : "3 €"
+      }
+    }, 
+    "Woman" :{
       "Hands and feet care": {
         "Semi permanent polish": "24 €",
-        "ornament": "1 €",
         "Nail jewelry": "4 €",
-        "Nail polish": "5 €",
-        "Nail polish 'French'": "10 €",
         "Express manicure (nail prepare, scrub, hydrate, repare, polish)": "15 €",
         "Manicure (scrub, mask, nail polish)": "35 €",
         "Pedicure (scrub, mask, nail polish)": "35 €",
@@ -212,10 +184,7 @@
       },
       "Make-up": {
         "Make-up day (Beauty treatment)": "15 €",
-        "Make-up evening (Sophisticated)": "20 €",
-        "Make-up great evening (With fake eyelashes)": "25 €",
-        "Make-up artistic (Draw...)": "40 €",
-        "Make-up wedding (With one try)": "45 €"
+        "Make-up evening (Sophisticated)": "20 €"
       },
       "Beauty of the look": {
         "Eyelash enhancement": "40 €",
@@ -225,36 +194,7 @@
         "Eyebrow discoloration": "10 €",
         "Restructuring eyebrows with vegetable henna": "30 €"
       },
-      "Lessons / Workshops": {
-        "Self makeup private lesson (1h)": "40 €",
-        "Self hairstyle private lesson (1h)": "40 €",
-        "Mixed private lesson (1h)": "40 €",
-        "Self makeup group lesson (1h30)": "30 €/ppl",
-        "Self hairstyle group lesson (1h30)": "30 €/ppl",
-        "Mixed group lesson (1h30)": "30 €/ppl",
-        "DIY cosmetic workshop : do your gloss (1h30)": "15 €/ppl"
-      }
-    },
-    "Hair removal": {
-      "Man's hair removal": {
-        "Eyebrows": "9 €",
-        "Nostrils": "9 €",
-        "Ears": "9 €",
-        "Neck": "9 €",
-        "Cheeks": "9 €",
-        "Shoulders": "10 €",
-        "Stomach": "10 €",
-        "Underarms": "15 €",
-        "Arms": "15 €",
-        "Chest": "20 €",
-        "Back": "20 €",
-        "1/2 legs": "20 €",
-        "Full legs": "30 €",
-        "Basic bikini *": "40 €",
-        "Full bikini *": "60 €",
-        "* Only if good hygiene": ""
-      },
-      "Woman's hair removal": {
+      "Hair removal": {
         "Eyebrows": "7 €",
         "Lips": "7 €",
         "Menton": "7 €",
@@ -269,20 +209,16 @@
         "Full legs": "25 €",
         "* Only if good hygiene and not on menstrual period": ""
       },
-      "Hair removal package": {
-        "1/2 legs + underarms or basic bikini": "20 €",
-        "1/2 legs + Brasilian bikini": "25 €",
-        "1/2 legs + full bikini": "35 €",
-        "1/2 legs + underarms + basic bikini": "30 €",
-        "1/2 legs + underarms + Brasilian bikini": "35 €",
-        "1/2 legs + underarms + full bikini": "45 €",
-        "Full legs + underarms ou maillot simple": "30 €",
-        "Full legs + Brasilian bikini": "35 €",
-        "Full legs + full bikini": "45 €",
-        "Full legs + underarms + basic bikini": "40 €",
-        "Full legs + underarms + Brasilian bikini": "45 €",
-        "Full legs + underarms ou full bikini": "55 €"
+      "Lessons / Workshops": {
+        "Self makeup private lesson (1h)": "40 €",
+        "Self hairstyle private lesson (1h)": "40 €",
+        "Mixed private lesson (1h)": "40 €",
+        "Self makeup group lesson (1h30)": "30 €/ppl",
+        "Self hairstyle group lesson (1h30)": "30 €/ppl",
+        "Mixed group lesson (1h30)": "30 €/ppl",
+        "DIY cosmetic workshop : do your gloss (1h30)": "15 €/ppl"
       }
     }
   }
+
 }
