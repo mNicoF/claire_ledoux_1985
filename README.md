@@ -16,4 +16,4 @@ Sources
 [Recette](https://mnicof.github.io/claire_ledoux_1985/) // 
 [Facebook](https://www.facebook.com/claireledoux1985/)
 
-13 Rue de l'Arsenal, 79000 Niort, France
+296 Rue du Maréchal Leclerc, 79000 Niort, France
