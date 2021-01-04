@@ -37,7 +37,7 @@ class Infos extends Component {
         info = (
           <iframe
             title={contact.label}
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2755.308366391724!2d-0.4649403844135393!3d46.32357177912051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4807302d49a7fac7%3A0xf6504c9d332526e9!2s13+Rue+de+l&#39;Arsenal%2C+79000+Niort!5e0!3m2!1sfr!2sfr!4v1550002441007"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2754.193591575366!2d-0.444245384589572!3d46.34570208221204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480731dfb88de69b%3A0xdec419cbbd57a2d8!2sClaire%20Ledoux%201985!5e0!3m2!1sfr!2sfr!4v1609754993954!5m2!1sfr!2sfr"
             width="800"
             height="600"
           />
@@ -48,7 +48,7 @@ class Infos extends Component {
         info = (
           <iframe
             title={contact.label}
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2755.308366391724!2d-0.4649403844135393!3d46.32357177912051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4807302d49a7fac7%3A0xf6504c9d332526e9!2s13+Rue+de+l&#39;Arsenal%2C+79000+Niort!5e0!3m2!1sfr!2sfr!4v1550002441007"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2754.193591575366!2d-0.444245384589572!3d46.34570208221204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480731dfb88de69b%3A0xdec419cbbd57a2d8!2sClaire%20Ledoux%201985!5e0!3m2!1sfr!2sfr!4v1609754993954!5m2!1sfr!2sfr"
             width="800"
             height="600"
           />
