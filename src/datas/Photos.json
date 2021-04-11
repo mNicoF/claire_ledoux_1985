@@ -8,17 +8,17 @@
     {
       "name":"Dermographie esthétique",
       "source":"Dermographie esthétique",
-      "size":3
+      "size":4
     },
     {
       "name":"Maquillage permanent",
       "source":"Maquillage permanent",
-      "size":40
+      "size":49
     },
     {
       "name":"Maquillage semi-permanent",
       "source":"Maquillage semi-permanent",
-      "size":36
+      "size":40
     },
     {
       "name":"Ongles",
@@ -40,17 +40,17 @@
     {
       "name":"Esthetic dermography",
       "source":"Dermographie esthétique",
-      "size":3
+      "size":4
     },
     {
       "name":"Permanent make up",
       "source":"Maquillage permanent",
-      "size":40
+      "size":49
     },
     {
       "name":"Semi-permanent make up",
       "source":"Maquillage semi-permanent",
-      "size":36
+      "size":40
     },
     {
       "name":"Nails",
