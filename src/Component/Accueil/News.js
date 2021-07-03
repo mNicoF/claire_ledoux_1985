@@ -39,30 +39,40 @@ class News extends Component {
 
   render() {
 
+    let newsContent = [];
     const news = this.state.news;
-    let jumboContent = [];
-    for (let n in news) {
-      jumboContent.push(<hr key={"hr_" + n} className="my-2" />);
-      let newsTxt = [];
-      if (news[n].url) {
-        newsTxt.push(
-        <p key={"p_" + n} className="lead">
-          {news[n].text.split('@link')[0]}
-          <a href={news[n].url} target="_blank" rel="noopener noreferrer">{news[n].link}</a>
-          {news[n].text.split('@link')[1]}
-        </p>);
-      } else {
-        newsTxt.push(<p key={"p_" + n} className="lead">{news[n].text}</p>);
-      }
-      jumboContent.push(newsTxt);
-    }
 
-    return (
-      <div className="NewsLayout">
+    if(news[0].text !== "") {
+      let jumboContent = [];
+      for (let n in news) {
+        jumboContent.push(<hr key={"hr_" + n} className="my-2" />);
+        let newsTxt = [];
+        if (news[n].url) {
+          newsTxt.push(
+          <p key={"p_" + n} className="lead">
+            {news[n].text.split('@link')[0]}
+            <a href={news[n].url} target="_blank" rel="noopener noreferrer">{news[n].link}</a>
+            {news[n].text.split('@link')[1]}
+          </p>);
+        } else {
+          newsTxt.push(<p key={"p_" + n} className="lead">{news[n].text}</p>);
+        }
+        jumboContent.push(newsTxt);
+      }
+
+      newsContent = (
         <Jumbotron>
           <h3 className="NewsHeader" onClick={() => this.toggle()}>{this.state.title} <Badge color={this.state.badgeColor}>{this.state.news.length}</Badge></h3>
           {this.state.isOpen && jumboContent}
         </Jumbotron>
+      );
+
+    }
+    
+
+    return (
+      <div className="NewsLayout">
+        {newsContent}
       </div>
     );
   }

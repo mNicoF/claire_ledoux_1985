@@ -40,6 +40,23 @@
     max-width: 85vw !important;
     height: 53vh !important;
     padding: 20px;
+    /*cursor: pointer;*/
+}
+
+.ImgFull {
+    background-color: white;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.ImgFull > img {
+    width: auto;
+    height: 90vh !important;
+    cursor: auto !important;
 }
 
 /**
