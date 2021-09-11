@@ -3,32 +3,32 @@
     {
       "name":"Dermographie réparatrice",
       "source":"Dermographie réparatrice",
-      "size":14
+      "size":16
     },
     {
       "name":"Dermographie esthétique",
       "source":"Dermographie esthétique",
-      "size":4
+      "size":5
     },
     {
-      "name":"Dermographie artistique",
-      "source":"Dermographie artistique",
-      "size":1
+      "name":"Tatouage",
+      "source":"Tatouage",
+      "size":9
     },
     {
       "name":"Maquillage permanent",
       "source":"Maquillage permanent",
-      "size":49
+      "size":59
     },
     {
       "name":"Maquillage semi-permanent",
       "source":"Maquillage semi-permanent",
-      "size":40
+      "size":48
     },
     {
-      "name":"Ongles",
-      "source":"Ongles",
-      "size":18
+      "name":"Vernis semi-permanent",
+      "source":"Vernis semi-permanent",
+      "size":20
     },
     {
       "name":"Make up",
@@ -40,32 +40,32 @@
     {
       "name":"Restorative dermography",
       "source":"Dermographie réparatrice",
-      "size":14
+      "size":16
     },
     {
       "name":"Esthetic dermography",
       "source":"Dermographie esthétique",
-      "size":4
+      "size":5
     },
     {
-      "name":"Artistic Dermography",
-      "source":"Dermographie artistique",
-      "size":1
+      "name":"Tattoo",
+      "source":"Tatouage",
+      "size":9
     },
     {
       "name":"Permanent make up",
       "source":"Maquillage permanent",
-      "size":49
+      "size":59
     },
     {
       "name":"Semi-permanent make up",
       "source":"Maquillage semi-permanent",
-      "size":40
+      "size":48
     },
     {
-      "name":"Nails",
-      "source":"Ongles",
-      "size":18
+      "name":"Semi-permanent nail polish",
+      "source":"Vernis semi-permanent",
+      "size":20
     },
     {
       "name":"Make up",

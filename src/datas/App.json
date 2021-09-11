@@ -31,8 +31,7 @@
             "galerie": {
                 "title": "galerie",
                 "sub": {
-                    "photos": "photos",
-                    "videos": "videos"
+                    "photos": "photos"
                 }
             },
             "tarifs": {
@@ -62,8 +61,7 @@
             "galerie": {
                 "title": "gallery",
                 "sub": {
-                    "photos": "pictures",
-                    "videos": "videos"
+                    "photos": "pictures"
                 }
             },
             "tarifs": {
