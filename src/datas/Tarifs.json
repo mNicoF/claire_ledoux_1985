@@ -3,18 +3,19 @@
     "Dermopigmentation": {
       "Esthétique": {
         "Microblading / Maquillage semi-permanent": "180 €",
-        "Sourcils poils à poils": "280 €",
-        "Sourcils ombrage / remplissage": "220 €",
-        "Eye-liner haut": "170 €",
+        "Maquillage permanent sourcils": "280 €",
+        "Sourcils ombrage / remplissage": "250 €",
+        "Eye-liner sup/poudré": "250 €",
+        "Eye-liner haut": "190 €",
         "Eye-liner bas": "100 €",
         "Eye-liner complet": "250 €",
         "Glossy Lips": "180 €",
-        "Contour de lèvres": "200 €",
-        "Contour + voilage": "250 €",
+        "Contour de lèvres": "220 €",
+        "Contour + voilage": "280 €",
         "Full lips": "300 €",
         "Candy lips": "380 €",
         "Grain de beauté": "60 €",
-        "Tâches de rousseurs": "60 €"
+        "Tâches de rousseurs": "80 €"
       },
       "Médical": {
         "Cicatrices": "100 € *",
@@ -24,21 +25,17 @@
         "* prix minimum uniquement sur devis": ""
       },
       "Retouches": {
-        "Retouche comprise le mois suivant": "",
-        "Retouche le 3ème mois": "40 €",
-        "Retouche le 4ème mois": "80 €",
-        "Retouche annuel": "100 €"
+        "Retouche 1 mois après": "gratuit",
+        "Retouche 2 mois après": "40 €",
+        "Retouche 3 mois après": "80 €",
+        "Retouche microblading annuel": "100 €",
+        "Retouche MP Sourcils": "140/180€",
+        "Retouche MP Yeux": "120/150€",
+        "Retouche MP Lèvres": "120/180€",
+        "* les retouches des autres prestations se font sur devis":""
       }
     },
     "Homme":{
-      "Coiffure" : {
-        "Coupe classique (shamp, coupe, rinçage, coiffage)" : "17 €",
-        "Coupe dégradée à blanc (shamp, coupe, rinçage, coiffage)" : "22 €"
-      },
-      "Barbe" : {
-        "Taille de barbe (taille et tracé tondeuse + huile ou crème)" : "12 €",
-        "Taille de moustache (taille et cire)" : "5 €"
-      }, 
       "Epilations" : {
         "Sourcils" : "9 €",
         "Narines" : "9 €",
@@ -61,6 +58,16 @@
       }
     }, 
     "Femme" :{
+      "Soins du corps" : {
+        "Modelage californien (50 min)" : "60 €",
+        "Californien dos ou jambes (25 min)" : "30 €",
+        "Modelage énergisant (50 min)" : "60 €",
+        "Modelage à la bougie (50 min)" : "70 €",
+        "Bougie dos ou jambes (25 min)" : "35 €",
+        "Modelage intuitif" : "1€/min (25 mini)",
+        "* Nouveau : modelage visage et crane":"",
+        "libère du stress et des tensions, soin nourissant des cheveux (60 min)":"68 €"
+      },
       "Soins mains et pieds" : {
         "Vernis semi-permanent" : "24 €",
         "Bijoux d'ongles" : "4 €",
@@ -116,18 +123,19 @@
     "Dermopigmentation": {
       "Esthetic": {
         "Microblading / Semi permanent makeup": "180 €",
-        "Bristle hairs eyebrows": "280 €",
-        "Shady eyebrows": "220 €",
-        "Eyeliner top": "170 €",
+        "Permanent Make-up eyebrows": "280 €",
+        "Shady/Filling eyebrows": "250 €",
+        "Eyeliner top/powder": "250",
+        "Eyeliner top": "190 €",
         "Eyeliner bottom": "100 €",
         "Eyeliner full": "250 €",
         "Glossy Lips": "180 €",
-        "Lips contour": "200 €",
-        "Contour + veiling": "220 €",
+        "Lips contour": "220 €",
+        "Contour + veiling": "280 €",
         "Full lips": "300 €",
         "Candy lips": "380 €",
         "Beauty spot": "60 €",
-        "Freckle": "60 €"
+        "Freckle": "80 €"
       },
       "Medical (on quotation)": {
         "Scars": "100 € *",
@@ -137,21 +145,17 @@
         "* minimum price only on quotation": ""
       },
       "Retouch": {
-        "Included retouch the next month": "",
-        "Retouch the 3rd month": "40 €",
-        "Retouch the 4th month": "80 €",
-        "Annual retouch": "100 €"
+        "Retouch after 1 month": "free",
+        "Retouch after 2 month": "40 €",
+        "Retouch after 3 month": "80 €",
+        "Annual retouch": "100 €",
+        "Retouch PM eyebrows": "140/180€",
+        "Retouch PM eyes": "120/150€",
+        "Retouch PM lips": "120/180€",
+        "* Retouch for other services only on quotation":""
       }
     },
     "Man":{
-      "Hairstyle" : {
-        "Classic haircut (shamp, cut, rinsing, styling)" : "17 €",
-        "Haircut with gradient to white (shamp, cut, rinsing, styling)" : "22 €"
-      },
-      "Beard" : {
-        "Beard trimming (trim and trimmer tracing + oil or cream)" : "12 €",
-        "Mustache trimming (trim and wax)" : "5 €"
-      }, 
       "Hair removal": {
         "Eyebrows": "9 €",
         "Nostrils": "9 €",
@@ -174,6 +178,16 @@
       }
     }, 
     "Woman" :{
+      "Body care" : {
+        "Californian modeling (50 min)" : "60 €",
+        "Californian back or legs (25 min)" : "30 €",
+        "Energizing modeling (50 min)" : "60 €",
+        "Canddle modeling (50 min)" : "70 €",
+        "Canddle back or legs (25 min)" : "35 €",
+        "Intuitive modeling" : "1€/min (25 mini)",
+        "* New : face and cranium modeling":"",
+        "Release stress and tension, nourishing hair care (60 min)":"68 €"
+      },
       "Hands and feet care": {
         "Semi permanent polish": "24 €",
         "Nail jewelry": "4 €",

@@ -4,7 +4,12 @@
       "title" : "Nouveau",
       "content" : [
         {
-          "text":"",
+          "text":"A partir de Janvier, changement de certains tarifs",
+          "link":"",
+          "url":""
+        },
+        {
+          "text":"Nouveaux tatouages dans la galerie photo",
           "link":"",
           "url":""
         }
@@ -33,7 +38,12 @@
       "title" : "News",
       "content" : [
         {
-          "text":"",
+          "text":"From January, some prices will change",
+          "link":"",
+          "url":""
+        },
+        {
+          "text":"New tattoo in the pics galery",
           "link":"",
           "url":""
         }
