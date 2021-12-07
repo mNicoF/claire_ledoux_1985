@@ -39,8 +39,14 @@
   background-color: transparent !important;
 }
 
+
+.nav-item > a {
+  font-size: 1.5vw !important;
+  vertical-align: top !important;
+}
+
 .nav-item > a, .nav-item > a:hover {
-  font-size: 2.5vh;
+  /*font-size: 2.5vh;*/
   font-family: F25_Executive;
   color:#37342F;
   text-decoration: none;
