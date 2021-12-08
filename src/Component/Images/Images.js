@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import { Button } from "reactstrap";
+import { findOne } from "../../utils/Images";
 
 import '../../Style/Medias.css';
 
@@ -37,8 +38,9 @@ class Images extends Component {
 
     let images = [];
     for (let i = 1; i <= this.props.folderSize; i++) {
+      const image = findOne(this.props.allImport[this.props.folderName], i);
       images.push(
-        <img key={i} src={require('../../medias/galerie/' + this.props.folderName + '/' + i + '.webp')} alt={i} className="ImageImg" />
+        <img key={i} src={image} alt={i} className="ImageImg" />
       );
     }
 

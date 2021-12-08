@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Jumbotron, Badge } from 'reactstrap';
+import { Badge } from 'reactstrap';
 
 class News extends Component {
   constructor(props) {
@@ -61,10 +61,10 @@ class News extends Component {
       }
 
       newsContent = (
-        <Jumbotron>
+        <div className="jumbotron">
           <h3 className="NewsHeader" onClick={() => this.toggle()}>{this.state.title} <Badge color={this.state.badgeColor}>{this.state.news.length}</Badge></h3>
           {this.state.isOpen && jumboContent}
-        </Jumbotron>
+        </div>
       );
 
     }

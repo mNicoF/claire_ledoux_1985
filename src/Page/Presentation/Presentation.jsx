@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import { importAll, findOne } from "../../utils/Images";
 import '../../Style/Presentation.css';
 
 class Presentation extends Component {
@@ -25,9 +25,11 @@ class Presentation extends Component {
           presentation.push(<p key={p}>{pres[p].value}</p>);
           break;
         case 'image':
+          const images = importAll(require.context('../../medias/presentation/', true, /\.(webp)$/));
+          const image = findOne(images, pres[p].value);
           presentation.push(
             <div key={p+'_div'} className="PresentationImg">
-              <img key={p} src={require('../../medias/presentation/' + pres[p].value + '.webp')} alt={pres[p].value} />
+              <img key={p} src={image} alt={pres[p].value} />
             </div>
           );
           break;

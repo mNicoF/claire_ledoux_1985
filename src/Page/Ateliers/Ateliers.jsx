@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import { importAll, findOne } from "../../utils/Images";
 import GenericTag from './../../Component/GenericTag';
 
 import '../../Style/Ateliers.css';
@@ -31,8 +31,10 @@ class Ateliers extends Component {
       //photos
       let photo = this.props.ateliers[a].photos[this.props.device];
       if (photo) {
+        const images = importAll(require.context('../../medias/ateliers/', true, /\.(webp)$/));
+        const image = findOne(images, photo);
         atelier.push(
-          <img key={"photo"+a} className="AtelierPhoto" src={require('../../medias/ateliers/' + photo)} alt={photo} />
+          <img key={"photo"+a} className="AtelierPhoto" src={image} alt={photo} />
         );
       }
 

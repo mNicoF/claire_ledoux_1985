@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import Header from "./AppComp/Header";
 import Footer from "./AppComp/Footer";
 import FooterRec from "./AppComp/FooterRec";
+import CartCanvas from "./AppComp/CartCanvas";
 
 import MessengerCustomerChat from 'react-messenger-customer-chat';
 
@@ -38,6 +39,8 @@ class AppLayout extends Component {
           menu={this.props.menu[this.state.lang]}
         />
 
+        <CartCanvas lang={this.state.lang} />
+
         {children}
 
         {this.props.target === "http://www.claireledoux1985.fr/" ? (
@@ -46,6 +49,7 @@ class AppLayout extends Component {
             <FooterRec infos={this.props.infos} version={this.props.version} dateMaJ={this.props.dateMaJ} />
           )}
 
+        
         <MessengerCustomerChat
           appId=""
           className="fb-customerchat"

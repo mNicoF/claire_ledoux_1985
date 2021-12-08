@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { ListGroup, ListGroupItem, ListGroupItemHeading, Button } from 'reactstrap';
+import { ListGroup, ListGroupItem, ListGroupItemHeading } from 'reactstrap';
 
 import Infos from './../../Component/Infos/Infos';
 import GenericTag from './../../Component/GenericTag';
@@ -20,7 +20,7 @@ class Contact extends Component {
   }
 
   componentDidMount() {
-    this.handleMoreInfo({ 'target': { 'id': 0 } });
+    this.handleMoreInfo({ 'target': { 'id': 3 } });
   }
 
   sendMail(mail){
@@ -45,14 +45,14 @@ class Contact extends Component {
     const contacts = this.state.contact;
     let listGroupItem = [];
     for (let c in contacts) {
-      let moreInfo = (contacts[c].moreInfo) ? (
+      /*let moreInfo = (contacts[c].moreInfo) ? (
         <Button id={c} className="moreInfoBtn theme" onClick={this.handleMoreInfo}>+</Button>
-      ) : (<></>);
+      ) : (<></>);*/
       listGroupItem.push(
         <ListGroupItem key={c} className="GroupItem">
           <GenericTag target={contacts[c].title} /> {' : '}
           <GenericTag target={contacts[c].value} />
-          {moreInfo}
+          {/*moreInfo*/}
         </ListGroupItem>)
     }
 

@@ -12,6 +12,7 @@ import {
   DropdownMenu,
   DropdownItem
 } from "reactstrap";
+import { importAll, findOne } from "../../utils/Images";
 
 class Header extends Component {
   constructor(props) {
@@ -62,7 +63,7 @@ class Header extends Component {
         let dropItems = [];
         for (let s in menuList[item].sub) {
           dropItems.push(
-            <DropdownItem>
+            <DropdownItem key={menuList[item].sub[s]}>
               <Link className="dropdownLinks"
                 to={"/" + this.props.lang + "/" + s}
                 onClick={() => this.toggle(false)}
@@ -103,11 +104,19 @@ class Header extends Component {
       langList.push(allLang[l]);
     }
 
+    const images = importAll(require.context('../../medias/lang/', true, /\.(webp)$/));
+    let imgFr = findOne(images, 'fr');
+    let imgEn = findOne(images, 'en');
+    let image = {
+      'fr': <img key={'fr'} src={imgFr} alt={'fr'} style={{ height: "12px" }} />,
+      'en': <img key={'en'} src={imgEn} alt={'en'} style={{ height: "12px" }} />
+    }
+    
     const formatOptionLabel = ({ value, label, icon }) => (
       <div style={{ display: "flex" }}>
         <div>{label}</div>
         <div style={{ marginLeft: "10px" }}>
-          <img key={icon} src={require('../../medias/lang/' + icon)} alt={icon} style={{ height: "12px" }} />
+          {image[value]}
         </div>
       </div>
     );

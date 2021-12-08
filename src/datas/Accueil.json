@@ -50,8 +50,8 @@
       ]
     },
     "media": {
-      "type" : "video",
-      "video" : {
+      "type" : "teaser",
+      "teaser" : {
         "title" : "Medical tattoo cabine in Niort",
         "source" : "https://www.youtube.com/embed/HFgBaR0D8cM"
       },

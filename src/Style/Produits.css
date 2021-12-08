@@ -25,3 +25,10 @@
     max-width: 30vw;
     height: 100%;
 }
+
+.PriceBdg {
+    vertical-align: middle !important;
+    font-size:2.5vh !important;
+    padding:10px !important;
+    margin-right: 10px;
+}

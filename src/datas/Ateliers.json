@@ -3,8 +3,8 @@
     {
       "title": "Cours d’auto maquillage et d’auto coiffure",
       "photos": {
-        "desktop": "cours_desk.webp",
-        "mobile": "cours_mobi.webp"
+        "desktop": "cours_desk",
+        "mobile": "cours_mobi"
       },
       "content": [
         {
@@ -80,8 +80,8 @@
     {
       "title": "Atelier DIY cosmétique : Faire son gloss",
       "photos": {
-        "desktop": "gloss_desk.webp",
-        "mobile": "gloss_mobi.webp"
+        "desktop": "gloss_desk",
+        "mobile": "gloss_mobi"
       },
       "content": [
         {
@@ -100,8 +100,8 @@
     {
       "title": "Self makeup and self hairstyle lessons",
       "photos": {
-        "desktop": "cours_desk.webp",
-        "mobile": "cours_mobi.webp"
+        "desktop": "cours_desk",
+        "mobile": "cours_mobi"
       },
       "content": [
         {
@@ -177,8 +177,8 @@
     {
       "title": "DIY cosmetic workshop : do your gloss",
       "photos": {
-        "desktop": "gloss_desk.webp",
-        "mobile": "gloss_mobi.webp"
+        "desktop": "gloss_desk",
+        "mobile": "gloss_mobi"
       },
       "content": [
         {

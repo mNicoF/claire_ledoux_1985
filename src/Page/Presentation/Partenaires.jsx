@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import { importAll, findOne } from "../../utils/Images";
 import '../../Style/Presentation.css';
 
 class Partenaires extends Component {
@@ -22,25 +22,27 @@ class Partenaires extends Component {
     for (let p in pres) {
       switch (pres[p].type) {
         case 'titre':
-          partenaires.push(<p key={p} className="PresentationTitle">{pres[p].value}</p>);
+          partenaires.push(<p key={pres[p].type+"_"+p} className="PresentationTitle">{pres[p].value}</p>);
           break;
         case 'paragraphe':
-          partenaires.push(<p key={p}>{pres[p].value}</p>);
+          partenaires.push(<p key={pres[p].type+"_"+p}>{pres[p].value}</p>);
           break;
         case 'lien':
           partenaires.push(<a rel="noopener noreferrer" target="_blank" href={pres[p].url}>{pres[p].value}</a>);
           break;
         case 'image':
+          const images = importAll(require.context('../../medias/partenaires/', true, /\.(webp)$/));
+          const image = findOne(images, pres[p].value);
           partenaires.push(
-            <div key={p + '_div'} className="PresentationImg">
-              <img key={p} src={require('../../medias/partenaires/' + pres[p].value + '.webp')} alt={pres[p].value} />
+            <div key={pres[p].type+"_"+p+'_div'} className="PresentationImg">
+              <img key={pres[p].type+"_"+p} src={image} alt={pres[p].value} />
             </div>
           );
           break;
         case 'liste':
           let liste = [];
           for (let c in pres[p].content) {
-            liste.push(<li>{pres[p].content[c]}</li>);
+            liste.push(<li key={pres[p].content[c]+"_"+c}>{pres[p].content[c]}</li>);
           }
           partenaires.push(
             <section>

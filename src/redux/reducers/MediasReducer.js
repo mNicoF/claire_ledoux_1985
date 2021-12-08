@@ -10,4 +10,4 @@ export function mediasReducer(state = initialState){
     return state;
 }
 
-export default {mediasReducer}
+export default mediasReducer;
