@@ -30,11 +30,11 @@ const config = {
                 use: [stylesHandler,'css-loader'],
             },
             {
-                test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,
-                type: 'asset',
+                test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif|otf)$/i,
+                loader: "file-loader"
             },
             {
-                test: /\.(png|jpg|)$/,
+                test: /\.(png|jpg|webp|)$/,
                 loader: 'url-loader?limit=200000'
             }
 
