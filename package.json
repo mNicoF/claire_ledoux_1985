@@ -1,7 +1,7 @@
 {
   "name": "my-webpack-project",
-  "version": "1.0.0",
-  "date": "02/12/2021",
+  "version": "1.3.0",
+  "date": "09/12/2021",
   "private": true,
   "homepage": "http://www.claireledoux1985.fr/",
   "dependencies": {

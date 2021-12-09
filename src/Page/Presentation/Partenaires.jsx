@@ -28,7 +28,7 @@ class Partenaires extends Component {
           partenaires.push(<p key={pres[p].type+"_"+p}>{pres[p].value}</p>);
           break;
         case 'lien':
-          partenaires.push(<a rel="noopener noreferrer" target="_blank" href={pres[p].url}>{pres[p].value}</a>);
+          partenaires.push(<a key={pres[p].type+"_"+p} rel="noopener noreferrer" target="_blank" href={pres[p].url}>{pres[p].value}</a>);
           break;
         case 'image':
           const images = importAll(require.context('../../medias/partenaires/', true, /\.(webp)$/));
@@ -45,9 +45,9 @@ class Partenaires extends Component {
             liste.push(<li key={pres[p].content[c]+"_"+c}>{pres[p].content[c]}</li>);
           }
           partenaires.push(
-            <section>
+            <section key={p+'_section'}>
               <p key={p} className="PresentationTitle">{pres[p].value}</p>
-              <ul>
+              <ul key={p+'_ul'}>
                 {liste}
               </ul>
             </section>

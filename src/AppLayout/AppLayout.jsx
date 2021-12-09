@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import Header from "./AppComp/Header";
 import Footer from "./AppComp/Footer";
 import FooterRec from "./AppComp/FooterRec";
-import CartCanvas from "./AppComp/CartCanvas";
+//import CartCanvas from "./AppComp/CartCanvas";
 
 import MessengerCustomerChat from 'react-messenger-customer-chat';
 
@@ -39,7 +39,7 @@ class AppLayout extends Component {
           menu={this.props.menu[this.state.lang]}
         />
 
-        <CartCanvas lang={this.state.lang} />
+        {/*<CartCanvas lang={this.state.lang} />*/}
 
         {children}
 
