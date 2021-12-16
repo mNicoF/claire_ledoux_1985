@@ -1,34 +1,19 @@
-import React, { Component } from "react";
+import React from "react";
 import { Button } from "reactstrap";
 
-class CartCanvas extends Component {
-  constructor(props) {
-    super(props);
+const CartCanvas = () => {
+  const [isOpen, setIsOpen] = React.useState(false);
 
-    this.toggle = this.toggle.bind(this);
+  const toggle = (force) => setIsOpen(force != null ? force : !isOpen);
 
-    this.state = {
-      isOpen: false
-    };
-  }
+  return (
+    <div>
+      <Button color="primary" onClick={() => toggle()}>
+        Panier
+      </Button>
 
-  toggle(force) {
-    this.setState({
-      isOpen: force != null ? force : !this.state.isOpen
-    });
-  }
-
-  render() {
-
-    return (
-      <div>
-        <Button color="primary" onClick={() => this.toggle()}>
-          Panier
-        </Button>
-
-      </div>
-    );
-  }
+    </div>
+  );
 }
 
 export default CartCanvas;

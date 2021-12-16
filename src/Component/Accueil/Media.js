@@ -1,26 +1,20 @@
-import React, { Component } from "react";
+import React from "react";
 
 import Carousel from "./MediaComp/Carousel";
 import Teaser from "./MediaComp/Teaser";
 
-class Media extends Component {
-  constructor(props) {
-    super(props);
+const Media = (props) => {
+  
+  const [type] = React.useState(props.media.type);
 
-    this.state = {
-      type: this.props.media.type
-    };
-  }
-
-  setMedia() {
+  const setMedia = () => {
     let media = <></>;
-    let type = this.state.type;
     switch (type) {
       case "carousel":
-        media = <Carousel infos={this.props.media[type]}/>;
+        media = <Carousel infos={props.media[type]}/>;
         break;
       case "teaser":
-        media = <Teaser infos={this.props.media[type]}/>;
+        media = <Teaser infos={props.media[type]}/>;
         break;
       default:
         break;
@@ -28,11 +22,10 @@ class Media extends Component {
     return media;
   }
 
-  render() {
-    let myMedia = this.setMedia();
+  const myMedia = setMedia();
 
-    return <div className="MediaLayout">{myMedia}</div>;
-  }
+  return <div className="MediaLayout">{myMedia}</div>;
+
 }
 
 export default Media;
