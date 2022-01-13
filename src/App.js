@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react";  
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import AppLayout from "./AppLayout/AppLayout";
@@ -89,8 +89,6 @@ const App = () => {
   const [lang, setLang] = React.useState((localStorage.getItem('siteLang'))? localStorage.getItem('siteLang') : 'fr');
 
   React.useEffect(() => {
-    //window.addEventListener("pushstate", this.handleHistory, false);
-    //window.addEventListener("popstate", this.handleHistory, false);
 
     const packageJson = require("./../package.json");
 
@@ -128,11 +126,6 @@ const App = () => {
       localStorage.setItem('siteLang', window.location.pathname.split("/")[1]);
     }
     setLang(currLang);
-
-    /*return () => {
-      window.removeEventListener("pushstate", this.handleHistory);
-      window.removeEventListener("popstate", this.handleHistory);
-    }*/
   }, []);
 
   return (

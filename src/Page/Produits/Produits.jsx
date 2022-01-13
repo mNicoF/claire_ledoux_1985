@@ -25,16 +25,16 @@ class Produits extends Component {
         let prices = [];
         prices.push(
           produits[p].price.map((p) => {
-            return (<Badge key={p} color="light" className="PriceBdg">{p} €</Badge>);
+            return (<Badge key={p} color="secondary" className="PriceBdg">{p} €</Badge>);
           })
         );
         
         let cart = [];
-        if(produits[p].stock === 0){
+        /*if(produits[p].stock === 0){
           cart.push(<Button key={"cartBtn_"+produits[p].image} disabled color="danger" size="lg">{NO_STOCK_LABEL}</Button>);
         } else {
           cart.push(<Button key={"cartBtn_"+produits[p].image} color="success" size="lg">{ADD_CART_LABEL}</Button>);
-        }
+        }*/
         const images = importAll(require.context('../../medias/produits/', true, /\.(webp)$/));
         const image = findOne(images, produits[p].image);
         cards.push(

@@ -40,6 +40,7 @@ class Photos extends Component {
     let Maquillage_permanent = importAll(require.context('../../medias/galerie/Maquillage permanent', true, /\.(webp)$/));
     let Maquillage_semi_permanent = importAll(require.context('../../medias/galerie/Maquillage semi-permanent', true, /\.(webp)$/));
     let Vernis_semi_permanent = importAll(require.context('../../medias/galerie/Vernis semi-permanent', true, /\.(webp)$/));
+    let Make_up = importAll(require.context('../../medias/galerie/Make up', true, /\.(webp)$/));
     
     this.setState({
       allImport: {
@@ -48,7 +49,8 @@ class Photos extends Component {
         "Tatouage": Tatouage,
         "Maquillage permanent": Maquillage_permanent,
         "Maquillage semi-permanent": Maquillage_semi_permanent,
-        "Vernis semi-permanent": Vernis_semi_permanent
+        "Vernis semi-permanent": Vernis_semi_permanent,
+        "Make up": Make_up
       }
     });
   }
