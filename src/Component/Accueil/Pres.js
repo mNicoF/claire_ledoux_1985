@@ -8,7 +8,7 @@ const Pres = (props) => {
     <div className="PresLayout">
       <h3>{title}</h3>
       <div className="PresContent">
-        {props.presentation.content}
+        {props.presentation.resume}
       </div>
     </div>
   );

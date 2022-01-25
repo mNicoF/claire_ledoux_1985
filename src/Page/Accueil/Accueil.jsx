@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 
 //import Annonce from "./../../Component/Accueil/Annonce";
 import News from "./../../Component/Accueil/News";
@@ -8,44 +8,34 @@ import Contact from "./../../Component/Accueil/Contact";
 
 import "../../Style/Accueil.css";
 
-class Accueil extends Component {
-  constructor(props) {
-    super(props);
+const Accueil = (props) => {
 
-    this.state = {
-      news: this.props.accueil.news,
-      media: this.props.accueil.media,
-      presentation: {
-        title: this.props.presentation.title,
-        content: this.props.presentation.resume
-      }
-    };
-  }
+  const [news] = React.useState(props.accueil.news);
+  const [media] = React.useState(props.accueil.media);
+  const [presentation] = React.useState(props.presentation);
 
-  render() {
-
-    //Traitement des données de contact
-    const contactList = this.props.contact;
-    let contactAccueil = [];
-    for (let c in contactList) {
-      if(contactList[c].accueil) {
-        contactAccueil.push(contactList[c]);
-      }
+  //Traitement des données de contact
+  const contactList = props.contact;
+  let contactAccueil = [];
+  for (let c in contactList) {
+    if(contactList[c].accueil) {
+      contactAccueil.push(contactList[c]);
     }
-
-    return (
-      <div className="AccueilLayout Page">
-        {/*<Annonce lang={this.props.lang}/>*/}
-        <News news={this.state.news}/>
-        <div className="AccueilCenter">
-          <Media media={this.state.media} />
-          <Pres lang={this.props.lang} presentation={this.state.presentation} />
-        </div>
-        <hr />
-        <Contact contact={contactAccueil} />
-      </div>
-    );
   }
+
+  return (
+    <div className="AccueilLayout Page">
+      {/*<Annonce lang={this.props.lang}/>*/}
+      <News news={news}/>
+      <div className="AccueilCenter">
+        <Media media={media} />
+        <Pres lang={props.lang} presentation={presentation} />
+      </div>
+      <hr />
+      <Contact contact={contactAccueil} />
+    </div>
+  );
+
 }
 
 export default Accueil;

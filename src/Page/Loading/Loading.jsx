@@ -1,24 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import '../../Style/Loading.css';
 
-class Loading extends Component {
-  constructor(props) {
-    super(props);
-    
-    this.state = {
-      
-    };
-  }
+const Loading = () => {
 
-  render() {
-
-    return (
-      <div className="LoadingLayout Page">
-          <h3>Chargement...</h3>
-      </div>
-    );
-  }
+  return (
+    <div className="LoadingLayout Page">
+        <h3>Chargement...</h3>
+    </div>
+  );
 }
 
 export default Loading;
