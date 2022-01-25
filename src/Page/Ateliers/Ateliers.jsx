@@ -4,7 +4,7 @@ import GenericTag from './../../Component/GenericTag';
 
 import '../../Style/Ateliers.css';
 
-const Ateliers = () => {
+const Ateliers = (props) => {
 
   /*
   Notes: ["A noter : venir démaquiller et/ou cheveux lavés du jour même"]
@@ -15,14 +15,14 @@ const Ateliers = () => {
 
   let ateliersList = [];
 
-  for (let a in this.props.ateliers) {
+  for (let a in props.ateliers) {
     let atelier = [];
 
     //titre
-    atelier.push(<h3 key={"title"+a} className="AtelierTitle">{this.props.ateliers[a].title}</h3>);
+    atelier.push(<h3 key={"title"+a} className="AtelierTitle">{props.ateliers[a].title}</h3>);
 
     //photos
-    let photo = this.props.ateliers[a].photos[this.props.device];
+    let photo = props.ateliers[a].photos[props.device];
     if (photo) {
       const images = importAll(require.context('../../medias/ateliers/', true, /\.(webp)$/));
       const image = findOne(images, photo);
@@ -34,7 +34,7 @@ const Ateliers = () => {
 
     //contenus
     atelier.push(
-      this.props.ateliers[a].content.map((c, i) => {
+      props.ateliers[a].content.map((c, i) => {
         let contenu = [];
         contenu.push(<GenericTag target={c} key={"contentLine"+i}></GenericTag>);
         return (
@@ -45,7 +45,7 @@ const Ateliers = () => {
       })
     );
     //prix
-    let prices = this.props.ateliers[a].prices
+    let prices = props.ateliers[a].prices
     let prix = [];
     let pIdx = 0;
     for (let p in prices) {
@@ -58,11 +58,11 @@ const Ateliers = () => {
       </div>
     );
     //notes
-    if(this.props.ateliers[a].notes[0]) {
+    if(props.ateliers[a].notes[0]) {
       atelier.push(
         <div key={"notes"+a} className="AtelierNote">
           {(localStorage.getItem('siteLang') === "fr")? "A noter :": "Please note :"}
-          {this.props.ateliers[a].notes.map((n, i) => {
+          {props.ateliers[a].notes.map((n, i) => {
           let notes = [];
           notes.push(n);
           return (<div key={"noteLine"+i}>{notes}</div>);

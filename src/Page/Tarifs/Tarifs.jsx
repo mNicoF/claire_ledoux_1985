@@ -17,13 +17,13 @@ const Tarifs = (props) => {
     let servicesList = servicesGroups[sg];
 
     for (let sl in servicesList) {
-      services.push(<Services key={sl} lang={this.props.lang} services={sl} list={servicesList[sl]} />);
+      services.push(<Services key={sl} lang={props.lang} services={sl} list={servicesList[sl]} />);
     }
     tiles.push(<div key={"tile_" + sg} className="TarifsTiles">{services}</div>);
   }
 
   /*
-  let topLine = (this.props.lang === 'fr') ?
+  let topLine = (props.lang === 'fr') ?
     "ATTENTION NOUVEAUX TARIFS ; profitez des prix actuels avant changement le 1er septembre 2020 !"
     : "WARNING NEW PRICES ; enjoy the current prices befor they change the 1st of september 2020 !";
     

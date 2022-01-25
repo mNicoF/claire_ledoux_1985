@@ -1,5 +1,5 @@
 import React from 'react';
-import { Badge, Card, CardImg, CardBody, CardTitle, CardSubtitle, CardText } from 'reactstrap';
+import { Badge, Card, CardImg, CardBody, CardTitle, CardSubtitle, CardText/*, Button*/ } from 'reactstrap';
 import { importAll, findOne } from "../../utils/Images";
 
 import '../../Style/Produits.css';
@@ -8,8 +8,8 @@ const Produits = (props) => {
 
   const [produits] = React.useState(props.produits);
 
-  //let NO_STOCK_LABEL = (this.props.lang === 'fr') ? "Réaprovisionnement..." : "replenishment...";
-  //let ADD_CART_LABEL = (this.props.lang === 'fr') ? "Ajouter au panier" : "Add to Cart";
+  //let NO_STOCK_LABEL = (props.lang === 'fr') ? "Réaprovisionnement..." : "replenishment...";
+  //let ADD_CART_LABEL = (props.lang === 'fr') ? "Ajouter au panier" : "Add to Cart";
 
   let cards = [];
   for(let p in produits) {
