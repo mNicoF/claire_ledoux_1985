@@ -15,7 +15,7 @@ const Contact = (props) => {
     props.sendMail(mail);
   }
 
-  const handleMoreInfo = (event) => {
+  /*const handleMoreInfo = (event) => {
     //besoin du type de device pour forcer la taille de l'info facebook
     const device = props.device;
     const currTarget = (info.props) ? info.props.contact : "";
@@ -24,11 +24,19 @@ const Contact = (props) => {
       <Infos contact={nextTarget.title} device={device} sendMail={(mail) => sendMail(mail)}/>
     ) : "";
     setInfo(tag);
-  }
+  }*/
 
   React.useEffect(() => {
-    handleMoreInfo({ 'target': { 'id': 3 } });
-  });
+    //handleMoreInfo({ 'target': { 'id': 3 } });
+    const device = props.device;
+    const currTarget = (info.props) ? info.props.contact : "";
+    //bloquer par default sur l'adresse maps
+    let nextTarget = contacts[3];
+    let tag = (nextTarget.title !== currTarget.title) ? (
+      <Infos contact={nextTarget.title} device={device} sendMail={(mail) => sendMail(mail)}/>
+    ) : "";
+    setInfo(tag);
+  }, []);
 
   let listGroupItem = [];
   for (let c in contacts) {

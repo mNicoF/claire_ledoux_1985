@@ -21,7 +21,7 @@
       "image": 2
     },
     {
-      "stock":-1,
+      "stock":1,
       "title": "Baume intense corps / pieds",
       "info": "Baume hydratant intense pour le corps et les pieds en format stick. Nourrit, protège et répare votre peau.",
       "detail": "Parfum : 'Crème de citron', 'Fleur de lys', 'Monoï' et 'Lait d'olives'",
@@ -31,7 +31,7 @@
       "image": 3
     },
     {
-      "stock":1,
+      "stock":-1,
       "title": "Gommage corps",
       "info": "Gommage et soin simultanés pour les mains, les pieds et le corps. Gomme, nourrit, hydrate, répare et protège la peau grâce aux huiles végétales naturelles et aux sels de la Mer Morte. Elimine les cellules mortes, aide à régénérer les cellules de la peau et laisse une peau incroyablement douce.",
       "detail": "Contenance : 141g, 368g",
@@ -118,7 +118,7 @@
       "image": 2
     },
     {
-      "stock":-1,
+      "stock":1,
       "title": "Balm intense body / feet",
       "info": "Balm hydrate intense for the body and feet in stick format. Nourishe, protect and repair your skin.",
       "detail": "Perfume : 'Lemon Cream', 'Lily Flower', 'Monoï' et 'Olives Milk'",
@@ -128,7 +128,7 @@
       "image": 3
     },
     {
-      "stock":1,
+      "stock":-1,
       "title": "Srub Body",
       "info": "Scrub and care simultaneous for the hands, the feet and the body. Exfolie, nourishe, hydrate, repair and protect the skin thank huiles to natural vegetable oils and Dead ea salts. Removes dead cells, helps regenerate skin cells and leaves incredibly soft skin.",
       "detail": "Contenance : 141g, 368g",
