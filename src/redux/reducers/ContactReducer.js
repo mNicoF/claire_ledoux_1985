@@ -45,4 +45,4 @@ export function contactReducer(state = initialState, action) {
     }
 }
 
-export default { contactReducer }
+export default contactReducer;

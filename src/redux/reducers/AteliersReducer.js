@@ -6,4 +6,4 @@ export function ateliersReducer(state = initialState){
     return state;
 }
 
-export default {ateliersReducer}
+export default ateliersReducer;

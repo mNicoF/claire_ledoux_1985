@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -12,18 +12,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
  * * icon : valeur de l'icon pour FontAwesomeIcon : ["far", "copyright"]
  * * classN : liste de className à ajouter à la balise
  */
-class GenericTag extends Component {
-  constructor(props) {
-    super(props);
 
-    this.setTag = this.setTag.bind(this);
+const GenericTag = (props) => {
+  
+  const [target] = React.useState(props.target);
 
-    this.state = {
-      target: this.props.target
-    };
-  }
-
-  setTag(target) {
+  const setTag = (target) => {
     const label = target.label;
     const type = target.type;
     const value = (target.value) ? target.value : "";
@@ -77,16 +71,13 @@ class GenericTag extends Component {
     return tag;
   }
 
-  render() {
+  let tag = setTag(target); //this.state.label, this.state.value, this.state.type, this.state.classN);
 
-    let tag = this.setTag(this.state.target); //this.state.label, this.state.value, this.state.type, this.state.classN);
-
-    return (
-      <>
-        {tag}
-      </>
-    );
-  }
+  return (
+    <>
+      {tag}
+    </>
+  );
 }
 
 export default GenericTag;

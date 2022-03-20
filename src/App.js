@@ -1,6 +1,5 @@
-import React, { Component } from "react";
-
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import React from "react";  
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import AppLayout from "./AppLayout/AppLayout";
 import Loading from "./Page/Loading/Loading";
@@ -24,14 +23,14 @@ import thunkMiddleware from "redux-thunk";
 import { Provider } from "react-redux";
 import { createLogger } from "redux-logger";
 
-import { appReducer } from "./redux/reducers/AppReducer";
-import { accueilReducer } from "./redux/reducers/AccueilReducer";
-import { presentationReducer } from "./redux/reducers/PresentationReducer";
-import { contactReducer } from "./redux/reducers/ContactReducer";
-import { tarifsReducer } from "./redux/reducers/TarifsReducer";
-import { ateliersReducer } from "./redux/reducers/AteliersReducer";
-import { produitReducer } from "./redux/reducers/ProduitsReducer";
-import { mediasReducer } from "./redux/reducers/MediasReducer";
+import appReducer from "./redux/reducers/AppReducer";
+import accueilReducer from "./redux/reducers/AccueilReducer";
+import presentationReducer from "./redux/reducers/PresentationReducer";
+import contactReducer from "./redux/reducers/ContactReducer";
+import tarifsReducer from "./redux/reducers/TarifsReducer";
+import ateliersReducer from "./redux/reducers/AteliersReducer";
+import produitReducer from "./redux/reducers/ProduitsReducer";
+import mediasReducer from "./redux/reducers/MediasReducer";
 
 /**
  * CSS
@@ -85,17 +84,11 @@ const store = createStore(
 /**
  * App Component render
  */
-class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      lang: (localStorage.getItem('siteLang'))? localStorage.getItem('siteLang') : 'fr'
-    };
-  }
+const App = () => {
 
-  componentDidMount() {
-    window.addEventListener("pushstate", this.handleHistory, false);
-    window.addEventListener("popstate", this.handleHistory, false);
+  const [lang, setLang] = React.useState((localStorage.getItem('siteLang'))? localStorage.getItem('siteLang') : 'fr');
+
+  React.useEffect(() => {
 
     const packageJson = require("./../package.json");
 
@@ -132,55 +125,34 @@ class App extends Component {
       //au cas ou il ne soit pas initialisé
       localStorage.setItem('siteLang', window.location.pathname.split("/")[1]);
     }
+    setLang(currLang);
+  }, []);
 
-    this.setState({
-      lang: currLang
-    });
-
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener("pushstate", this.handleHistory);
-    window.removeEventListener("popstate", this.handleHistory);
-  }
-
-  render() {
-
-    return (
-      <div className="App">
-        <Provider store={store}>
-          <Router>
-            <AppLayout lang={this.state.lang}>
-              <Switch>
-                <Route exact path="/" component={Loading} />
-                <Route path="/:lang/accueil" component={Accueil} />
-                <Route path="/:lang/presentation" component={Presentation} />
-                <Route path="/:lang/partenaires" component={Partenaires} />
-                <Route path="/:lang/photos" component={Photos} />
-                <Route path="/:lang/videos" component={Videos} />
-                <Route path="/:lang/tarifs" component={Tarifs} />
-                <Route path="/:lang/ateliers" component={Ateliers} />
-                <Route path="/:lang/produits" component={Produits} />
-                <Route path="/:lang/contact" component={Contact} />
-                <Route 
-                  exact path="/:lang"
-                  render={props =>
-                    props.match.params.lang === 'fr' || props.match.params.lang === 'en' ? (
-                      <Accueil />
-                    ) : (
-                      <NotFound />
-                    )
-                  }
-                />
-                {/*<Redirect from="*" to="/404"/>*/}
-                <Route component={NotFound} />
-              </Switch>
-            </AppLayout>
-          </Router>
-        </Provider>
-      </div>
-    );
-  }
+  return (
+    <div className="App">
+      <Provider store={store}>
+        <Router>
+          <AppLayout lang={lang}>
+            <Routes>
+              <Route exact path="/" element={<Loading/>} />
+              <Route path="/:lang/accueil" element={<Accueil/>} />
+              <Route path="/:lang/presentation" element={<Presentation/>} />
+              <Route path="/:lang/partenaires" element={<Partenaires/>} />
+              <Route path="/:lang/photos" element={<Photos/>} />
+              <Route path="/:lang/videos" element={<Videos/>} />
+              <Route path="/:lang/tarifs" element={<Tarifs/>} />
+              <Route path="/:lang/ateliers" element={<Ateliers/>} />
+              <Route path="/:lang/produits" element={<Produits/>} />
+              <Route path="/:lang/contact" element={<Contact/>} />
+              <Route path="/fr" element={<Accueil/>} />
+              <Route path="/en" element={<Accueil/>} />
+              <Route path="*" element={<NotFound/>} />
+            </Routes>
+          </AppLayout>
+        </Router>
+      </Provider>
+    </div>
+  );
 }
 
 export default App;

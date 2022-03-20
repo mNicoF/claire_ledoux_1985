@@ -1,24 +1,17 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Button } from "reactstrap";
-
+import { importAll, findOne } from "../../utils/Images";
 import Images from "../../Component/Images/Images";
 
-class Photos extends Component {
-  constructor(props) {
-    super(props);
+const Photos = (props) => {
 
-    this.handleSelect = this.handleSelect.bind(this);
-    this.handleBack = this.handleBack.bind(this);
+  const [allImport, setAllImport] = React.useState({});
+  const [photoList] = React.useState(props.photoList);
+  const [inGalerie, setInGalerie] = React.useState(false);
+  const [prevScroll, setPrevScroll] = React.useState(0);
+  const [target, setTarget] = React.useState(<Images folderName="ongles" folderSize={13} />);
 
-    this.state = {
-      photoList: this.props.photoList,
-      inGalerie: false,
-      prevScroll: 0,
-      target: <Images folderName="ongles" folderSize={13} />
-    };
-  }
-
-  componentDidMount() {
+  React.useEffect(() => {
     window.onscroll = function() {
       let dfltBackBtn = document.getElementById('dfltBackBtn');
       let stkyBackBtn = document.getElementById('stkyBackBtn');
@@ -32,64 +25,76 @@ class Photos extends Component {
         }
       }
     }
-  }
 
-  handleSelect(target) {
+    let Dermographie_réparatrice = importAll(require.context('../../medias/galerie/Dermographie réparatrice', true, /\.(webp)$/));
+    let Dermographie_esthétique = importAll(require.context('../../medias/galerie/Dermographie esthétique', true, /\.(webp)$/));
+    let Tatouage = importAll(require.context('../../medias/galerie/Tatouage', true, /\.(webp)$/));
+    let Maquillage_permanent = importAll(require.context('../../medias/galerie/Maquillage permanent', true, /\.(webp)$/));
+    let Maquillage_semi_permanent = importAll(require.context('../../medias/galerie/Maquillage semi-permanent', true, /\.(webp)$/));
+    let Vernis_semi_permanent = importAll(require.context('../../medias/galerie/Vernis semi-permanent', true, /\.(webp)$/));
+    let Make_up = importAll(require.context('../../medias/galerie/Make up', true, /\.(webp)$/));
+
+    setAllImport({
+      "Dermographie réparatrice": Dermographie_réparatrice,
+      "Dermographie esthétique": Dermographie_esthétique,
+      "Tatouage": Tatouage,
+      "Maquillage permanent": Maquillage_permanent,
+      "Maquillage semi-permanent": Maquillage_semi_permanent,
+      "Vernis semi-permanent": Vernis_semi_permanent,
+      "Make up": Make_up
+    });
+  }, []);
+
+  const handleSelect = (target) => {
     let windowScrollY = window.scrollY;
     window.scrollTo(0, 0);
-    this.setState({
-      inGalerie: true,
-      prevScroll: windowScrollY,
-      target: <Images folderName={target.source} folderSize={target.size} />
-    })
+    setInGalerie(true);
+    setPrevScroll(windowScrollY);
+    setTarget(<Images folderName={target.source} folderSize={target.size} allImport={allImport} />);
   }
 
-  handleBack() {
-    window.scrollTo(0, this.state.prevScroll);
-    this.setState({
-      prevScroll: 0,
-      inGalerie: false
-    })
+  const handleBack = () => {
+    window.scrollTo(0, prevScroll);
+    setInGalerie(false);
+    setPrevScroll(0);
   }
-
-  render() {
-
-    let menuAlbum = [];
-    for (let photo in this.state.photoList) {
-      menuAlbum.push(
-        <div className="GalerieDiv" key={photo}>
-          <h6 style={{ "textDecoration": "underline" }}>{this.state.photoList[photo].name+" ("+this.state.photoList[photo].size+")"}</h6>
-          <img
-            className="isBtn GalerieImg"
-            src={require('../../medias/galerie/' + this.state.photoList[photo].source + '/' + this.state.photoList[photo].size + '.webp')}
-            alt={photo}
-            onClick={() => this.handleSelect(this.state.photoList[photo])}
-          />
-        </div>
-      );
-    }
     
-    let backLabel = (this.props.currLang === 'fr')? '< Retour' : '< Back';
-
-    return (
-      <div className="GalerieLayout Page">
-
-        {this.state.inGalerie ? (
-          <React.Fragment>
-            <div>
-              <Button id="dfltBackBtn" style={{"display":"block", "marginLeft":"20px", "backgroundColor":"#37342F",}} onClick={() => this.handleBack()}>{backLabel}</Button>
-              <Button id="stkyBackBtn" style={{"display":"none", "marginLeft":"20px", "backgroundColor":"#37342F", "zIndex":100, "position":"fixed", "top":0}} onClick={() => this.handleBack()}>{'< Retour'}</Button>
-            </div>
-            {this.state.target}
-          </React.Fragment>
-        ) : (
-            <React.Fragment>
-              {menuAlbum}
-            </React.Fragment>
-          )}
+  let menuAlbum = [];
+  for (let photo in photoList) {
+    const image = findOne(allImport[photoList[photo].source], photoList[photo].size);
+    menuAlbum.push(
+      <div className="GalerieDiv" key={photo}>
+        <h6 style={{ "textDecoration": "underline" }}>{photoList[photo].name+" ("+photoList[photo].size+")"}</h6>
+        <img
+          className="isBtn GalerieImg"
+          src={image}
+          alt={photo}
+          onClick={() => handleSelect(photoList[photo])}
+        />
       </div>
     );
   }
+  
+  let backLabel = (props.currLang === 'fr')? '< Retour' : '< Back';
+
+  return (
+    <div className="GalerieLayout Page">
+
+      {inGalerie ? (
+        <React.Fragment>
+          <div>
+            <Button id="dfltBackBtn" className="DfltBackBtn" onClick={() => handleBack()}>{backLabel}</Button>
+            <Button id="stkyBackBtn" className="StkyBackBtn" style={{'display':'none'}} onClick={() => handleBack()}>{backLabel}</Button>
+          </div>
+          {target}
+        </React.Fragment>
+      ) : (
+          <React.Fragment>
+            {menuAlbum}
+          </React.Fragment>
+        )}
+    </div>
+  );
 }
 
 export default Photos;

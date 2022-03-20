@@ -27,6 +27,13 @@ h2, h3, h4, h5, h6 {
  * Facebook
  */
 
+ .fb_dialog_content > iframe {
+  bottom: 40pt !important;
+  right: 10pt !important;
+ }
+
+ /** Tout ce qui suit ne marche plus ?
+  *
 .fb_customer_chat_bounce_in_v2{
   bottom: 85pt !important;
   right: 10pt !important;
@@ -43,7 +50,7 @@ h2, h3, h4, h5, h6 {
   top: auto;
   z-index: 2147483647;
   max-height: 100%;
-  */
+  * /
 }
 
 .fb_customer_chat_bounce_out_v2{
@@ -66,8 +73,10 @@ h2, h3, h4, h5, h6 {
   top: auto;
   width: 45pt;
   z-index: 2147483646;
-  */
+  * /
 }
+  *
+  */
 
 /* 
  * Theme font

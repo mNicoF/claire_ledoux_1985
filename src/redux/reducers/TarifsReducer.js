@@ -6,4 +6,4 @@ export function tarifsReducer(state = initialState){
     return state;
 }
 
-export default {tarifsReducer}
+export default tarifsReducer;

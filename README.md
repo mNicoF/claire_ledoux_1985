@@ -1,3 +1,4 @@
+# 🚀 Welcome to your new awesome project!
 Ce projet est un simple site web pour l'entreprise Claire Ledoux 1985.
 ---
 Maquillage permanent // Tatouage medical // Dermopigmentation

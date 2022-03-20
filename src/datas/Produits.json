@@ -1,155 +1,195 @@
 {
   "fr": [
     {
+      "stock":1,
       "title": "Huile de beauté",
       "info": "Hydrate, nourrit, protège, lisse et répare ! Appliquez sur l'ensemble du corps, du visage et des cheveux. Idéalement, sur peau mouillée en sortant de la douche ou en ajoutant quelques gouttes dans l'eau du bain.",
       "detail": "Parfum : 'Poire Amandine', 'Fleur de lys', 'Monoï' et 'Cerise noire'",
       "price": ["19"],
+      "var": ["Poire Amandine", "Fleur de lys", "Monoï", "Cerise noire"],
       "img": "../../medias/produits/huile-de-beaute.webp",
       "image": 1
     },
     {
+      "stock":0,
       "title": "Stylo cuticules",
       "info": "Nourrit les cuticules et fortifie les ongles grâce aux huiles végétales naturelles.",
       "detail": "Parfum : 'Poire Amandine', 'Fleur de lys', 'Monoï' et 'Lait d'olives'",
       "price": ["11"],
+      "var": ["Poire Amandine", "Fleur de lys", "Monoï", "Lait d'olives"],
       "img": "../../medias/produits/huile-de-beaute.webp",
       "image": 2
     },
     {
+      "stock":1,
       "title": "Baume intense corps / pieds",
       "info": "Baume hydratant intense pour le corps et les pieds en format stick. Nourrit, protège et répare votre peau.",
       "detail": "Parfum : 'Crème de citron', 'Fleur de lys', 'Monoï' et 'Lait d'olives'",
       "price": ["17"],
+      "var": ["Crème de citron", "Fleur de lys", "Monoï", "Lait d'olives"],
       "img": "../../medias/produits/huile-de-beaute.webp",
       "image": 3
     },
     {
+      "stock":-1,
       "title": "Gommage corps",
       "info": "Gommage et soin simultanés pour les mains, les pieds et le corps. Gomme, nourrit, hydrate, répare et protège la peau grâce aux huiles végétales naturelles et aux sels de la Mer Morte. Elimine les cellules mortes, aide à régénérer les cellules de la peau et laisse une peau incroyablement douce.",
       "detail": "Contenance : 141g, 368g",
       "price": ["24", "35"],
+      "var": ["141g", "368g"],
       "img": "../../medias/produits/huile-de-beaute.webp",
       "image": 4
     },
     {
+      "stock":1,
       "title": "Gommage sucrée pour lèvres",
       "info": "Gomme sucrée et comestible ! Nourrit, hydrate, répare et protège vos lèvres.",
       "detail": "Parfum : 'Menthe', 'Grenadine'",
       "price": ["12"],
+      "var": ["Menthe", "Grenadine"],
       "img": "../../medias/produits/huile-de-beaute.webp",
       "image": 5
     },
     {
+      "stock":1,
       "title": "Désinfectant",
       "info": "Désinfectant mains For Men, avec son mousqueton, 30ml.",
       "detail": "Parfum : 'Musc'",
       "price": ["9"],
+      "var": ["Musc"],
       "image": 6
     },
     {
+      "stock":1,
       "title": "Crème main",
       "info": "Crème mains et ongles homme, Hard 'N Heavy 60ml.",
       "detail": "Parfum : 'Musc'",
       "price": ["9"],
+      "var": ["Musc"],
       "image": 7
     },
     {
+      "stock":1,
       "title": "Parfum d’Ambiance",
       "info": "Parfum d’Ambiance tête de mort 100ml",
       "detail": "Parfum : 'Mûre'",
       "price": ["21"],
+      "var": ["Mûre"],
       "image": 8
     },
     {
+      "stock":1,
       "title": "Gel douche",
       "info": "Gel douche homme, Hard 'N Heavy 200ml.",
       "detail": "Parfum : 'Musc'",
       "price": ["14"],
+      "var": ["Musc"],
       "image": 9
     },
     {
+      "stock":1,
       "title": "Tête de mort Blanc Neige",
       "info": "Gel douche et Bain douche 180ml",
       "detail": "Parfum : 'Coco'",
       "price": ["14"],
+      "var": ["Coco"],
       "image": 10
     }
   ],
   "en": [
     {
+      "stock":1,
       "title": "Beauty Oil",
       "info": "Hydrate, nourishe, protect, smooth and repair ! Apply on all body, face and hair. Idéally, on skin wet after getting out the shower or adding a few drops to the bath water.",
-      "detail": "Perfume : 'Almond Pear', 'Lily Flower', 'Monoï' et 'black cherry'",
+      "detail": "Perfume : 'Almond Pear', 'Lily Flower', 'Monoï' et 'Black cherry'",
       "price": ["19"],
+      "var": ["Almond Pear", "Lily Flower", "Monoï", "Black cherry"],
       "img": "../../medias/produits/huile-de-beaute.webp",
       "image": 1
     },
     {
+      "stock":0,
       "title": "Cuticle Pen",
       "info": "Nourishe the cuticle and fortified the nails thanks to natural vegetable oils.",
-      "detail": "Perfume : 'Almond Pear', 'Lily Flower', 'Monoï' et 'OLive Milk'",
+      "detail": "Perfume : 'Almond Pear', 'Lily Flower', 'Monoï' et 'Olive Milk'",
       "price": ["11"],
+      "var": ["Almond Pear", "Lily Flower", "Monoï", "Olive Milk"],
       "img": "../../medias/produits/huile-de-beaute.webp",
       "image": 2
     },
     {
+      "stock":1,
       "title": "Balm intense body / feet",
       "info": "Balm hydrate intense for the body and feet in stick format. Nourishe, protect and repair your skin.",
-      "detail": "Perfume : 'Lemon Cream', 'Lily Flower', 'Monoï' et 'Olives Mil'",
+      "detail": "Perfume : 'Lemon Cream', 'Lily Flower', 'Monoï' et 'Olives Milk'",
       "price": ["17"],
+      "var": ["Lemon Cream", "Lily Flower", "Monoï", "Olives Milk"],
       "img": "../../medias/produits/huile-de-beaute.webp",
       "image": 3
     },
     {
+      "stock":-1,
       "title": "Srub Body",
       "info": "Scrub and care simultaneous for the hands, the feet and the body. Exfolie, nourishe, hydrate, repair and protect the skin thank huiles to natural vegetable oils and Dead ea salts. Removes dead cells, helps regenerate skin cells and leaves incredibly soft skin.",
       "detail": "Contenance : 141g, 368g",
       "price": ["24", "35"],
+      "var": ["141g","368g"],
       "img": "../../medias/produits/huile-de-beaute.webp",
       "image": 4
     },
     {
+      "stock":1,
       "title": "Sweet Scub for Lips",
       "info": "Sweet scrub ans edible ! Nourishe, hydrate, repair and protect your lips.",
       "detail": "Perfume : 'Mint', 'Grenadine'",
       "price": ["12"],
+      "var": ["Mint", "Grenadine"],
       "img": "../../medias/produits/huile-de-beaute.webp",
       "image": 5
     },
     {
+      "stock":1,
       "title": "Disinfectant",
       "info": "Disinfectant hands For Men, with his carbiner, 30ml.",
       "detail": "Perfume : 'Musk'",
       "price": ["9"],
+      "var": ["Musk"],
       "image": 6
     },
     {
+      "stock":1,
       "title": "Hands Cream",
       "info": "Hands cream and nails men, Hard 'N Heavy 60ml.",
       "detail": "Perfume : 'Musk'",
       "price": ["9"],
+      "var": ["Musk"],
       "image": 7
     },
     {
+      "stock":1,
       "title": "Ambiance Perfume",
       "info": "Ambiance Perfume skull 100ml",
       "detail": "Perfume : 'Blackberry'",
       "price": ["21"],
+      "var": ["Blackberry"],
       "image": 8
     },
     {
+      "stock":1,
       "title": "Shower gel",
       "info": "Shower gel Men, Hard 'N Heavy 200ml.",
       "detail": "Perfume : 'Musk'",
       "price": ["14"],
+      "var": ["Musk"],
       "image": 9
     },
     {
+      "stock":1,
       "title": "Skull Snow White",
       "info": "Shower gel and Shower Bath 180ml",
       "detail": "Perfume : 'Coconut'",
       "price": ["14"],
+      "var": ["Coconut"],
       "image": 10
     }
   ]

@@ -10,4 +10,4 @@ export function presentationReducer(state = initialState) {
     return state;
 }
 
-export default { presentationReducer }
+export default presentationReducer;

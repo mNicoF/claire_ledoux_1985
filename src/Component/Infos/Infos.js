@@ -1,16 +1,9 @@
-import React, { Component } from "react";
+import React from "react";
 import MailForm from './MailForm';
 
-class Infos extends Component {
-  constructor(props) {
-    super(props);
+const Infos = (props) => {
 
-    this.renderInfo = this.renderInfo.bind(this);
-
-    this.state = {};
-  }
-
-  renderInfo(contact, device) {
+  const renderInfo = (contact, device) => {
     let info = "";
     switch (contact.label) {
       case "Horaires":
@@ -122,12 +115,10 @@ class Infos extends Component {
     return info;
   }
 
-  render() {
-    let infoContent = this.renderInfo(this.props.contact, this.props.device);
+  const infoContent = renderInfo(props.contact, props.device);
 
-    return (<div className="InfoLayout">{infoContent}</div>);
+  return (<div className="InfoLayout">{infoContent}</div>);
 
-  }
 }
 
 export default Infos;

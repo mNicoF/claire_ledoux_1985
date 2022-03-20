@@ -1,3 +1,0 @@
-Sitemap: http://www.claireledoux1985.fr/sitemap.xml
-User-agent: *
-Disallow:

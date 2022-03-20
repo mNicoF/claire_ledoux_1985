@@ -6,4 +6,4 @@ export function accueilReducer(state = initialState){
     return state;
 }
 
-export default {accueilReducer}
+export default accueilReducer;
