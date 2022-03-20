@@ -3,7 +3,7 @@
     {
       "name":"Dermographie réparatrice",
       "source":"Dermographie réparatrice",
-      "size":17
+      "size":18
     },
     {
       "name":"Dermographie esthétique",
@@ -13,17 +13,17 @@
     {
       "name":"Tatouage",
       "source":"Tatouage",
-      "size":12
+      "size":13
     },
     {
       "name":"Maquillage permanent",
       "source":"Maquillage permanent",
-      "size":65
+      "size":70
     },
     {
       "name":"Maquillage semi-permanent",
       "source":"Maquillage semi-permanent",
-      "size":52
+      "size":55
     },
     {
       "name":"Vernis semi-permanent",
@@ -40,7 +40,7 @@
     {
       "name":"Restorative dermography",
       "source":"Dermographie réparatrice",
-      "size":17
+      "size":18
     },
     {
       "name":"Esthetic dermography",
@@ -50,17 +50,17 @@
     {
       "name":"Tattoo",
       "source":"Tatouage",
-      "size":12
+      "size":13
     },
     {
       "name":"Permanent make up",
       "source":"Maquillage permanent",
-      "size":65
+      "size":70
     },
     {
       "name":"Semi-permanent make up",
       "source":"Maquillage semi-permanent",
-      "size":52
+      "size":55
     },
     {
       "name":"Semi-permanent nail polish",
