@@ -25,9 +25,12 @@ const Photos = (props) => {
         }
       }
     }
+    
+    //let test = importAll(require.context('../../medias/galerie/test', true, /\.(webp)$/));
 
     let Dermographie_réparatrice = importAll(require.context('../../medias/galerie/Dermographie réparatrice', true, /\.(webp)$/));
     let Dermographie_esthétique = importAll(require.context('../../medias/galerie/Dermographie esthétique', true, /\.(webp)$/));
+    let Piercing_et_bijoux = importAll(require.context('../../medias/galerie/Piercing et bijoux', true, /\.(webp)$/));
     let Tatouage = importAll(require.context('../../medias/galerie/Tatouage', true, /\.(webp)$/));
     let Maquillage_permanent = importAll(require.context('../../medias/galerie/Maquillage permanent', true, /\.(webp)$/));
     let Maquillage_semi_permanent = importAll(require.context('../../medias/galerie/Maquillage semi-permanent', true, /\.(webp)$/));
@@ -37,6 +40,7 @@ const Photos = (props) => {
     setAllImport({
       "Dermographie réparatrice": Dermographie_réparatrice,
       "Dermographie esthétique": Dermographie_esthétique,
+      "Piercing et bijoux": Piercing_et_bijoux,
       "Tatouage": Tatouage,
       "Maquillage permanent": Maquillage_permanent,
       "Maquillage semi-permanent": Maquillage_semi_permanent,

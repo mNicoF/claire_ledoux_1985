@@ -11,6 +11,11 @@
       "size":5
     },
     {
+      "name":"Piercing et bijoux",
+      "source":"Piercing et bijoux",
+      "size":14
+    },
+    {
       "name":"Tatouage",
       "source":"Tatouage",
       "size":16
@@ -34,12 +39,7 @@
       "name":"Make up",
       "source":"Make up",
       "size":13
-    },
-    {
-      "name":"Piercing et bijoux",
-      "source":"Piercing et bijoux",
-      "size":14
-    } 
+    }
   ],
   "en": [
     {
@@ -51,6 +51,11 @@
       "name":"Esthetic dermography",
       "source":"Dermographie esthétique",
       "size":5
+    },
+    {
+      "name":"Piercing and jewelry",
+      "source":"Piercing et bijoux",
+      "size":14
     },
     {
       "name":"Tattoo",
@@ -76,11 +81,6 @@
       "name":"Make up",
       "source":"Make up",
       "size":13
-    },
-    {
-      "name":"Piercing and jewelry",
-      "source":"Piercing et bijoux",
-      "size":14
-    } 
+    }
   ]
 }
