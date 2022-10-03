@@ -112,6 +112,41 @@
         "Cours mixte en groupe (1h30)": "30 €/prs",
         "Atelier DIY Cosmétique : faire son gloss (1h30)": "15 €/prs"
       }
+    }, "Piercing": {
+      "Oreilles": {
+        "1 Lobe": "20 €",
+        "2 Lobes": "30 €",
+        "Lobes Transversal": "45 €",
+        "Industriel": "60 €",
+        "Helix": "30 €",
+        "Anti-Helix": "40 €",
+        "Rook": "40 €",
+        "Tragus": "45 €",
+        "Anti-Tragus": "45 €",
+        "Conch": "50 €",
+        "Snug": "50 €",
+        "Daith": "45 €"
+      }, "Visage": {
+        "Medusa": "45 €",
+        "Madona": "40 €",
+        "Bridge": "50 €",
+        "Bridge Vertical": "60 €",
+        "Arcade": "45 €",
+        "Nez": "40 €",
+        "Septum": "45 €",
+        "Labret": "45 €",
+        "Ashley": "45 €",
+        "Smiley": "50 €",
+        "2 Smiley": "70 €",
+        "Langue": "45 €"
+      }, "Corps": {
+        "Nombril": "50 €",
+        "Surface": "60 €",
+        "Teton": "50 €",
+        "2 Tetons": "70 €",
+        "Micro Dermal": "90 €",
+        "Génital Femme": "80 €"
+      }
     }
   },
 
@@ -231,6 +266,41 @@
         "Self hairstyle group lesson (1h30)": "30 €/ppl",
         "Mixed group lesson (1h30)": "30 €/ppl",
         "DIY cosmetic workshop : do your gloss (1h30)": "15 €/ppl"
+      }
+    }, "Piercing": {
+      "Ears": {
+        "1 Lobe": "20 €",
+        "2 Lobes": "30 €",
+        "Transversal Lobes": "45 €",
+        "Industrial": "60 €",
+        "Helix": "30 €",
+        "Anti-Helix": "40 €",
+        "Rook": "40 €",
+        "Tragus": "45 €",
+        "Anti-Tragus": "45 €",
+        "Conch": "50 €",
+        "Snug": "50 €",
+        "Daith": "45 €"
+      }, "Face": {
+        "Medusa": "45 €",
+        "Madona": "40 €",
+        "Bridge": "50 €",
+        "Vertical Bridge": "60 €",
+        "Arcade": "45 €",
+        "Nose": "40 €",
+        "Septum": "45 €",
+        "Labret": "45 €",
+        "Ashley": "45 €",
+        "Smiley": "50 €",
+        "2 Smiley": "70 €",
+        "Tong": "45 €"
+      }, "Body": {
+        "Belly button": "50 €",
+        "Surface": "60 €",
+        "Nipple": "50 €",
+        "2 Nipples": "70 €",
+        "Micro Dermal": "90 €",
+        "Woman's Genital": "80 €"
       }
     }
   }

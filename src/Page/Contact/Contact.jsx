@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useCallback } from "react";
 import { ListGroup, ListGroupItem, ListGroupItemHeading } from 'reactstrap';
 
 import Infos from './../../Component/Infos/Infos';
@@ -8,12 +8,12 @@ import '../../Style/Contact.css';
 
 const Contact = (props) => {
 
-  const [contacts] = React.useState(props.contact);
-  const [info, setInfo] = React.useState('');
+  const [contacts] = useState(props.contact);
+  const [info, setInfo] = useState('');
 
-  const sendMail = (mail) => {
+  const sendMail = useCallback((mail) => {
     props.sendMail(mail);
-  }
+  }, [props]);
 
   /*const handleMoreInfo = (event) => {
     //besoin du type de device pour forcer la taille de l'info facebook
@@ -36,7 +36,7 @@ const Contact = (props) => {
       <Infos contact={nextTarget.title} device={device} sendMail={(mail) => sendMail(mail)}/>
     ) : "";
     setInfo(tag);
-  }, []);
+  }, [props.device, info.props, contacts, sendMail]);
 
   let listGroupItem = [];
   for (let c in contacts) {

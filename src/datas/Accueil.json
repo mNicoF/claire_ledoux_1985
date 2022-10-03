@@ -4,9 +4,15 @@
       "title" : "Nouveau",
       "content" : [
         {
-          "text":"A partir de mi-Septembre : piercing au cabinet !",
-          "link":"",
-          "url":""
+          "text":"Photos de Piercing et bijoux dans la @link",
+          "link":"Galerie",
+          "urlType": "in",
+          "url":"/photos"
+        }, {
+          "text":"Prix des Piercing dans @link",
+          "link":"Tarifs",
+          "urlType": "in",
+          "url":"/tarifs"
         }
       ]
     },
@@ -33,14 +39,15 @@
       "title" : "News",
       "content" : [
         {
-          "text":"From mid-September: piercing in the office!",
-          "link":"",
-          "url":""
-        },
-        {
-          "text":"New tattoo in the pics galery",
-          "link":"",
-          "url":""
+          "text":"Piercing and jewelry in the @link",
+          "link":"Galery",
+          "urlType": "in",
+          "url":"/photos"
+        }, {
+          "text":"Piercing @link",
+          "link":"Prices",
+          "urlType": "in",
+          "url":"/tarifs"
         }
       ]
     },

@@ -13,7 +13,7 @@
     {
       "name":"Tatouage",
       "source":"Tatouage",
-      "size":13
+      "size":16
     },
     {
       "name":"Maquillage permanent",
@@ -34,7 +34,12 @@
       "name":"Make up",
       "source":"Make up",
       "size":13
-    }
+    },
+    {
+      "name":"Piercing et bijoux",
+      "source":"Piercing et bijoux",
+      "size":14
+    } 
   ],
   "en": [
     {
@@ -50,7 +55,7 @@
     {
       "name":"Tattoo",
       "source":"Tatouage",
-      "size":13
+      "size":16
     },
     {
       "name":"Permanent make up",
@@ -71,6 +76,11 @@
       "name":"Make up",
       "source":"Make up",
       "size":13
-    }
+    },
+    {
+      "name":"Piercing and jewelry",
+      "source":"Piercing et bijoux",
+      "size":14
+    } 
   ]
 }
