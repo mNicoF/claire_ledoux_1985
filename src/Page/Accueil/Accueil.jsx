@@ -1,6 +1,6 @@
 import React from "react";
 
-//import Annonce from "./../../Component/Accueil/Annonce";
+import Annonce from "./../../Component/Accueil/Annonce";
 import News from "./../../Component/Accueil/News";
 import Media from "./../../Component/Accueil/Media";
 import Pres from "./../../Component/Accueil/Pres";
@@ -25,7 +25,7 @@ const Accueil = (props) => {
 
   return (
     <div className="AccueilLayout Page">
-      {/*<Annonce lang={this.props.lang}/>*/}
+      <Annonce lang={props.lang}/>
       <News lang={props.lang} news={news}/>
       <div className="AccueilCenter">
         <Media media={media} />

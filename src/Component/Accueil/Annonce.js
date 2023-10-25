@@ -2,7 +2,7 @@ import React from 'react';
 import { Button } from "reactstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const Annonce = () => {
+const Annonce = (props) => {
 
   const annonceLayoutStyle = {
     "display": sessionStorage.getItem('displayAnnonce'),
@@ -29,7 +29,7 @@ const Annonce = () => {
   }
 
   const textStyle = {
-    "maxWidth": "50vh"
+    //"maxWidth": "50vh"
   }
 
   const emphaseStyle = {
@@ -53,36 +53,26 @@ const Annonce = () => {
   }
 
   /*
-  let title = (this.props.lang === 'fr') ? "Annonce :" : "Advert :";
-  let text = (this.props.lang === 'fr') ?
-    "Bonjour, Recherche de personnes qui seraient dans cette situation et qui accepteraient d’être modèles. N'hésitez pas à prendre contact pour tout renseignements et n'hésitez pas à partager autour de vous !" :
-    "Hello, Looking for people in those situation and willing to be a model. Do not hesitate to contact me for any information and do not hesitate to share around you !";
-  let emphase = (this.props.lang === 'fr') ? "Source photos : internet" : "Pictures source : internet";
-  let img1 = (<img src={require('../../medias/accueil/img1.webp')} alt='img1' style={picStyle} />);
-  let img2 = (<img src={require('../../medias/accueil/img2.webp')} alt='img2' style={picStyle} />);
+  let img1 = (<img src={require('../../medias/accueil/covid19.webp')} alt='img1' style={picStyle} />);
   */
 
-  /*
-  let title = (this.props.lang === 'fr') ? "Annonce :" : "Advert :";
-  let text = (this.props.lang === 'fr') ?
-    "Pour tous les clients qui avaient un rendez-vous de retouche prévu pendant la période du confinement, merci de reprendre rendez-vous avant le 31 mai. Au delà de cette date le rendez-vous devra être réglé" :
-    "For all the customers that had an appointment during the containment period, please be sure to take a new appointment before the 31th of May. Beyond this date, the appointment will have to be paid";
-  let emphase = (this.props.lang === 'fr') ? "Source photos : internet" : "Pictures source : internet";
-  let img1 = (<img src={require('../../medias/accueil/covid19.webp')} alt='img1' style={picStyle} />);
-  let img2 = (<div></div>);
-  */
+ let title = (props.lang === 'fr') ? "Message a l'attention des clientes et clients :" : "Important :";
+ let text = (props.lang === 'fr') ?
+   "Bonjour, je suis actuellement dans l'incapacité de vous recevoir au cabinet pour une durée indéterminée. Je reste néamoins joignable par messages tout les jours de la semaine de 14h à 18h" :
+   "For all the customers that had an appointment during the containment period, please be sure to take a new appointment before the 31th of May. Beyond this date, the appointment will have to be paid";
+ let emphase = (props.lang === 'fr') ? "Merci de votre compréhension - Claire Ledoux" : "Claire Ledoux";
 
   return (
     <div id='annonceLayout' style={annonceLayoutStyle}>
       <Button onClick={() => handleClose()} style={closeBtnStyle} color="danger"><FontAwesomeIcon icon={["fas", "times"]} /></Button>
-      <div style={annonceContentStyle}>
-        {img1}
+      <div >
+        {/*img1*/}
         <div>
           <h3 style={titleStyle}>{title}</h3>
           <p style={textStyle}>{text}</p>
           <p style={emphaseStyle}>{emphase}</p>
         </div>
-        {img2}
+        {/*img2*/}
       </div>
     </div>
   );
