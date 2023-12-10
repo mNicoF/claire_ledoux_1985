@@ -56,8 +56,8 @@
       }
     },
     {
-      "accueil": true,
-      "moreInfo": true,
+      "accueil": false,
+      "moreInfo": false,
       "title": {
         "label": "Adresse",
         "type": "text",
@@ -67,7 +67,7 @@
         ]
       },
       "value": {
-        "label": "296 Rue du Maréchal Leclerc, 79000 Niort",
+        "label": "",
         "value": "https://goo.gl/maps/gTW4PySFiitszrrJ9",
         "type": "link"
       }
@@ -86,6 +86,23 @@
       "value": {
         "label": "@claireledoux1985",
         "value": "https://www.facebook.com/claireledoux1985/",
+        "type": "link"
+      }
+    },
+    {
+      "accueil": false,
+      "moreInfo": false,
+      "title": {
+        "label": "Instagram",
+        "type": "text",
+        "icon": [
+          "fab",
+          "instagram"
+        ]
+      },
+      "value": {
+        "label": "claireledoux_cl_85",
+        "value": "https://www.instagram.com/claireledoux_cl_85/",
         "type": "link"
       }
     },
@@ -176,8 +193,8 @@
       }
     },
     {
-      "accueil": true,
-      "moreInfo": true,
+      "accueil": false,
+      "moreInfo": false,
       "title": {
         "label": "Address",
         "type": "text",
@@ -187,7 +204,7 @@
         ]
       },
       "value": {
-        "label": "296 Rue du Maréchal Leclerc, 79000 Niort, France",
+        "label": "",
         "value": "https://goo.gl/maps/gTW4PySFiitszrrJ9",
         "type": "link"
       }
@@ -206,6 +223,23 @@
       "value": {
         "label": "@claireledoux1985",
         "value": "https://www.facebook.com/claireledoux1985/",
+        "type": "link"
+      }
+    },
+    {
+      "accueil": false,
+      "moreInfo": false,
+      "title": {
+        "label": "Instagram",
+        "type": "text",
+        "icon": [
+          "fab",
+          "instagram"
+        ]
+      },
+      "value": {
+        "label": "claireledoux_cl_85",
+        "value": "https://www.instagram.com/claireledoux_cl_85/",
         "type": "link"
       }
     },

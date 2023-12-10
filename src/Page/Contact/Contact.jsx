@@ -43,12 +43,14 @@ const Contact = (props) => {
     /*let moreInfo = (contacts[c].moreInfo) ? (
       <Button id={c} className="moreInfoBtn theme" onClick={this.handleMoreInfo}>+</Button>
     ) : (<></>);*/
-    listGroupItem.push(
-      <ListGroupItem key={c} className="GroupItem">
-        <GenericTag target={contacts[c].title} /> {' : '}
-        <GenericTag target={contacts[c].value} />
-        {/*moreInfo*/}
-      </ListGroupItem>)
+    if(contacts[c].value.label !== ""){
+      listGroupItem.push(
+        <ListGroupItem key={c} className="GroupItem">
+          <GenericTag target={contacts[c].title} /> {' : '}
+          <GenericTag target={contacts[c].value} />
+          {/*moreInfo*/}
+        </ListGroupItem>)
+    }
   }
 
   let listGroupHeading = (props.currLang === 'fr')? 'Information et contacts' : 'Information and contact';
@@ -65,7 +67,7 @@ const Contact = (props) => {
   return (
     <div className="ContactLayout Page">
       {listGroup}
-      {info}
+      {/*info*/}
     </div>
   );
 }

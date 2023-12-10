@@ -12,17 +12,17 @@ const Annonce = (props) => {
     "position": "relative"
   }
 
-  const annonceContentStyle = {
+  /*const annonceContentStyle = {
     "display": "flex",
     "flexDirection": "row",
     "flexWrap": "wrap",
     "justifyContent": "space-between" //"space-around"
-  }
+  }*/
 
-  const picStyle = {
+  /*const picStyle = {
     "minHeight": "30vh",
     "maxHeight": "15vw"
-  }
+  }*/
 
   const titleStyle = {
     "marginTop": "20px"
@@ -30,6 +30,8 @@ const Annonce = (props) => {
 
   const textStyle = {
     //"maxWidth": "50vh"
+    marginLeft: "40px",
+    marginRight: "40px"
   }
 
   const emphaseStyle = {
@@ -56,11 +58,11 @@ const Annonce = (props) => {
   let img1 = (<img src={require('../../medias/accueil/covid19.webp')} alt='img1' style={picStyle} />);
   */
 
- let title = (props.lang === 'fr') ? "Message a l'attention des clientes et clients :" : "Important :";
+ let title = (props.lang === 'fr') ? "Message a l'attention des clientes et clients :" : "Message to customers :";
  let text = (props.lang === 'fr') ?
-   "Bonjour, je suis actuellement dans l'incapacité de vous recevoir au cabinet pour une durée indéterminée. Je reste néamoins joignable par messages tout les jours de la semaine de 14h à 18h" :
-   "For all the customers that had an appointment during the containment period, please be sure to take a new appointment before the 31th of May. Beyond this date, the appointment will have to be paid";
- let emphase = (props.lang === 'fr') ? "Merci de votre compréhension - Claire Ledoux" : "Claire Ledoux";
+   "Bonjour, Suite a mon hospitalisation, le cabinet est temporairement fermé à partir du 18 décembre et jusqu'au 31 janvier 2024. Je reste disponible par mail et téléphone pour tout type de question." :
+   "Hello, Due to my hospitalization, my office will be temporarily closed from december the 18th to january the 31th of 2024. I am still availlable by email and phone for any type of question.";
+ let emphase = (props.lang === 'fr') ? "Merci de votre compréhension - Claire Ledoux" : "Thank you for your hunderstanding - Claire Ledoux";
 
   return (
     <div id='annonceLayout' style={annonceLayoutStyle}>

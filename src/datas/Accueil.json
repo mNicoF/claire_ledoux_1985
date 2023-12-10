@@ -4,15 +4,10 @@
       "title" : "Nouveau",
       "content" : [
         {
-          "text":"Photos de Piercing et bijoux dans la @link",
-          "link":"Galerie",
-          "urlType": "in",
-          "url":"/photos"
-        }, {
-          "text":"Prix des Piercing dans @link",
-          "link":"Tarifs",
-          "urlType": "in",
-          "url":"/tarifs"
+          "text":"",
+          "link":"",
+          "urlType": "",
+          "url":""
         }
       ]
     },
@@ -39,15 +34,10 @@
       "title" : "News",
       "content" : [
         {
-          "text":"Piercing and jewelry in the @link",
-          "link":"Galery",
-          "urlType": "in",
-          "url":"/photos"
-        }, {
-          "text":"Piercing @link",
-          "link":"Prices",
-          "urlType": "in",
-          "url":"/tarifs"
+          "text":"",
+          "link":"",
+          "urlType": "",
+          "url":""
         }
       ]
     },

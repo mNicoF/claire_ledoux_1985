@@ -52,11 +52,11 @@ import {
   faMars,
   faChartLine
 } from "@fortawesome/free-solid-svg-icons";
-import { faFacebook } from "@fortawesome/fontawesome-free-brands";
+import { faFacebook, faInstagram } from "@fortawesome/fontawesome-free-brands";
 
 library.add(faCopyright, faClock);
 library.add(faAt, faPhone, faMapMarked, faGlobeAfrica, faTimes, faMars, faChartLine);
-library.add(faFacebook);
+library.add(faFacebook, faInstagram);
 
 const reducers = combineReducers({
   appReducer,
